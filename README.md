@@ -1,7 +1,7 @@
 # hplt-eval
 
 ## Contents
-- [Overview]
+- [Overview](#overview)
 - [Evaluation suite](#evaluation-suite)
 - [Installation and Usage](#installation-and-usage)
 
