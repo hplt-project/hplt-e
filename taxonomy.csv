@@ -1,0 +1,131 @@
+Language,Dataset,Harness,Code,Train,Dev,Test,Prompts,Type,Category,Method,Metrics,HF
+Norwegian,NoReC Sentence ,norec_sentence,nob_Latn,3894,701,583,5,Text classification,Sentiment analysis,Human-created,F1/Accuracy,https://huggingface.co/datasets/ltg/norec_sentence
+Norwegian,NoReC Document ,norec_document,nob_Latn,23445,2939,2955,5,Text classification,Sentiment analysis,Human-created,F1/Accuracy,https://huggingface.co/datasets/ltg/norec_document
+Norwegian,NorQuAD ,norquad,nob_Latn,3808,472,472,5,Generative QA,Reading comprehension,Human-created,F1/Exact match,https://huggingface.co/datasets/ltg/norquad
+Norwegian,Belebele ,norbelebele,nob_Latn,0,0,900,5,Multiple-choice QA,Reading comprehension,Human-translated,Accuracy,https://huggingface.co/datasets/facebook/belebele
+Norwegian,Tatoeba,tatoeba_eng_nob,nob_Latn,0,5.2k,4.5k,4,Sequence-to-sequence generation,Machine translation,Human-created,"BLEU, BERTScore",https://huggingface.co/datasets/Helsinki-NLP/tatoeba_mt
+Norwegian,Tatoeba,tatoeba_eng_nno,nno_Latn,0,504,459,4,Sequence-to-sequence generation,Machine translation,Human-created,"BLEU, BERTScore",https://huggingface.co/datasets/Helsinki-NLP/tatoeba_mt
+Norwegian,NorOpenBookQA ,noropenbookqa_nob,nob_Latn,2.8k,0,163,5,Multiple-choice QA,Language-specific & world knowledge,Human-created & human-translated,Accuracy,https://huggingface.co/datasets/ltg/noropenbookqa
+Norwegian,NorOpenBookQA ,noropenbookqa_nno,nno_Latn,0,376,90,5,Multiple-choice QA,Language-specific & world knowledge,Human-created & human-translated,Accuracy,https://huggingface.co/datasets/ltg/noropenbookqa
+Norwegian,NRK-Quiz-QA ,nrk_quiz_qa_nob,nob_Latn,0,0,3.6k,5,Multiple-choice QA,Language-specific & world knowledge,Human-created,Accuracy,https://huggingface.co/datasets/ltg/nrk_quiz_qa
+Norwegian,NRK-Quiz-QA ,nrk_quiz_qa_nno,nno_Latn,0,0,1.3k,5,Multiple-choice QA,Language-specific & world knowledge,Human-created,Accuracy,https://huggingface.co/datasets/ltg/nrk_quiz_qa
+Norwegian,NorCommonsenseQA ,norcommonsenseqa_nob,nob_Latn,0,0,693,5,Multiple-choice QA,Commonsense reasoning,Human-created & human-translated,Accuracy,https://huggingface.co/datasets/ltg/norcommonsenseqa
+Norwegian,NorCommonsenseQA ,norcommonsenseqa_nno,nno_Latn,0,0,95,5,Multiple-choice QA,Commonsense reasoning,Human-created & human-translated,Accuracy,https://huggingface.co/datasets/ltg/norcommonsenseqa
+Norwegian,NorTruthfulQA Multiple-choice ,nortruthfulqa_mc_nob,nob_Latn,0,0,488,5,Multiple-choice QA,Truthfulness,Human-created & human-translated,Accuracy,https://huggingface.co/datasets/ltg/nortruthfulqa_mc
+Norwegian,NorTruthfulQA Multiple-choice ,nortruthfulqa_mc_nno,nno_Latn,0,0,57,5,Multiple-choice QA,Truthfulness,Human-created & human-translated,Accuracy,https://huggingface.co/datasets/ltg/nortruthfulqa_mc
+Norwegian,NorTruthfulQA Generation ,nortruthfulqa_gen_nob,nob_Latn,0,0,346,5,Generative QA,Truthfulness,Human-created & human-translated,"BLEU, ROUGE-L",https://huggingface.co/datasets/ltg/nortruthfulqa_gen
+Norwegian,NorTruthfulQA Generation ,nortruthfulqa_gen_nno,nno_Latn,0,0,125,5,Generative QA,Truthfulness,Human-created & human-translated,"BLEU, ROUGE-L",https://huggingface.co/datasets/ltg/nortruthfulqa_gen
+Norwegian,NorIdiom ,noridiom_nob,nob_Latn,0,0,3.4k,5,Sentence completion,Language knowledge,Human-created,F1/Exact match,https://huggingface.co/datasets/Sprakbanken/Norwegian_idioms
+Norwegian,NorIdiom ,noridiom_nno,nno_Latn,0,0,89,5,Sentence completion,Language knowledge,Human-created,F1/Exact match,https://huggingface.co/datasets/Sprakbanken/Norwegian_idioms
+Norwegian,NCB ,ncb,nob_Latn,0,0,840,0,Ranking,Language knowledge,Human-created,Accuracy,https://huggingface.co/datasets/hcfa/ncb
+Ukrainian,Global-MMLU,global_mmlu_full_uk,ukr_Cyrl,0,285,14042,1,Multiple-choice QA,Language-specific & world knowledge,Human-translated,Accuracy,https://huggingface.co/datasets/CohereForAI/Global-MMLU
+Ukrainian,ZNO,zno,ukr_Cyrl,3063,0,751,1,Multiple-choice QA,Language-specific & world knowledge,Human-created,Accuracy,https://huggingface.co/datasets/osyvokon/zno
+Ukrainian,INCLUDE,include_base_44_ukrainian,ukr_Cyrl,0,25,551,1,Multiple-choice QA,Language-specific & world knowledge,Human-created,Accuracy,https://huggingface.co/datasets/CohereLabs/include-base-44
+Ukrainian,TextDetox,textdetox_ukr,ukr_Cyrl,5000,0,0,1,Text classification,Toxicity detection,Human-created,Accuracy,https://huggingface.co/datasets/ukr-detect/ukr-toxicity-dataset
+Ukrainian,UA-SQuAD,ua_squad,ukr_Cyrl,3917,0,3812,1,Generative QA,Reading comprehension,Human-translated,F1/Exact match,https://huggingface.co/datasets/FIdo-AI/ua-squad
+Ukrainian,Belebele,belebele_ukr_Cyrl,ukr_Cyrl,0,0,900,1,Multiple-choice QA,Reading comprehension,Human-translated,Accuracy,https://huggingface.co/datasets/facebook/belebele
+Ukrainian,UA-GEC,ua_gec,ukr_Cyrl,0,0,2081,0,Ranking,Language knowledge,Human-created,Accuracy,https://github.com/grammarly/ua-gec/tree/main
+Ukrainian,MultiBLiMP,ua_blimp,ukr_Cyrl,0,0,2744,0,Ranking,Language knowledge,Human-created,Accuracy,https://huggingface.co/datasets/jumelet/multiblimp
+Ukrainian,WMT24PP,wmt24pp_en-uk,ukr_Cyrl,0,0,980,1,Sequence-to-sequence generation,Machine translation,Human-created,"BLEU, BERTScore",https://huggingface.co/datasets/google/wmt24pp/
+Portuguese,ASSIN,assin_entailment,por_Latn,5000,1000,4000,1,Text classification,Entailment,Human-reviewed,Accuracy,https://huggingface.co/datasets/nilc-nlp/assin
+Portuguese,ASSIN,assin_paraphrase,por_Latn,5000,1000,"4,000",1,Text classification,Paraphrasing,Human-reviewed,Accuracy,https://huggingface.co/datasets/nilc-nlp/assin
+Portuguese,Belebele,belebele_por_Latn,por_Latn,0,0,900,1,Multiple-choice QA,Reading comprehension,Human-translated,Accuracy,https://huggingface.co/datasets/facebook/belebele
+Portuguese,FLORES,flores_en-pt,por_Latn,0,0,1012,1,Sequence-to-sequence generation,Machine translation,Human-created,"BLEU, BERTScore",https://huggingface.co/datasets/facebook/flores
+Portuguese,Global-MMLU,global_mmlu_pt,por_Latn,0,285,14042,1,Multiple-choice QA,Language-specific & world knowledge,Human-translated,Accuracy,https://huggingface.co/datasets/CohereForAI/Global-MMLU
+Portuguese,INCLUDE,include_base_44_portuguese,por_Latn,0,30,551,1,Multiple-choice QA,Language-specific & world knowledge,Human-created,Accuracy,https://huggingface.co/datasets/CohereLabs/include-base-44
+Galician,Belebele,belebele_glg_Latn,glg_Latn,0,0,900,1,Multiple-choice QA,Reading comprehension,Human-translated,Accuracy,https://huggingface.co/datasets/facebook/belebele
+Galician,FLORES,flores_en-gl,glg_Latn,0,0,1012,1,Sequence-to-sequence generation,Machine translation,Human-created,"BLEU, BERTScore",https://huggingface.co/datasets/facebook/flores
+Galician,GalCoLA,galcola,glg_Latn,11956,3417,1711,1,Text classification,Language knowledge,Human-translated,"MCC, Accuracy",https://huggingface.co/datasets/proxectonos/galcola
+Galician,MGSM,mgsm_direct_gl,glg_Latn,8,0,250,1,Generative QA,Mathematical reasoning,Human-translated,Exact match,https://huggingface.co/datasets/proxectonos/mgsm_gl
+Galician,OpenBookQA-gl,openbookqa_gl,glg_Latn,0,500,500,1,Multiple-choice QA,Language-specific & world knowledge,Human-translated,Accuracy,https://huggingface.co/datasets/proxectonos/openbookqa_gl
+Galician,Parafrases-gl,parafrases_gl,glg_Latn,2052,586,294,1,Text classification,Paraphrasing,Human-reviewed,Accuracy,https://huggingface.co/datasets/proxectonos/parafrases_gl
+Galician,PAWS-gl,paws_gl,glg_Latn,0,0,2000,1,Text classification,Paraphrasing,Human-translated,Accuracy,https://huggingface.co/datasets/proxectonos/PAWS-gl
+Galician,TruthfulQA-gl Generation,truthfulqa_gl_gen,glg_Latn,0,0,817,1,Generative QA,Truthfulness,Human-translated,"BLEU, ROUGE-1, ROUGE-2, ROUGE-L",https://huggingface.co/datasets/proxectonos/truthfulqa_gl
+Galician,TruthfulQA-gl Multiple-choice,truthfulqa_gl_mc1,glg_Latn,0,0,817,1,Multiple-choice QA,Truthfulness,Human-translated,Accuracy,https://huggingface.co/datasets/proxectonos/truthfulqa_gl
+Galician,TruthfulQA-gl Multiple-choice,truthfulqa_gl_mc2,glg_Latn,0,0,817,1,Multiple-choice QA,Truthfulness,Human-translated,Accuracy,https://huggingface.co/datasets/proxectonos/truthfulqa_gl
+Galician,VeritasQA-gl Generation,veritasqa_gen_gl,glg_Latn,0,0,353,x,Generative QA,Truthfulness,Human-created & human-translated,x,https://huggingface.co/datasets/projecte-aina/veritasQA
+Galician,VeritasQA-gl Multiple-choice,veritasqa_mc1_gl,glg_Latn,0,0,353,x,Multiple-choice QA,Truthfulness,Human-created & human-translated,x,https://huggingface.co/datasets/projecte-aina/veritasQA
+Galician,VeritasQA-gl Multiple-choice,veritasqa_mc2_gl,glg_Latn,0,0,353,x,Multiple-choice QA,Truthfulness,Human-created & human-translated,x,https://huggingface.co/datasets/projecte-aina/veritasQA
+Basque,Belebele,belebele_eus_Latn,eus_Latn,0,0,900,1,Multiple-choice QA,Reading comprehension,Human-translated,Accuracy,https://huggingface.co/datasets/facebook/belebele
+Basque,EusExams,eus_exams_eu,eus_Latn,0,0,"16,774",1,Multiple-choice QA,Language-specific & world knowledge,Human-created,Accuracy,https://huggingface.co/datasets/HiTZ/EusExams
+Basque,EusProfficiency,eus_proficiency,eus_Latn,0,0,"5,169",1,Multiple-choice QA,Language-specific & world knowledge,Human-created,Accuracy,https://huggingface.co/datasets/HiTZ/EusProficiency
+Basque,EusReading,eus_reading,eus_Latn,0,0,352,1,Multiple-choice QA,Reading comprehension,Human-created,Accuracy,https://huggingface.co/datasets/HiTZ/EusReading
+Basque,EusTrivia,eus_trivia,eus_Latn,0,0,"1,715",1,Multiple-choice QA,Language-specific & world knowledge,Human-created,Accuracy,https://huggingface.co/datasets/HiTZ/EusTrivia
+Basque,MGSM-eu,mgsm_direct_eu,eus_Latn,8,0,250,1,Generative QA,Mathematical reasoning,Human-translated,Exact match,https://huggingface.co/datasets/HiTZ/MGSM-eu
+Basque,PIQA-eu,piqa_eu,eus_Latn,0,0,1836,1,Multiple-choice QA,Commonsense reasoning,Human-translated,Accuracy,https://huggingface.co/datasets/HiTZ/PIQA-eu
+Basque,NLI (Basque GLUE),qnlieu,eus_Latn,1764,230,238,1,Text classification,Entailment,Human-created,Accuracy,https://huggingface.co/datasets/orai-nlp/basqueGLUE
+Basque,WNLI,wnli_eu,eus_Latn,0,71,146,1,Text classification,Entailment,Human-translated,Accuracy,https://huggingface.co/datasets/HiTZ/wnli-eu
+Basque,XCOPA,xcopa_eu,eus_Latn,0,100,500,1,Text classification,Commonsense reasoning,Human-translated,Accuracy,https://huggingface.co/datasets/HiTZ/XCOPA-eu
+Basque,XNLI,xnli_eu_native,eus_Latn,0,0,621,1,Text classification,Entailment,Human-created,Accuracy,https://huggingface.co/datasets/HiTZ/xnli-eu
+Basque,xStoryCloze,xstorycloze_eu,eus_Latn,360,0,1510,1,Multiple-choice QA,Commonsense reasoning,Human-translated,Accuracy,https://huggingface.co/datasets/juletxara/xstory_cloze
+Basque,PAWS-eu,paws_eu,eus_Latn,0,0,2000,1,Text classification,Paraphrasing,Human-translated,Accuracy,https://huggingface.co/datasets/HiTZ/PAWS-eu
+Basque,ARC-eu,arc_eu_easy,eus_Latn,0,570,"2,376",1,Multiple-choice QA,Language-specific & world knowledge,Human-translated,Accuracy,https://huggingface.co/datasets/HiTZ/ARC-eu
+Basque,ARC-eu,arc_eu_challenge,eus_Latn,0,299,"1,172",1,Multiple-choice QA,Language-specific & world knowledge,Human-translated,Accuracy,https://huggingface.co/datasets/HiTZ/ARC-eu
+Basque,FLORES,flores_en-eu,eus_Latn,0,0,1012,1,Sequence-to-sequence generation,Machine translation,Human-created,"BLEU, BERTScore",https://huggingface.co/datasets/facebook/flores
+Basque,INCLUDE,include_base_44_basque,eus_Latn,0,5,500,1,Multiple-choice QA,Language-specific & world knowledge,Human-created,Accuracy,https://huggingface.co/datasets/CohereLabs/include-base-44
+Spanish,Belebele,belebele_spa_Latn,spa_Latn,0,0,900,1,Multiple-choice QA,Reading comprehension,Human-translated,Accuracy,https://huggingface.co/datasets/facebook/belebele
+Spanish,COPA,copa_es,spa_Latn,0,100,500,1,Text classification,Commonsense reasoning,Human-translated,Accuracy,https://huggingface.co/datasets/BSC-LT/COPA-es
+Spanish,ESCoLA,escola,spa_Latn,8454,1053,1060,1,Text classification,Language knowledge,Human-created,"MCC, Accuracy",https://huggingface.co/datasets/nbel/EsCoLA
+Spanish,MGSM-es,mgsm_direct_es,spa_Latn,8,0,250,1,Generative QA,Mathematical reasoning,Human-translated,Exact match,https://huggingface.co/datasets/juletxara/mgsm
+Spanish,OpenBookQA-es,openbookqa_es,spa_Latn,0,500,500,1,Multiple-choice QA,Language-specific & world knowledge,Human-translated,Accuracy,https://huggingface.co/datasets/BSC-LT/openbookqa-es
+Spanish,PAWS-es,paws_es,spa_Latn,49400,2000,2000,1,Text classification,Paraphrasing,Human-translated,Accuracy,https://huggingface.co/datasets/google-research-datasets/paws-x
+Spanish,VeritasQA-es Generation,veritasqa_gen_es,spa_Latn,0,0,353,-,Generative QA,Truthfulness,Human-created & human-translated,-,https://huggingface.co/datasets/projecte-aina/veritasQA
+Spanish,VeritasQA-es Multiple-choice,veritasqa_mc1_es,spa_Latn,0,0,353,-,Multiple-choice QA,Truthfulness,Human-created & human-translated,-,https://huggingface.co/datasets/projecte-aina/veritasQA
+Spanish,VeritasQA-es Multiple-choice,veritasqa_mc2_es,spa_Latn,0,0,353,-,Multiple-choice QA,Truthfulness,Human-created & human-translated,-,https://huggingface.co/datasets/projecte-aina/veritasQA
+Spanish,WNLI,wnli_es,spa_Latn,636,72,147,1,Text classification,Entailment,Human-translated,Accuracy,https://huggingface.co/datasets/PlanTL-GOB-ES/wnli-es
+Spanish,XNLI,xnli_es,spa_Latn,392702,2490,5010,1,Text classification,Entailment,Human-created & human-translated,Accuracy,https://huggingface.co/datasets/facebook/xnli
+Spanish,XQuAD,xquad_es,spa_Latn,0,0,1190,1,Generative QA,Reading comprehension,Human-translated,F1/Exact match,https://huggingface.co/datasets/google/xquad
+Spanish,xStoryCloze,xstorycloze_es,spa_Latn,360,0,1510,1,Multiple-choice QA,Commonsense reasoning,Human-translated,Accuracy,https://huggingface.co/datasets/juletxara/xstory_cloze
+Spanish,Cocoteros,cocoteros_es,spa_Latn,3876,0,969,1,Text generation ,Commonsense reasoning,Human-reviewed,"BLEU, ROUGE-1",https://huggingface.co/datasets/gplsi/cocoteros
+Spanish,FLORES,flores_en-es,spa_Latn,0,0,1012,1,Sequence-to-sequence generation,Machine translation,Human-created,"BLEU, BERTScore",https://huggingface.co/datasets/facebook/flores
+Spanish,INCLUDE,include_base_44_spanish,spa_Latn,0,20,550,1,Multiple-choice QA,Language-specific & world knowledge,Human-created,Accuracy,https://huggingface.co/datasets/CohereLabs/include-base-44
+Spanish,Global-MMLU,global_mmlu_full_es,spa_Latn,0,285,14042,1,Multiple-choice QA,Language-specific & world knowledge,Human-translated,Accuracy,https://huggingface.co/datasets/CohereForAI/Global-MMLU
+Catalan,ARC-ca,arc_ca_challenge,cat_Latn,0,299,1172,1,Multiple-choice QA,Language-specific & world knowledge,Human-translated,Accuracy,https://huggingface.co/datasets/projecte-aina/arc_ca
+Catalan,ARC-ca,arc_ca_easy,cat_Latn,0,570,2376,1,Multiple-choice QA,Language-specific & world knowledge,Human-translated,Accuracy,https://huggingface.co/datasets/projecte-aina/arc_ca
+Catalan,Belebele,belebele_cat_Latn,cat_Latn,0,0,900,1,Multiple-choice QA,Reading comprehension,Human-translated,Accuracy,https://huggingface.co/datasets/facebook/belebele
+Catalan,CatalanQA,catalanqa,cat_Latn,17135,2157,2135,1,Generative QA,Language-specific & world knowledge,Human-created,F1/Exact match,https://huggingface.co/datasets/projecte-aina/catalanqa
+Catalan,CatCoLA,catcola,cat_Latn,8151,1018,1020,1,Text classification,Language knowledge,Human-created,Accuracy,https://huggingface.co/datasets/nbel/CatCoLA
+Catalan,COPA-ca,copa_ca,cat_Latn,400,100,500,1,Text classification,Commonsense reasoning,Human-created,"MCC, Accuracy",https://huggingface.co/datasets/projecte-aina/COPA-ca
+Catalan,CoQCat,coqcat,cat_Latn,71489,8909,8986,1,Generative QA,Reading comprehension,Human-created,F1/Exact match,https://huggingface.co/datasets/projecte-aina/CoQCat
+Catalan,MGSM-cat,mgsm_direct_ca,cat_Latn,8,0,250,1,Generative QA,Mathematical reasoning,Human-translated,Exact match,https://huggingface.co/datasets/projecte-aina/mgsm_ca
+Catalan,OpenBookQA-cat,openbookqa_ca,cat_Latn,0,500,500,1,Multiple-choice QA,Language-specific & world knowledge,Human-translated,Accuracy,https://huggingface.co/datasets/projecte-aina/openbookqa_ca
+Catalan,Parafraseja,parafraseja,cat_Latn,15984,2000,4000,1,Text classification,Paraphrasing,Human-created,Accuracy,https://huggingface.co/datasets/projecte-aina/Parafraseja
+Catalan,PAWS-ca,paws_ca,cat_Latn,49400,2000,2000,1,Text classification,Paraphrasing,Human-translated,Accuracy,https://huggingface.co/datasets/projecte-aina/PAWS-ca
+Catalan,PIQA-ca,piqa_ca,cat_Latn,,1838,0,1,Multiple-choice QA,Commonsense reasoning,Human-translated,Accuracy,https://huggingface.co/datasets/projecte-aina/piqa_ca
+Catalan,SIQA-ca,siqa_ca,cat_Latn,,1954,0,1,Multiple-choice QA,Commonsense reasoning,Human-translated,Accuracy,https://huggingface.co/datasets/projecte-aina/siqa_ca
+Catalan,TE-ca,TE-ca,cat_Latn,16930,2116,2117,1,Text classification,Entailment,Human-created,Accuracy,https://huggingface.co/datasets/projecte-aina/teca
+Catalan,VeritasQA-cat Generation,veritasqa_gen_ca,cat_Latn,0,0,353,-,Generative QA,Truthfulness,Human-created & human-translated,-,https://huggingface.co/datasets/projecte-aina/veritasQA
+Catalan,VeritasQA-cat Multiple-choice,veritasqa_mc1_ca,cat_Latn,0,0,353,-,Multiple-choice QA,Truthfulness,Human-created & human-translated,-,https://huggingface.co/datasets/projecte-aina/veritasQA
+Catalan,VeritasQA-cat Multiple-choice,veritasqa_mc2_ca,cat_Latn,0,0,353,-,Multiple-choice QA,Truthfulness,Human-created & human-translated,-,https://huggingface.co/datasets/projecte-aina/veritasQA
+Catalan,WNLI,wnli_ca,cat_Latn,635,71,146,1,Text classification,Entailment,Human-translated,Accuracy,https://huggingface.co/datasets/projecte-aina/wnli-ca
+Catalan,XNLI,xnli_ca,cat_Latn,0,2490,5010,1,Text classification,Entailment,Human-translated,Accuracy,https://huggingface.co/datasets/projecte-aina/xnli-ca
+Catalan,XQuAD,xquad_ca,cat_Latn,0,0,1189,1,Generative QA,Reading comprehension,Human-translated,F1/Exact match,https://huggingface.co/datasets/projecte-aina/xquad-ca
+Catalan,xStoryCloze,xstorycloze_ca,cat_Latn,360,0,1510,1,Multiple-choice QA,Commonsense reasoning,Human-translated,Accuracy,https://huggingface.co/datasets/juletxara/xstory_cloze
+Catalan,Cocoteros,cocoteros_va,cat_Latn,0,0,968,1,Text generation,Commonsense reasoning,Human-reviewed & translated,"BLEU, ROUGE-1",https://huggingface.co/datasets/gplsi/cocoteros_va
+Catalan,FLORES,flores_en-ca,cat_Latn,0,0,1012,1,Sequence-to-sequence generation,Machine translation,Human-created,"BLEU, BERTScore",https://huggingface.co/datasets/facebook/flores
+Czech,Belebele,belebele_ces_Latn,ces_Latn,0,0,900,5,Multiple-choice QA,Reading comprehension,Human-translated,Accuracy,https://huggingface.co/datasets/facebook/belebele
+Czech,Global-MMLU,global_mmlu_full_cs,ces_Latn,0,285,14042,1,Multiple-choice QA,Language-specific & world knowledge,Human-translated,Accuracy,https://huggingface.co/datasets/CohereLabs/Global-MMLU
+Czech,SQAD3.2,benczechmark_cs_sqad32,ces_Latn,11569,0,2819,5,Generative QA,Reading comprehension,Human-created,F1/Exact match,https://huggingface.co/datasets/CZLC/sqad_3.2_filtered
+Czech,Umimeto ,benczechmark_umimeto_qa,ces_Latn,0,0,700,5,Multiple-choice QA,Language-specific & world knowledge,Human-created,Accuracy,https://huggingface.co/datasets/CZLC/umimeto-qa
+Czech,CERMAT OPEN,benczechmark_cermat_qa,ces_Latn,0,0,312,5,Generative QA,Language knowledge,Human-created,F1/Exact match,https://huggingface.co/datasets/CZLC/cermat_czech_open
+Czech,CERMAT TF,benczechmark_cermat_czech_tf,ces_Latn,0,0,647,5,Multiple-choice QA,Language knowledge,Human-created,F1/Accuracy,https://huggingface.co/datasets/CZLC/cermat_czech_tf
+Czech,CERMAT MC,benczechmark_cermat_mc,ces_Latn,0,0,649,5,Multiple-choice QA,Language knowledge,Human-created,Accuracy,https://huggingface.co/datasets/CZLC/cermat_czech_mc
+Czech,Klokan QA (balanced),benczechmark_klokan_qa,ces_Latn,813,0,807,5,Multiple-choice QA,Mathematical reasoning,Human-created,Accuracy,https://huggingface.co/datasets/hynky/klokan-qa
+Czech,CERMAT (Math),benczechmark_cermat_czmath_mc,ces_Latn,0,0,126,5,Multiple-choice QA,Mathematical reasoning,Human-created,Accuracy,https://huggingface.co/datasets/CZLC/cermat_math_mc
+Czech,Umimeto (Math),benczechmark_umimeto_qa,ces_Latn,0,0,100,5,Multiple-choice QA,Mathematical reasoning,Human-created,Accuracy,https://huggingface.co/datasets/CZLC/umimeto-qa
+Czech,CTKFacts ,benczechmark_ctkfacts_nli,ces_Latn,3626,482,558,8,Text classification,Entailment,Human-created,Accuracy,https://huggingface.co/datasets/ctu-aic/ctkfacts_nli
+Czech,Subjectivity ,benczechmark_subjectivity,ces_Latn,20,0,1980,5,Text classification,Sentiment analysis,Human-created,F1/Accuracy,https://huggingface.co/datasets/davidadamczyk/czechbench_subjectivity
+Czech,CzechSentiment - Mall,benczechmark_sentiment_mall,ces_Latn,29359,312,1499,5,Text classification,Sentiment analysis,Human-created,F1/Accuracy,https://huggingface.co/datasets/CZLC/mall_sentiment_balanced
+Czech,CzechSentiment - CSFD,benczechmark_sentiment_csfd,ces_Latn,87145,895,1504,5,Text classification,Sentiment analysis,Human-created,F1/Accuracy,https://huggingface.co/datasets/CZLC/csfd_sentiment_balanced
+Czech,CzechSentiment - FB,benczechmark_sentiment_fb,ces_Latn,3876,597,1500,5,Text classification,Sentiment analysis,Human-created,F1/Accuracy,https://huggingface.co/datasets/CZLC/fb_sentiment_balanced
+French,FQuaD,french_bench_fquadv2,fra_Latn,0,0,800,1,Generative QA,Reading comprehension,Human-created,F1/Exact match,https://huggingface.co/datasets/manu/fquad2_test
+French,French Trivia,french_bench_trivia,fra_Latn,380,0,0,1,Generative QA,Language-specific & world knowledge,Human-created,F1/Exact match,https://huggingface.co/datasets/manu/french-trivia/viewer/default/train?row=0&views%5B%5D=train
+French,French Language Test: Grammar,french_bench_grammar,fra_Latn,0,0,119,1,Multiple-choice QA,Language knowledge,Human-created,Accuracy,https://huggingface.co/datasets/manu/french-bench-grammar-vocab-reading
+French,French Language Test: Vocabulary,french_bench_vocab,fra_Latn,0,0,119,1,Multiple-choice QA,Language knowledge,Human-created,Accuracy,https://huggingface.co/datasets/manu/french-bench-grammar-vocab-reading
+French,French Language Test: Reading,french_bench_reading_comp,fra_Latn,0,0,71,1,Multiple-choice QA,Reading comprehension,Human-created,Accuracy,https://huggingface.co/datasets/manu/french-bench-grammar-vocab-reading
+French,Belebele,belebele_fra_Latn,fra_Latn,0,0,900,1,Multiple-choice QA,Reading comprehension,Human-translated,Accuracy,https://huggingface.co/datasets/facebook/belebele
+French,French NLI,french_bench_topic_based_nli,fra_Latn,0,60,600,1,Text classification,Entailment,Human-created,Accuracy,https://huggingface.co/datasets/manu/topic_based_nli_test
+French,WMT14,wmt14-en-fr,fra_Latn,0,3000,3000,1,Sequence-to-sequence generation,Machine translation,Human-created,BLEU,https://huggingface.co/datasets/wmt/wmt14
+French,XNLI,french_bench_xnli,fra_Latn,393000,2490,5010,1,Text classification,Entailment,Human-translated,Accuracy,https://huggingface.co/datasets/facebook/xnli
+French,INCLUDE,include_base_44_french,fra_Latn,0,25,419,1,Multiple-choice QA,Language-specific & world knowledge,Human-created,Accuracy,https://huggingface.co/datasets/CohereLabs/include-base-44
+French,Global-MMLU,global_mmlu_fr,fra_Latn,0,285,14000,1,Multiple-choice QA,Language-specific & world knowledge,Human-translated,Accuracy,https://huggingface.co/datasets/CohereForAI/Global-MMLU

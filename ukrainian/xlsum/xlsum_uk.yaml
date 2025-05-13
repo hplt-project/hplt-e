@@ -1,0 +1,19 @@
+task: xlsum_uk
+dataset_path: csebuetnlp/xlsum
+dataset_name: ukrainian
+doc_to_text: "Текст: {{text}}\nРезюме:"
+doc_to_target: "{{summary}}"
+output_type: generate_until
+training_split: train
+validation_split: validation
+test_split: test
+fewshot_split: train
+process_results: !function utils.process_results
+process_docs: !function utils.process_docs
+metric_list:
+  - metric: bleu
+    aggregation: bleu
+    higher_is_better: true
+  - metric: rougeL
+    aggregation: mean
+    higher_is_better: true

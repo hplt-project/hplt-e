@@ -1,0 +1,15 @@
+dataset_path: osyvokon/zno
+output_type: multiple_choice
+training_split: train
+validation_split: null
+test_split: test
+doc_to_text: "{{question}}"
+doc_to_choice: "{{choices.text}}"
+doc_to_target: "{{choices.label.index(correct_answers[0])}}"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true

@@ -1,0 +1,3 @@
+task: zno_language_and_literature
+include: _zno_yaml
+process_docs: !function utils.filter_language_and_literature
