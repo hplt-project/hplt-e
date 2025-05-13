@@ -303,6 +303,22 @@ lm_eval \
 </details>
 
 <details>
+<summary><b>Czech</b></summary>
+
+**Step 1: Clone the repository**
+
+```bash
+git clone https://github.com/DCGM/lm-evaluation-harness.git
+cd lm-evaluation-harness
+```
+
+**Step 2: Run the evaluation**
+
+Follow (and test) the instructions [here](https://github.com/DCGM/lm-evaluation-harness/tree/main?tab=readme-ov-file#example-usage).
+
+</details>
+
+<details>
 <summary><b>Ukrainian</b></summary>
 
 Evaluation on the Ukrainian tasks requires the usage of the `include_path` argument to ensure our tasks are registered in the framework:
