@@ -347,7 +347,7 @@ An alternative approach to run all tasks of interest at once involves creating a
 
 **Step 1: Create a configuration file**
 
-Create a configuration file containing the name of the group and corresponding tasks and save it in the, e.g., `groups` folder.
+Create a configuration file containing the name of the group and corresponding tasks and save it in the, e.g., `groups` folder. An example for the Ukrainian ZNO group task can be found [here](ukrainian/zno/zno.yaml).
 
 ```bash
 group: hplt_french
