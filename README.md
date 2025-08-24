@@ -1,4 +1,4 @@
-# hplt-eval
+# HPLT-E: Multilingual and Comprehensive LLM Evaluation
 
 ## Contents
 - [Overview](#overview)
