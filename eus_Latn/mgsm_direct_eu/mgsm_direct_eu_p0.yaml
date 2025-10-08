@@ -1,0 +1,3 @@
+task: mgsm_direct_eu_p0
+include: _mgsm_direct_eu_yaml
+doc_to_text: "Galdera: {{question}}\nErantzuna:"

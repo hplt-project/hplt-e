@@ -1,0 +1,8 @@
+task: ctkfacts_nli_p6
+include: _ctkfacts_nli_yaml
+description: "Prozkoumejte pravdivost následujúcích výroků. Odpovězte Ano/ne/možná:\n\n"
+doc_to_choice:
+  - "ne"
+  - "možná"
+  - "Ano"
+doc_to_text: 'Předpokládejme následovné: {{evidence}} Pak musí být pravda, že "{{claim}}"? Ano, ne, nebo možná? Odpověď: '

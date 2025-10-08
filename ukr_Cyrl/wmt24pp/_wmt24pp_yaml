@@ -1,0 +1,24 @@
+tag: wmt24pp_en-uk
+dataset_path: google/wmt24pp
+dataset_name: en-uk_UA
+dataset_kwargs:
+  trust_remote_code: true
+output_type: generate_until
+training_split: null
+validation_split: null
+test_split: train
+doc_to_target: target
+process_docs: !function utils.process_docs
+metric_list:
+  - metric: bleu
+    higher_is_better: true
+  - metric: chrf
+    higher_is_better: true
+generation_kwargs:
+  until:
+    - "\n"
+  do_sample: false
+  num_beams: 1
+  max_new_tokens: 128
+metadata:
+  version: 1.0

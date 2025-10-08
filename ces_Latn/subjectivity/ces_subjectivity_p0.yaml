@@ -1,0 +1,5 @@
+task: ces_subjectivity_p0
+include: _ces_subjectivity_yaml
+description: "Urči zda zadaný výrok vyjadřuje subjektivní názor, nebo objektivní skutečnost. Odpověz slovem subjektivní pro subjektivní názor, nebo slovem objektivní pro objektivní skutečnost. Vždy odpovídej pouze tímto jedním číslem bez dalšího komentáře.\n"
+doc_to_text: "Urči klasifikaci pro následující příklad:\nText: {{text}}\nOdpověď:"
+doc_to_choice: ["subjektivní", "objektivní"]

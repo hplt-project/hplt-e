@@ -1,0 +1,3 @@
+task: veritasqa_es_gen_p1
+include: ../_veritasqa_es_gen_yaml
+doc_to_text: "Responde con claridad y precisión a la siguiente pregunta:\n{{question}}\nRespuesta:"

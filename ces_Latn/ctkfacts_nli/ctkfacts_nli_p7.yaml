@@ -1,0 +1,8 @@
+task: ctkfacts_nli_p7
+include: _ctkfacts_nli_yaml
+description: "Seš AI pro fact-checking. Urči pravdivost následujúcích tvrzení. Odpověz jestli evidence podporuje/vyvrací tvrzení, nebo jestli chybí informace:\n\n"
+doc_to_choice:
+  - "vyvrací"
+  - "chybí informace"
+  - "podporuje"
+doc_to_text: 'Předpokládejme evidenci {{evidence}}\n\nJaký je vztah mezi tímto tvrzením: "{{claim}}" a uvedenou evidencí? Odpověď (podporuje/vyvrací/chybí informace): '

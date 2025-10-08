@@ -1,0 +1,4 @@
+task: cesbelebele_p3
+include: _cesbelebele_yaml
+description: "Vyber třídu pro daný text z nabízených možností na základě poskytnutého kontextu. Neopakuj vybranou odpověď. Vrať pouze číslo odpověďi bez dalších komentářů."
+doc_to_text: "Vyber třídu pro daný text:\nOtázka: {{question}}\nExtra Informace: {{flores_passage}}\nVarianty odpovědí: 1. {{mc_answer1}}\n 2. {{mc_answer2}}\n 3. {{mc_answer3}}\n 4. {{mc_answer4}}\n Moje odpověď:"

@@ -1,0 +1,4 @@
+task: cermat_czmath_mc_p2
+include: _cermat_czmath_mc_yaml
+description: "Ukázkové úlohy ze zkoušky z matematiky. Odpovídejte pouze z možností A,B,C,D,E:\n\n"
+doc_to_text: "{{('Ukázka: '+ context+' ') if context else ''}}Zodpovězte: {{query}}\nMožnosti: {{'\n'.join(choices)}}\nVybraná odpověď:"

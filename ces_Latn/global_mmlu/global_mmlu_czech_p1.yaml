@@ -1,0 +1,15 @@
+group: global_mmlu_czech_p1
+task:
+  - global_mmlu_czech_business_p1
+  - global_mmlu_czech_humanities_p1
+  - global_mmlu_czech_medical_p1
+  - global_mmlu_czech_other_p1
+  - global_mmlu_czech_stem_p1
+  - global_mmlu_czech_social_sciences_p1
+aggregate_metric_list:
+  - metric: acc
+    weight_by_size: True
+  - metric: acc_norm
+    weight_by_size: True
+metadata:
+  version: 1.0

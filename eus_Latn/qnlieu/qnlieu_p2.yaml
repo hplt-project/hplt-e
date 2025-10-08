@@ -1,0 +1,4 @@
+task: qnlieu_p2
+include: _qnlieu_yaml
+doc_to_text: "{{sentence1}}\nGaldera: {{sentence2}}.\nErantzuna:"
+doc_to_choice: ["Gezurra", "Egia"]

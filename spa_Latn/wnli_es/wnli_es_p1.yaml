@@ -1,0 +1,4 @@
+task: wnli_es_p1
+include: _wnli_es_yaml
+doc_to_text: "Lee el texto y contesta si la afirmación es verdadera o falsa.\nTexto: {{sentence1}}\nAfirmación: {{sentence2}}\nRespuesta:"
+doc_to_choice: ["Falso", "Verdadero"]

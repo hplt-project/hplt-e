@@ -1,0 +1,3 @@
+task: mgsm_direct_ca_p1
+include: _mgsm_direct_ca_yaml
+doc_to_text: "Respon amb claredat i precisió a la pregunta següent\n{{question}}\nResposta:"

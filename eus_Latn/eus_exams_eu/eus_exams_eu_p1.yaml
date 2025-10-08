@@ -1,0 +1,38 @@
+group: eus_exams_eu_p1
+task:
+  - hplt-e_eus_exams_eu_opeosakiadmineu
+  - hplt-e_eus_exams_eu_opeosakiauxenfeu
+  - hplt-e_eus_exams_eu_opeosakiauxeu
+  - hplt-e_eus_exams_eu_opeosakiceladoreu
+  - hplt-e_eus_exams_eu_opeosakienfeu
+  - hplt-e_eus_exams_eu_opeosakioperarioeu
+  - hplt-e_eus_exams_eu_opeosakitecnicoeu
+  - hplt-e_eus_exams_eu_opeosakivarioseu
+  - hplt-e_eus_exams_eu_opegasteizkoudala
+  - hplt-e_eus_exams_eu_opeehuadmineu
+  - hplt-e_eus_exams_eu_opeehuauxeu
+  - hplt-e_eus_exams_eu_opeehubiblioeu
+  - hplt-e_eus_exams_eu_opeehuderechoeu
+  - hplt-e_eus_exams_eu_opeehueconomicaseu
+  - hplt-e_eus_exams_eu_opeehuempresarialeseu
+  - hplt-e_eus_exams_eu_opeehusubalternoeu
+  - hplt-e_eus_exams_eu_opeehutecnicoeu
+  - hplt-e_eus_exams_eu_opeehuteknikarib
+  - hplt-e_eus_exams_eu_jadministrari
+  - hplt-e_eus_exams_eu_jlaguntza
+  - hplt-e_eus_exams_eu_jlaguntzaile
+  - hplt-e_eus_exams_eu_jteknikari
+  - hplt-e_eus_exams_eu_osakidetza1e
+  - hplt-e_eus_exams_eu_osakidetza2e
+  - hplt-e_eus_exams_eu_osakidetza3e
+  - hplt-e_eus_exams_eu_osakidetza5e
+  - hplt-e_eus_exams_eu_osakidetza6e
+  - hplt-e_eus_exams_eu_osakidetza7e
+  - hplt-e_eus_exams_eu_opebilbaoeu
+doc_to_text: "{{question}}\nA. {{candidates[0]}}\nB. {{candidates[1]}}\nC. {{candidates[2]}}\nD. {{candidates[3]}}\nErantzuna:"
+doc_to_choice: ["A", "B", "C", "D"]
+aggregate_metric_list:
+  - metric: acc
+    weight_by_size: True
+  - metric: acc_norm
+    weight_by_size: True

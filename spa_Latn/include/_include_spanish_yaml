@@ -1,0 +1,14 @@
+dataset_path: CohereForAI/include-base-44
+dataset_name: Spanish
+test_split: test
+output_type: multiple_choice
+doc_to_target: answer
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0

@@ -1,0 +1,8 @@
+task: ctkfacts_nli_p3
+include: _ctkfacts_nli_yaml
+description: "Úkol: Vyhodnoťte pravdivost následujúcích tvrzení. Odpovězte pravda/nepravda/ani jedno:\n\n"
+doc_to_choice:
+  - "nepravda"
+  - "ani jedno"
+  - "Pravda"
+doc_to_text: '{{evidence}}\n\nOtázka: {{claim}} Pravda, nepravda, nebo ani jedno?'

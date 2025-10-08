@@ -1,0 +1,7 @@
+task: french_bench_vocabulary_p0
+include: ../_french_language_test_yaml
+validation_split: Vocabulary
+fewshot_split: Vocabulary
+test_split: Vocabulary
+doc_to_text: "La phrase suivante est logique sémantiquement:\n"
+doc_to_choice: "{{[question.replace('<...>', answerA), question.replace('<...>', answerB), question.replace('<...>', answerC), question.replace('<...>', answerD)]}}"

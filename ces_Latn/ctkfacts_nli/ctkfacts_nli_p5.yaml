@@ -1,0 +1,8 @@
+task: ctkfacts_nli_p5
+include: _ctkfacts_nli_yaml
+description: "Seš profesionální fact-checker. Determinuj pravdivost následujúcích tvrzení. Odpověz pravda/nepravda/nejasné:\n\n"
+doc_to_choice:
+  - "nepravda"
+  - "nejasné"
+  - "pravda"
+doc_to_text: 'Předpokládejme následovné: {{evidence}}\n\nPak následující tvrzení: "{{claim}}" je pravda, nepravda, nebo nejasné? '

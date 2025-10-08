@@ -1,0 +1,5 @@
+include: ../_global_mmlu_yaml
+task: global_mmlu_french_other_p0
+tag: global_mmlu_french_other
+process_docs: !function ../utils.process_other
+doc_to_text: "{{question.strip()}}\nA. {{option_a}}\nB. {{option_b}}\nC. {{option_c}}\nD. {{option_d}}\nRéponse :"

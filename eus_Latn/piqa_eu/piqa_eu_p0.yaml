@@ -1,0 +1,4 @@
+task: piqa_eu_p0
+include: _piqa_eu_yaml
+doc_to_text: "Galdera: {{goal}}\nErantzuna:"
+doc_to_choice: "{{[sol1, sol2]}}"

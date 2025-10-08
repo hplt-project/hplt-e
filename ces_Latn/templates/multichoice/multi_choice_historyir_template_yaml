@@ -1,0 +1,5 @@
+include:
+ - multi_class_template_yaml
+
+doc_to_choice: !function ../../utils.history_ir_get_choice
+doc_to_target: gold

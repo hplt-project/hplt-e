@@ -1,0 +1,3 @@
+task: xquad_ca_p0
+include: _xquad_ca_yaml
+doc_to_text: "Context: {{context}}\n\nPregunta: {{question}}\n\nResposta:"

@@ -1,0 +1,5 @@
+task: ces_subjectivity_p1
+include: _ces_subjectivity_yaml
+description: "Rozhodni, zda uvedený výrok vyjadřuje faktický názor, nebo osobní skutečnost. Odpověz slovem faktický pro faktický názor, nebo slovem osobní pro osobní skutečnost. Vždy odpovídej pouze jedním z těchto slov bez dalšího komentáře.\n"
+doc_to_text: "Vytvoř klasifikaci pro následující příklad:\nText: {{text}}\nOdpověď:"
+doc_to_choice: ["osobní", "faktický"]

@@ -1,0 +1,3 @@
+task: mgsm_direct_eu_p2
+include: _mgsm_direct_eu_yaml
+doc_to_text: "Eman erantzun zehatza hurrengo galderari:\n{{question}}\nErantzuna:"

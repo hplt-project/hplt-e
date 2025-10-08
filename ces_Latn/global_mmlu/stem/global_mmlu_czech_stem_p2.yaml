@@ -1,0 +1,5 @@
+include: ../_global_mmlu_yaml
+task: global_mmlu_czech_stem_p2
+tag: global_mmlu_czech_stem
+process_docs: !function ../utils.process_stem
+doc_to_text: "Pro následující otázku vybere jednu správnou odpověď:\n{{question.strip()}}\nA. {{option_a}}\nB. {{option_b}}\nC. {{option_c}}\nD. {{option_d}}\nSprávná odpověď:"

@@ -1,0 +1,3 @@
+task: veritasqa_ca_gen_p1
+include: ../_veritasqa_ca_gen_yaml
+doc_to_text: "Respon amb claredat i precisió a la pregunta següent:\n{{question}}\nResposta:"

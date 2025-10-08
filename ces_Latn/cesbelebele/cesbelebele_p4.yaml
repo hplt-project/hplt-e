@@ -1,0 +1,4 @@
+task: cesbelebele_p4
+include: _cesbelebele_yaml
+description: "Klasifikuj příklad výběrem jedné z nabízených možností podle poskytnutého kontextu. Neopakuj vybranou odpověď. Odpověz jen číslem odpovídající vybrané možnosti bez jakýchkoliv komentářů."
+doc_to_text: "Vyřešte následující úkol:\nNa základě kontextu: {{flores_passage}}\nodpovězte na otázku: {{question}}\nVyberte pouze jednu odpověď jako správnou:\n 1. {{mc_answer1}}\n 2. {{mc_answer2}}\n 3. {{mc_answer3}}\n 4. {{mc_answer4}}\nOdpověď:"

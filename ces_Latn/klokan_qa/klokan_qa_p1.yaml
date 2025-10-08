@@ -1,0 +1,3 @@
+task: klokan_qa_p1
+include: _klokan_qa_yaml
+description: "Úkol: Vyberte správnou odpověď A-E na následující otázky.\n\n"

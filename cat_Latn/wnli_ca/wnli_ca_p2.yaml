@@ -1,0 +1,4 @@
+task: wnli_ca_p2
+include: _wnli_ca_yaml
+doc_to_text: "{{sentence1}}\nPregunta: {{sentence2}}.\nResposta:"
+doc_to_choice: ["Fals", "Cert"]

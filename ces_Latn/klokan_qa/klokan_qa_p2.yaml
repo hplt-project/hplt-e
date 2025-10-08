@@ -1,0 +1,3 @@
+task: klokan_qa_p2
+include: _klokan_qa_yaml
+description: "Ukázkové úlohy z Matematického Klokana.\n\n"

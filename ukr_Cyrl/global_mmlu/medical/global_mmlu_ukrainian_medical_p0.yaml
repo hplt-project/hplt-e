@@ -1,0 +1,10 @@
+include: ../_global_mmlu_yaml
+task: global_mmlu_ukrainian_medical_p0
+tag: global_mmlu_ukrainian_medical
+process_docs: !function ../utils.process_medical
+doc_to_text: "Питання: {{question.strip()}}\nА. {{option_a}}\nБ. {{option_b}}\nВ. {{option_c}}\nГ. {{option_d}}\nВiдповiдь:"
+doc_to_choice:
+  - А
+  - Б
+  - В
+  - Г

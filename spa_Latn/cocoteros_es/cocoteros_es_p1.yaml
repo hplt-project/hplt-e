@@ -1,0 +1,3 @@
+task: cocoteros_es_p1
+include: _cocoteros_es_yaml
+doc_to_text: "Contexto: {{context}}\nCon ese contexto, forma una frase corta usando las palabras: {{keywords}}\n\nRespuesta:"

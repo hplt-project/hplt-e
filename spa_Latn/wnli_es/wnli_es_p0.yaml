@@ -1,0 +1,4 @@
+task: wnli_es_p0
+include: _wnli_es_yaml
+doc_to_text: "{{sentence1}}\nPregunta: {{sentence2}} ¿Verdadero o Falso?\nRespuesta:"
+doc_to_choice: ["Falso", "Verdadero"]

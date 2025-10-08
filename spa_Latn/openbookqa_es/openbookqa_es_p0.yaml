@@ -1,0 +1,4 @@
+task: openbookqa_es_p0
+include: _openbookqa_es_yaml
+doc_to_text: question_stem
+doc_to_choice: "{{choices.text}}"

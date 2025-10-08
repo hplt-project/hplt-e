@@ -1,0 +1,4 @@
+task: frabelebele_p0
+include: _frabelebele_yaml
+doc_to_text: "Texte : {{flores_passage}}\nQuestion : {{question}}\nA : {{mc_answer1}}\nB : {{mc_answer2}}\nC : {{mc_answer3}}\nD : {{mc_answer4}}\nRéponse :"
+doc_to_choice: ["A", "B", "C", "D"]

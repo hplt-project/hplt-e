@@ -1,0 +1,16 @@
+tag: include_french
+dataset_path: CohereForAI/include-base-44
+dataset_name: French
+test_split: test
+output_type: multiple_choice
+doc_to_target: answer
+doc_to_choice: ["A", "B", "C", "D"]
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0

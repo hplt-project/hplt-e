@@ -1,0 +1,5 @@
+task: ces_subjectivity_p4
+include: _ces_subjectivity_yaml
+description: "Zjisti, jestli daný výrok vyjadřuje faktický názor, nebo názorovou skutečnost. Odpověz slovem faktický pro faktický názor nebo slovem názorový pro názorovou skutečnost. Vždy odpověz pouze tímto jedním slovem bez dalšího komentáře.\n"
+doc_to_text: "Generuj klasifikaci pro následující příklad:\nText: {{text}}\nOdpověď:"
+doc_to_choice: ["názorový", "faktický"]

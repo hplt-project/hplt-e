@@ -1,0 +1,4 @@
+task: siqa_ca_p1
+include: _siqa_ca_yaml
+doc_to_text: "Passatge: {{context}}\nPregunta: {{question}}\nA. {{answerA}}\nB. {{answerB}}\nC. {{answerC}}\nResposta:"
+doc_to_choice: ["A", "B", "C"]

@@ -1,0 +1,4 @@
+task: copa_es_p2
+include: _copa_es_yaml
+doc_to_text: '{{premise[:-1].strip() + {"cause": " debido a que", "effect": ", y como resultado,"}[question]}}'
+doc_to_choice: '{{[choice1, choice2]}}'

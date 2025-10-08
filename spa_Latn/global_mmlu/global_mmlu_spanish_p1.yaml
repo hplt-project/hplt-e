@@ -1,0 +1,15 @@
+group: global_mmlu_spanish_p1
+task:
+  - global_mmlu_spanish_business_p1
+  - global_mmlu_spanish_humanities_p1
+  - global_mmlu_spanish_medical_p1
+  - global_mmlu_spanish_other_p1
+  - global_mmlu_spanish_stem_p1
+  - global_mmlu_spanish_social_sciences_p1
+aggregate_metric_list:
+  - metric: acc
+    weight_by_size: True
+  - metric: acc_norm
+    weight_by_size: True
+metadata:
+  version: 1.0

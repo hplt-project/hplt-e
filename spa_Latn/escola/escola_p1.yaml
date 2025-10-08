@@ -1,0 +1,4 @@
+task: escola_p1
+include: _escola_yaml
+doc_to_text: "{{Sentence}}\n¿Esta frase tiene sentido, sí o no?"
+doc_to_choice: ["no", "sí"]

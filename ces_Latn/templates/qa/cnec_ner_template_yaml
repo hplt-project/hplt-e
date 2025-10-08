@@ -1,0 +1,2 @@
+include: qa_template_yaml
+process_docs: !function ../../utils.process_docs_cs_nec

@@ -1,0 +1,5 @@
+task: paws_es_p0
+include: _paws_es_yaml
+doc_to_text: ''
+doc_to_choice: '{{[sentence1+", ¿verdad? No, "+sentence2, sentence1+", ¿verdad? Sí, "+sentence2]}}'
+target_delimiter: ''

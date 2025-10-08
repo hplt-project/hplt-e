@@ -1,0 +1,4 @@
+task: wnli_eu_p0
+include: _wnli_eu_yaml
+doc_to_text: "{{sentence1}}\nGaldera: {{sentence2}} Egia edo Gezurra?\nErantzuna:"
+doc_to_choice: ["Gezurra", "Egia"]

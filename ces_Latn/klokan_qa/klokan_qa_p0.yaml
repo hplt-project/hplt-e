@@ -1,0 +1,3 @@
+task: klokan_qa_p0
+include: _klokan_qa_yaml
+description: "Jsi expert v matematice. Předložím ti několik otázek a možné odpovědi A-E a tvůj úkol bude vybrat správnou odpověď.\n\n"

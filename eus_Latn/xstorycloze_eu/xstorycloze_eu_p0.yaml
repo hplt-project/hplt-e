@@ -1,0 +1,4 @@
+task: xstorycloze_eu_p0
+include: _xstorycloze_eu_yaml
+doc_to_text: "{{[input_sentence_1, input_sentence_2, input_sentence_3, input_sentence_4]|join(' ')}}"
+doc_to_choice: "{{[sentence_quiz1, sentence_quiz2]}}"

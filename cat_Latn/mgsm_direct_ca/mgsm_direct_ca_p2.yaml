@@ -1,0 +1,3 @@
+task: mgsm_direct_ca_p2
+include: _mgsm_direct_ca_yaml
+doc_to_text: "Respon a la següent pregunta:\n{{question}}\nRaona la teva resposta:"

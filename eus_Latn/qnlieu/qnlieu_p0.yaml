@@ -1,0 +1,4 @@
+task: qnlieu_p0
+include: _qnlieu_yaml
+doc_to_text: "{{question}}\n{{sentence}}\nGaldera: aurreko galderari erantzuten al dio emandako testuak?\nErantzuna:"
+doc_to_choice: ['bai', 'ez']

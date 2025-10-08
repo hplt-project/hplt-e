@@ -1,0 +1,4 @@
+task: spabelebele_p2
+include: _spabelebele_yaml
+doc_to_text: "{{flores_passage}}\nEn base al pasaje anterior, responde a la pregunta: {{question.strip()}}\nA: {{mc_answer1}}\nB: {{mc_answer2}}\nC: {{mc_answer3}}\nD: {{mc_answer4}}\n\n¿Cuál es la respuesta correcta?"
+doc_to_choice: ["A", "B", "C", "D"]

@@ -1,0 +1,18 @@
+tag: cesbelebele
+dataset_path: davidadamczyk/czechbench_belebele
+test_split: test
+fewshot_split: test
+fewshot_config:
+  sampler: first_n
+output_type: multiple_choice
+doc_to_target: !function ../utils.get_target_belebele
+doc_to_choice: !function ../utils.get_choices_belebele
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0

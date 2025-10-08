@@ -1,0 +1,8 @@
+task: ctkfacts_nli_p1
+include: _ctkfacts_nli_yaml
+description: "Ste fact-checker. Určete pravdivost následujúcích tvrzení. Odpovězte Ano/ne/možná:\n\n"
+doc_to_choice:
+  - "ne"
+  - "možná"
+  - "Ano"
+doc_to_text: 'Předpokládáme, že {{evidence}} Je možné předpokládat, že "{{claim}}" je pravda? Ano, ne, nebo možná?'

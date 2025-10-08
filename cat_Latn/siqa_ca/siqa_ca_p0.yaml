@@ -1,0 +1,4 @@
+task: siqa_ca_p0
+include: _siqa_ca_yaml
+doc_to_text: "Pregunta: {{context}} {{question}}\nResposta:"
+doc_to_choice: "{{[answerA, answerB, answerC]}}"

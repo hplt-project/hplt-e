@@ -1,0 +1,5 @@
+task: ces_subjectivity_p2
+include: _ces_subjectivity_yaml
+description: "Urči, jestli zadaný výrok vyjadřuje nezaujatý názor, nebo osobní skutečnost. Odpověz slovem nezaujatý pro nezaujatý názor nebo slovem osobní pro osobní skutečnost. Vždy odpověz pouze tímto jedním slovem bez dalšího komentáře.\n"
+doc_to_text: "Vypracuj klasifikaci pro následující příklad:\nText: {{text}}\nOdpověď:"
+doc_to_choice: ["osobní", "nezaujatý"]

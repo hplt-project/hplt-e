@@ -1,0 +1,8 @@
+task: ctkfacts_nli_p0
+include: _ctkfacts_nli_yaml
+description: "Vyhodnoťte pravdivost následujúcích tvrzení. Odpovězte pravda/nepravda/není jasné:\n\n"
+doc_to_choice:
+  - "nepravda"
+  - "není jasné"
+  - "pravda"
+doc_to_text: '{{evidence}} Za uvedeného předpokladu a na základě znalostí o světe, "{{claim}}" je určitě pravda, nepravda, nebo není jasné? Odpověď (pravda/nepravda/není jasné):'

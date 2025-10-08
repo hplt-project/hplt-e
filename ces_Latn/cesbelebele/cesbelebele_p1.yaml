@@ -1,0 +1,4 @@
+task: cesbelebele_p1
+include: _cesbelebele_yaml
+description: "Klasifikuj následující text dle jedné z nabízených možností. Na základě poskytnutého kontextu odpovídej pouze číslem odpovídajícím vybrané odpovědi bez dalšího komentáře."
+doc_to_text: "Klasifikuj následující text:\nÚryvek: {{flores_passage}}\nOtázka: {{question}}\nVaše možnosti:\n 1. {{mc_answer1}}\n 2. {{mc_answer2}}\n 3. {{mc_answer3}}\n 4. {{mc_answer4}}\nOdpověď:"

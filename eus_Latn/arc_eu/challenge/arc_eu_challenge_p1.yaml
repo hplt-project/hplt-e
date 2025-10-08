@@ -1,0 +1,5 @@
+task: arc_eu_challenge_p1
+include: ../_arc_eu_yaml
+dataset_name: ARC-Challenge
+doc_to_text: !function ../utils.p1
+doc_to_choice: "{{choices.label}}"

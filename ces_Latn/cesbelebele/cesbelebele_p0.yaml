@@ -1,0 +1,4 @@
+task: cesbelebele_p0
+include: _cesbelebele_yaml
+description: "Zodpověz zadanou otázku výběrem jedné z nabízených možností. Odpovídej na základě poskytnutého kontextu. Zvolenou odpověď neopakuj. Vždy odpovídej pouze číslem odpovídajícím vybrané odpovědi bez dalšího komentáře."
+doc_to_text: "Vygeneruj klasifikaci pro následující příklad:\nKontext: {{flores_passage}}\nDotaz: {{question}}\nMožnosti 1. {{mc_answer1}}\n 2. {{mc_answer2}}\n 3. {{mc_answer3}}\n 4. {{mc_answer4}}\nOdpověď:"

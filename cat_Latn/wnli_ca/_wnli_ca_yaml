@@ -1,0 +1,11 @@
+dataset_path: projecte-aina/wnli-ca
+dataset_name: null
+output_type: multiple_choice
+training_split: train
+validation_split: validation
+test_split: null
+doc_to_target: label
+metric_list:
+  - metric: acc
+metadata:
+  version: 1.0

@@ -1,0 +1,5 @@
+task: ces_subjectivity_p3
+include: _ces_subjectivity_yaml
+description: "Zjisti, zda zadaný výrok představuje věcný názor, nebo osobní skutečnost. Odpověz slovem věcný pro věcný názor nebo slovem osobní pro osobní skutečnost. Vždy odpověz pouze tímto jedním slovem bez dalšího komentáře.\n"
+doc_to_text: "Vytvoř klasifikaci pro tento příklad:\nText: {{text}}\nOdpověď:"
+doc_to_choice: ["osobní", "věcný"]

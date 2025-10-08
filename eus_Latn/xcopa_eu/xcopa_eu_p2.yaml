@@ -1,0 +1,4 @@
+task: xcopa_eu_p2
+include: _xcopa_eu_yaml
+doc_to_text: '{{premise[:-1].strip() +  {"cause": " zeren", "effect": "; ondorioz,"}[question]}}'
+doc_to_choice: !function utils.xcopa_doc_to_choice

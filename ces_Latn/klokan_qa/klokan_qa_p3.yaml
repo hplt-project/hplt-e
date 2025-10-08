@@ -1,0 +1,3 @@
+task: klokan_qa_p2
+include: _klokan_qa_yaml
+description: "Matematická Olympiáda.\n\nInstrukce: Vyberte správnou odpověď A-E pro zadanou otázku. Pro každou otázku existuje právě jedna správná odpověď.\nZadání:\n\n"
