@@ -1,0 +1,9 @@
+{
+    "monotonicity": {"lower_t": 500, "upper_t": 14306},
+    "consistency": {"lower_t": 7000, "upper_t": 14306},
+    "cv": {"lower_t": 7000, "upper_t": 14306},
+    "mad": {"lower_t": 7000, "upper_t": 14306},
+    "prompt_switch_rate": {"lower_t": 7000, "upper_t": 14306},
+    "snr": {"lower_t": 14306, "upper_t": 14306},
+    "randomness": {"lower_t": 14306, "upper_t": 14306}
+}

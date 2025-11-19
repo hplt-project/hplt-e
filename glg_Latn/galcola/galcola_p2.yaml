@@ -1,0 +1,4 @@
+task: galcola_p2
+include: _galcola_yaml
+doc_to_text: "Determina se a seguinte frase ten sentido: {{sentence}}\nResposta:"
+doc_to_choice: ["non", "si"]

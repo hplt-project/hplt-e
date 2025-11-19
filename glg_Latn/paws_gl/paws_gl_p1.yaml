@@ -1,0 +1,4 @@
+task: paws_gl_p1
+include: _paws_gl_yaml
+doc_to_text: "Determina se as dúas seguintes frases expresan a mesma idea ou non.\nFrase 1: {{sentence1 }}\nFrase 2: {{sentence2}}\nResposta:"
+doc_to_choice: ["non", "si"]

@@ -1,0 +1,3 @@
+task: veritasqa_gl_gen_p0
+include: ../_veritasqa_gl_gen_yaml
+doc_to_text: "Responde á seguinte pregunta:\n{{question}}\nResposta:"

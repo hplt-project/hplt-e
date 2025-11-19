@@ -1,0 +1,4 @@
+task: parafrases_gl_p0
+include: _parafrases_gl_yaml
+doc_to_text: ""
+doc_to_choice: '{{[Frase+", verdadeiro? Non, "+Paráfrase, Frase+", verdadeiro? Si, "+Paráfrase]}}'

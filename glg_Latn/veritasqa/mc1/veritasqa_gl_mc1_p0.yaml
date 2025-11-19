@@ -1,0 +1,4 @@
+task: veritasqa_gl_mc1_p0
+include: ../_veritasqa_gl_mc_yaml
+doc_to_choice: "{{mc1_targets.choices}}"
+doc_to_text: "Pregunta: {{question}}\nResposta:"

@@ -1,0 +1,4 @@
+task: parafrases_gl_p2
+include: _parafrases_gl_yaml
+doc_to_text: "Frase 1: {{Frase}}\nFrase 2: {{Paráfrase}}\nPregunta: As frases 1 e 2 expresan o mesmo significado? Si ou non?\nResposta:"
+doc_to_choice: ["non", "si"]

@@ -1,0 +1,5 @@
+task: galcola_p1
+include: _galcola_yaml
+doc_to_text: "{{sentence}}\nPregunta: Ten sentido esta frase?"
+target_delimiter: "\n"
+doc_to_choice: ["non", "si"]

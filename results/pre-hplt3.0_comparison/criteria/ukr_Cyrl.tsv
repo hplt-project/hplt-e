@@ -1,0 +1,8 @@
+dataset	randomness	snr	monotonicity	consistency	cv	mad	mad_q75	prompt_switch_rate
+global_mmlu_ukrainian	-0.324	42.739	-0.393	0.653	1.323	0.386	0.452	16.666
+include_ukrainian	11.0	10.141	0.203	0.003	1.402	1.273	1.818	26.667
+textdetox_ukr	0.04	2652.356	-0.081	-0.112	0.038	0.01	0.025	40.0
+ua_squad	18.833	14.716	0.925	0.378	16.808	0.77	1.273	36.666
+ukrbelebele	1.778	14.14	0.151	0.271	2.342	0.833	1.278	43.334
+wmt24pp_en-uk	2.43	1.414	0.587	0.321	112.076	0.144	0.398	0.0
+zno	3.569	34.258	-0.481	0.053	3.907	0.483	0.799	36.666

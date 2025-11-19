@@ -1,0 +1,4 @@
+task: paws_gl_p0
+include: _paws_gl_yaml
+doc_to_text: ""
+doc_to_choice: '{{[sentence1+", verdadeiro? Non, "+sentence2, sentence1+", verdadeiro? Si, "+sentence2]}}'

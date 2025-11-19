@@ -1,32 +1,39 @@
-# HPLT-E: Multilingual and Comprehensive LLM Evaluation
+# HPLT-E: Comprehensive Multilingual LLM Evaluation
 
-HPLT-E is a framework for comprehensive multilingual and multi-prompt *k*-shot evaluation across 124 tasks in eight typologically diverse languages: Catalan, Spanish, Basque, Galician, Norwegian, Ukrainian, Czech, and Finnish.
+HPLT-E is a framework for comprehensive multilingual and multi-prompt *k*-shot evaluation across 124 tasks in nine typologically diverse languages: Catalan, Spanish, Basque, Galician, French, Norwegian, Ukrainian, Czech, and Finnish.
 
-## Updates
+## 🚀 Updates
 
-* **`08.10.2025`**: We are releasing HPLT v3 together with HPLT-E, used to benchmark HPLT v3 against HPLT v2 in our multilingual ablation studies.
-
-
-## Contents
-- [Overview](#overview)
-- [Evaluation suite](#evaluation-suite)
-- [Ablation studies](#ablation-studies)
-- [Installation and Usage](#installation-and-usage)
+* **`19.11.2025`**: We update HPLT-E and release our results of comparing HPLT 3.0, HPLT v2, FineWeb2, and MADLAD-400.
+* **`02.11.2025`**: Our [pre-print](https://arxiv.org/abs/2511.01066) is available on arXiv. 
+* **`08.10.2025`**: We release HPLT 3.0 together with HPLT-E.
 
 
-## Overview
+## 📑 Contents
+- [🗺️ Overview](#-overview)
+- [🌐 Multilingual Evaluation Suite](#-multilingual-evaluation-suite)
+- [🧪 Multilingual Evaluation Recipe](#-multilingual-evaluation-recipe)
+- [⚙️ Installation and Usage](#-installation-and-usage)
+- [🧾 Citation](#-citation)
+- [🙏 Acknowledgements](#-acknowledgements)
 
-HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Spanish (SpanishBench), Basque (BasqueBench), Galician (GalicianBench), Norwegian (NorEval), Finnish (FinBench v2), and Czech (BenCzechMark). In addition, we create a multi-task benchmark for Ukrainian (UkrainianBench) and extend  single-prompt benchmarks to the multi-prompt scenario (Catalan, Spanish, Basque, Galician, and Ukrainian). HPLT-E covers a diverse set of 124 natural language understanding and generation tasks, each supporting 3-7 human-written prompts. Our main evaluation principles include:
+
+## 🗺️ Overview
+
+HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Spanish (SpanishBench), Basque (BasqueBench), Galician (GalicianBench), French (FrenchBench), Norwegian (NorEval), Finnish (FinBench v2), and Czech (BenCzechMark). In addition, we create a multi-task benchmark for Ukrainian (UkrainianBench) and extend single-prompt benchmarks to the multi-prompt scenario (French, Catalan, Spanish, Basque, Galician, and Ukrainian). HPLT-E covers a diverse set of 124 natural language understanding and generation tasks, each supporting 3-7 human-written prompts. Our main evaluation principles include:
 
 * **Diversity**: broader representation of lesser-resourced languages in context of pretraining corpora comparison.
-* **Data quality**: use of human-created datasets to ensure reliable evaluation.
-* **Robust evaluation**: evaluation across 450+ prompts written by native speakers to account for prompt sensitivity.
+* **Data quality**: use of human-curated datasets to ensure reliable evaluation.
+* **Robust evaluation**: evaluation across 500+ prompts written by native speakers to account for prompt sensitivity.
 * **Reproducibility**: full integration of HPLT-E into [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) for user-friendly standardized evaluation.
 
 
-## Evaluation suite
+## 🌐 Multilingual evaluation suite
 
-### Catalan
+HPLT-E covers different task categories in all languages: entailment, causal reasoning, mathematical reasoning, commonsense reasoning, language knowledge, language-specific & world knowledge, paraphrase detection, reading comprehension, sentiment analysis, toxicity detection, machine translation, and truthfulness. The supported tasks for each language are summarized below.
+
+<details>
+<summary><b>Catalan</b></summary>
 
 * Benchmark: CatalanBench
 * Paper: [aclanthology.org/2025.coling-main.699](https://aclanthology.org/2025.coling-main.699)
@@ -35,8 +42,6 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 * Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/catalan_bench](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/catalan_bench)
 * HPLT-E multi-prompt implementation: [cat_Latn](./cat_Latn/)
 
-<details >
-<summary><b>Tasks</b></summary>
 
 |Name  |LM Evaluation Harness   |Task type  | Task category |
 |:---|:---|:---|:---|
@@ -49,8 +54,8 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 |	CoQCat	|`coqcat_p[0-2]`	|	 Generative QA	|Reading comprehension|
 |	MGSM-cat|	`mgsm_direct_ca_p[0-2]`	|	Generative QA	|Mathematical reasoning|
 |	OpenBookQA-cat	|`openbookqa_ca_p[0-2]`	|	Multiple-choice QA |	Language-specific & world knowledge|
-|	Parafraseja	|`parafraseja_p[0-2]`	|	Text classification	|Paraphrasing|
-|	PAWS-ca	|`paws_ca_p[0-2]`	|	 Text classification	|Paraphrasing|
+|	Parafraseja	|`parafraseja_p[0-2]`	|	Text classification	|Paraphrase detection|
+|	PAWS-ca	|`paws_ca_p[0-2]`	|	 Text classification	|Paraphrase detection|
 |	PIQA-ca|	`piqa_ca_p[0-2]`	|		Multiple-choice QA |	Commonsense reasoning|
 |	SIQA-ca	|`siqa_ca_p[0-2]`	|		Multiple-choice QA |	Commonsense reasoning|
 |	TE-ca	|`teca_p[0-2]`	|	Text classification	|Entailment|
@@ -66,7 +71,8 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 
 </details>
 
-### Spanish
+<details>
+<summary><b>Spanish</b></summary>
 
 * Benchmark: SpanishBench
 * Paper: [aclanthology.org/2025.coling-main.699](https://aclanthology.org/2025.coling-main.699)
@@ -75,9 +81,6 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 * Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/spanish_bench](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/spanish_bench)
 * HPLT-E multi-prompt implementation: [spa_Latn](./spa_Latn/)
 
-<details >
-<summary><b>Tasks</b></summary>
-
 |Name  |LM Evaluation Harness   |Task type  | Task category |
 |:---|:---|:---|:---|
 |Belebele|	`spabelebele_p[0-2]`	 |Multiple-choice QA	|Reading comprehension|
@@ -85,7 +88,7 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 |ESCoLA	|`escola_p[0-2]`		|Text cassification	|Language knowledge|
 |MGSM-es|	`mgsm_direct_es_p[0-2]`	|	Generative QA|	Mathematical reasoning|
 |OpenBookQA-es	|`openbookqa_es_p[0-2]`	|	Multiple-choice QA|	Language-specific & world knowledge|
-|PAWS-es|	`paws_es_p[0-2]`	|	Text cassification|	Paraphrasing|
+|PAWS-es|	`paws_es_p[0-2]`	|	Text cassification|	Paraphrase detection|
 |VeritasQA-es Generation	|`veritasqa_es_gen_p[0-2]`	|	Generative QA|	Truthfulness|
 |VeritasQA-es Multiple-choice	|`veritasqa_es_mc1_p[0-2]`	|	Multiple-choice QA	|Truthfulness|
 |VeritasQA-es Multiple-choice	|`veritasqa_es_mc2_p[0-2]`	|		Multiple-choice QA|	Truthfulness|
@@ -99,7 +102,34 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 
 </details>
 
-### Basque
+<details>
+<summary><b>Galician</b></summary>
+
+* Benchmark: GalicianBench
+* Paper: [aclanthology.org/2025.coling-main.699](https://aclanthology.org/2025.coling-main.699)
+* Homepage: N/A
+* Language code: `glg_Latn`
+* Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/galician_bench](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/galician_bench)
+* HPLT-E multi-prompt implementation: [glg_Latn](./glg_Latn/)
+
+
+|Name  |LM Evaluation Harness   | Task type  | Task category |
+|:---|:---|:---|:---|
+|	Belebele |	`glgbelebele_p[0-2]`	|	 	Multiple-choice QA	|Reading comprehension|
+|	MGSM-gl	|`mgsm_direct_gl_p[0-2]`	|		Generative QA	|Mathematical reasoning|
+| GalCoLA | `galcola_p[0-2]`      | Text classification| Language knowledge|
+|	OpenBookQA-gl	|`openbookqa_gl_p[0-2]`	|	Multiple-choice QA |	Language-specific & world knowledge|
+|	Parafrases-gl	|`parafrases_gl_p[0-2]`	|	Text classification	|Paraphrase detection|
+|	PAWS-gl|	`paws_gl_p[0-2]`	|Text classification|	Paraphrase detection|
+|	FLORES	|`flores_en-glg_p[0-2]`	|	Sequence-to-sequence generation|	Machine translation|
+|	VeritasQA-gl Generation	|`veritasqa_gl_gen_p[0-2]`	|	Generative QA|	Truthfulness|
+|	VeritasQA-gl Multiple-choice	|`veritasqa_gl_mc1_p[0-2]`	|	Multiple-choice QA |	Truthfulness|
+|	VeritasQA-gl Multiple-choice	|`veritasqa_gl_mc2_p[0-2]`	|	Multiple-choice QA |	Truthfulness|
+
+</details>
+
+<details>
+<summary><b>Basque</b></summary>
 
 * Benchmark: BasqueBench
 * Paper: [aclanthology.org/2025.coling-main.699](https://aclanthology.org/2025.coling-main.699)
@@ -108,8 +138,6 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 * Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/basque_bench](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/basque_bench)
 * HPLT-E multi-prompt implementation: [eus_Latn](./eus_Latn/)
 
-<details >
-<summary><b>Tasks</b></summary>
 
 |Name  |LM Evaluation Harness   | Task type  | Task category |
 |:---|:---|:---|:---|
@@ -124,7 +152,7 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 |	XCOPA	|`xcopa_eu_p[0-2]`	|	Text cassification	|Commonsense reasoning|
 |	XNLI	|`xnli_eu_native_p[0-2]`	|	Text classification|	Entailment|
 |	xStoryCloze|	`xstorycloze_eu_p[0-2]`	|		Multiple-choice QA|	Commonsense reasoning|
-|	PAWS-eu|	`paws_eu_p[0-2]`	|Text classification|	Paraphrasing|
+|	PAWS-eu|	`paws_eu_p[0-2]`	|Text classification|	Paraphrase detection|
 |	ARC-eu|`arc_eu_easy_p[0-2]`	|	 	Multiple-choice QA|	Language-specific & world knowledge|
 |	ARC-eu|	`arc_eu_challenge_p[0-2]`	|		Multiple-choice QA|	Language-specific & world knowledge|
 |	FLORES	|`flores_en-eu_p[0-2]`	|	Sequence-to-sequence generation|	Machine translation|
@@ -132,19 +160,16 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 
 </details>
 
-
-### Norwegian
+<details>
+<summary><b>Norwegian</b></summary>
 
 * Benchmark: NorEval
 * Paper: [aclanthology.org/2025.findings-acl.181](https://aclanthology.org/2025.findings-acl.181/)
 * Homepage: [github.com/ltgoslo/noreval](https://github.com/ltgoslo/noreval/tree/main)
-* Language code: `nor_Latn`
+* Language code: `nor_Latn` (Bokmål and Nynorsk)
 * Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/noreval](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/noreval)
 * HPLT-E multi-prompt implementation: N/A
 
-
-<details >
-<summary><b>Tasks</b></summary>
 
 |Name  |LM Evaluation Harness (Bokmål) | LM Evaluation Harness (Nynorsk)  |Task type  | Task category |
 |:---|:---|:---|:---|:---|
@@ -163,18 +188,15 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 </details>
 
 
-### Ukrainian
+<details>
+<summary><b>Ukrainian</b></summary>
 
 * Benchmark: UkrainianBench
-* Paper: N/A
+* Paper: [arxiv.org/abs/2511.01066](https://arxiv.org/abs/2511.01066)
 * Homepage: [github.com/hplt-project/hplt-e](https://github.com/hplt-project/hplt-e)
 * Language code: `ukr_Cyrl`
 * Original LM Evaluation Harness implementation: N/A 
 * HPLT-E multi-prompt implementation: [ukr_Cyrl](./ukr_Cyrl/)
-
-
-<details >
-<summary><b>Tasks</b></summary>
 
 |Name  |LM Evaluation Harness   |Task type  | Task category |
 |:---|:---|:---|:---|
@@ -188,20 +210,18 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 
 </details>
 
-### Czech
+
+<details>
+<summary><b>Czech</b></summary>
 
 * Benchmark: BenCzechMark
-* Paper: [arxiv.org/abs/2412.17933](https://arxiv.org/abs/2412.17933)
+* Paper: [direct.mit.edu/tacl/article/doi/10.1162/TACL.a.32/132962](https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.32/132962/BenCzechMark-A-Czech-Centric-Multitask-and)
 * Homepage: [github.com/DCGM/lm-evaluation-harness](https://github.com/DCGM/lm-evaluation-harness)
 * Language code: `ces_Latn`
 * Original LM Evaluation Harness implementation: [github.com/DCGM/lm-evaluation-harness/tree/main/lm_eval/tasks/benczechmark](https://github.com/DCGM/lm-evaluation-harness/tree/main/lm_eval/tasks/benczechmark)
 * HPLT-E multi-prompt implementation: [ces_Latn](./ces_Latn/)
 
-
-**NB**: we update BenCzechmark to enable support for latest LM Evaluation Harness versions and create prompts for Global-MMLU
-
-<details >
-<summary><b>Tasks</b></summary>
+**NB**: we update BenCzechmark to enable support for latest LM Evaluation Harness versions and create new prompts for Global-MMLU.
 
 |Name  |LM Evaluation Harness   |Task type  | Task category |
 |:---|:---|:---|:---|
@@ -223,7 +243,8 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 
 </details>
 
-### French
+<details>
+<summary><b>French</b></summary>
 
 * Benchmark: FrenchBench
 * Paper: [arxiv.org/abs/2402.00786](https://arxiv.org/abs/2402.00786)
@@ -231,9 +252,6 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 * Language code: `fra_Latn`
 * Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/french_bench](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/french_bench)
 * HPLT-E multi-prompt implementation: [fra_Latn](./fra_Latn/)
-
-<details >
-<summary><b>Tasks</b></summary>
 
 |Name  |LM Evaluation Harness   |Task type  | Task category |
 |:---|:---|:---|:---|
@@ -249,7 +267,8 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 
 </details>
 
-### Finnish
+<details>
+<summary><b>Finnish</b></summary>
 
 * Benchmark: FinBench v2
 * Paper: TBA
@@ -257,161 +276,135 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 * Language code: `fin_Latn`
 * Original LM Evaluation Harness implementation: [github.com/LumiOpen/lm-evaluation-harness/tree/finbench_v2/lm_eval/tasks/finbench_v2](https://github.com/LumiOpen/lm-evaluation-harness/tree/finbench_v2/lm_eval/tasks/finbench_v2)
 * HPLT-E multi-prompt implementation: N/A
-<details >
-<summary><b>Tasks</b></summary>
 
 | Name| Formulation | LM Evaluation Harness| Task type | Task category| FinBench v2 dataset version |
-|:--------------------|-------------|:|:----------------|:----|:------------------|
-| [ARC-challenge-fi](https://huggingface.co/datasets/silogen/ARC-C-fi-HT) | _mcf_ | `arc_challenge_fi_mcf_fbv2_p[0-4]` | Multiple-choice QA | Language-scpecific & world knowledge | [finbenchv2-arc-c-fi-ht](https://huggingface.co/datasets/TurkuNLP/finbenchv2-arc-c-fi-ht)  |
-|     | _cf_  | `arc_challenge_fi_cf_fbv2_p[0-4]`  ||  |      |    |
-| [Belebele](https://huggingface.co/datasets/facebook/belebele)   | _mcf_ | `belebele_fin_Latn_mcf_fbv2_p[0-4]`| Multiple-choice QA | Reading comprehension | [finbenchv2-belebele-fi-og](https://huggingface.co/datasets/TurkuNLP/finbenchv2-belebele-fi-og)  |
-|     | _cf_  | `belebele_fin_Latn_cf_fbv2_p[0-4]` ||  |      |    |
-| [GoldenSwag](https://huggingface.co/datasets/PleIAs/GoldenSwag) | _mcf_ | `goldenswag_ht_fi_mcf_fbv2_p[0-4]`  | Sentence completion  | Commonsense reasoning | [finbenchv2-goldenswag-fi-ht](https://huggingface.co/datasets/TurkuNLP/finbenchv2-goldenswag-fi-ht)      |
-|     | _cf_  | `goldenswag_ht_fi_cf_fbv2_p[0-4]`  ||  |      |    |
-| [FIN-Bench](https://github.com/TurkuNLP/FIN-bench)     | _mcf_ | `finbench_analogies_mcf_fbv2_p[0-4]`   | Multiple-choice   | Relational reasoning  | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
-|     | _cf_  | `finbench_analogies_cf_fbv2_p[0-4]`||  |      |    |
-|     | _mcf_ | `finbench_emotions_mcf_fbv2_p[0-4]` | Multiple-choice   | Sentiment analysis    | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
-|     | _cf_  | `finbench_emotions_cf_fbv2_p[0-4]` ||  |      |    |
-|     | _mcf_ | `finbench_empirical_judgments_mcf_fbv2_p[0-4]` | Multiple-choice   | Causal reasoning      | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
-|     | _cf_  | `finbench_empirical_judgments_cf_fbv2_p[0-4]` ||  |      |    |
-|     | _mcf_ | `finbench_general_knowledge_mcf_fbv2_p[0-4]` | Multiple-choice   | Language-scpecific & world knowledge | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
-|     | _cf_  | `finbench_general_knowledge_cf_fbv2_p[0-4]` ||  |      |    |
-|     | _mcf_ | `finbench_hhh_alignment_mcf_fbv2_p[0-4]`     | Multiple-choice   | Alignment and safety  | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
-|     | _cf_  | `finbench_hhh_alignment_cf_fbv2_p[0-4]`     ||  |      |    |
-|     | _mcf_ | `finbench_paraphrase_mcf_fbv2_p[0-4]`  | Multiple-choice   | Paraphrasing     | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
-|     | _cf_  | `finbench_paraphrase_cf_fbv2_p[0-4]`  ||  |      |    |
-|     | _mcf_ | `finbench_similarities_abstraction_mcf_fbv2_p[0-4]`  | Multiple-choice   | Commonsense reasoning | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
-|     | _cf_  | `finbench_similarities_abstraction_cf_fbv2_p[0-4]`  ||  |      |    |
+|:--------------------|-------------|:----|:----------------|:----|:------------------|
+| [ARC-challenge-fi](https://huggingface.co/datasets/silogen/ARC-C-fi-HT) |Multiple-choice | `arc_challenge_fi_mcf_fbv2_p[0-4]` | Multiple-choice QA | Language-scpecific & world knowledge | [finbenchv2-arc-c-fi-ht](https://huggingface.co/datasets/TurkuNLP/finbenchv2-arc-c-fi-ht)  | 
+|     |Close| `arc_challenge_fi_cf_fbv2_p[0-4]`  ||  |      |    |
+| [Belebele](https://huggingface.co/datasets/facebook/belebele)   |Multiple-choice | `belebele_fin_Latn_mcf_fbv2_p[0-4]`| Multiple-choice QA | Reading comprehension | [finbenchv2-belebele-fi-og](https://huggingface.co/datasets/TurkuNLP/finbenchv2-belebele-fi-og)  |
+|     |Close| `belebele_fin_Latn_cf_fbv2_p[0-4]` ||  |      |    |
+| [GoldenSwag](https://huggingface.co/datasets/PleIAs/GoldenSwag) |Multiple-choice | `goldenswag_ht_fi_mcf_fbv2_p[0-4]`  | Sentence completion  | Commonsense reasoning | [finbenchv2-goldenswag-fi-ht](https://huggingface.co/datasets/TurkuNLP/finbenchv2-goldenswag-fi-ht)      |
+|     |Close| `goldenswag_ht_fi_cf_fbv2_p[0-4]`  ||  |      |    |
+| [FIN-Bench](https://github.com/TurkuNLP/FIN-bench)     |Multiple-choice | `finbench_analogies_mcf_fbv2_p[0-4]`   | Multiple choice QA | Relational reasoning  | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
+|     |Close| `finbench_analogies_cf_fbv2_p[0-4]`||  |      |    |
+|     |Multiple-choice | `finbench_emotions_mcf_fbv2_p[0-4]` | Text classification | Sentiment analysis    | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
+|     |Close| `finbench_emotions_cf_fbv2_p[0-4]` ||  |      |    |
+|     |Multiple-choice | `finbench_empirical_judgments_mcf_fbv2_p[0-4]` | Text classification | Causal reasoning      | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
+|     |Close| `finbench_empirical_judgments_cf_fbv2_p[0-4]` ||  |      |    |
+|     |Multiple-choice | `finbench_general_knowledge_mcf_fbv2_p[0-4]` | Multiple choice QA | Language-scpecific & world knowledge | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
+|     |Close| `finbench_general_knowledge_cf_fbv2_p[0-4]` ||  |      |    |
+|     |Multiple-choice | `finbench_hhh_alignment_mcf_fbv2_p[0-4]`     | Multiple choice QA | Alignment and safety  | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
+|     |Close| `finbench_hhh_alignment_cf_fbv2_p[0-4]`     ||  |      |    |
+|     |Multiple-choice | `finbench_paraphrase_mcf_fbv2_p[0-4]`  | Text classification | Paraphrase detection     | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
+|     |Close| `finbench_paraphrase_cf_fbv2_p[0-4]`  ||  |      |    |
+|     |Multiple-choice | `finbench_similarities_abstraction_mcf_fbv2_p[0-4]`  | Multiple choice QA | Commonsense reasoning | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
+|     |Close| `finbench_similarities_abstraction_cf_fbv2_p[0-4]`  ||  |      |    |
 
 
 </details>
 
-## Ablation studies
 
-In our HPLT v3 release, we conduct a series of multilingual ablation studies to compare HPLT v2 and HPLT v3 on the eight HPLT-E languages. We pretrain monolingual Llama-style 2.15B decoder-only models using 30B tokens from each language corpus, keeping the hyperparameters and tokenizer fixed across experiments:
-- Hidden size: 2048
-- Attention heads: 32
-- Layers: 24
-- Sequence length: 2048
-- Tokenizer: Gemma-3 (SentencePiece, vocabulary size 262K)
+## 🧪 Multilingual Evaluation Recipe
+We provide results of our ablation studies evaluating different corpora and sampling strategies across multiple languages:
 
-Pretraining is performed with the Megatron-LM framework on the LUMI HPC supercomputer, using 16 AMD MI250x nodes and totaling approx. 1k GPU hours. We evaluate the ablation models at regular checkpoint intervals (every 1B tokens) in a 0-shot setup, aggregating results across all prompts and selecting tasks that provide reliable signal during pretraining.
+* [**⚖️ Pre-HPLT 3.0 Comparison**](./results/pre-hplt3.0_comparison/README.md): Comparison of HPLT 2.0 and pre-HPLT 3.0 data deduplication strategies across nine selected languages (HPLT 3.0 pre-release).
+* [**📚 Corpora Comparison**](./results/corpora_comparison/README.md): Evaluation of HPLT 2.0, HPLT 3.0, FineWeb2, and MADLAD-400 on nine selected languages (HPLT 3.0 release).
+* [**🧰 Web Document Scorer (WDS) Comparison**](./results/wds_comparison/README.md): Analysis of HPLT 3.0 corpora sampled using different WDS thresholds, focusing on Spanish and French (HPLT 3.0 release).
 
-### Task selection
+
+Our multilingual evaluation recipe consists of three main components:
+* 🧩 **Pretraining**: Pretraining ablation models on various corpora configurations for the target languages.
+* 🎯 **Task selection**: Selecting tasks that provide reliable pretraining evaluation signal based on the maximum performance across prompts.
+* 📊 **Performance aggregation**: Aggregating performance on the selected tasks across languages.
+
+
+<details>
+<summary><b>🧩 Pretraining</b></summary>
+
+Each evaluation series involves pretraining individual 2.15B-parameter models for every language, following a fixed pretraining setup. All models follow the Llama architecture with 24 layers, 32 attention heads, and a sequence length of 2048. The tokenizer is Gemma-3 with the vocabulary size of 262K tokens. For lower-resource languages with less than 30B/100B tokens of available data, datasets are uniformly upsampled (repeated) following [Muennighoff et al. (2023)](https://openreview.net/forum?id=j5BuTrEj35). Pretraining is run using the Megatron-LM framework on the LUMI supercomputer, employing 16 AMD MI250x nodes and totaling approximately 1k GPU hours.
+
+</details>
+
+<details>
+<summary><b>🎯 Task selection</b></summary>
 
 We use the standard task-specific metrics and report the maximum score across the prompts as the main performance aggregation method. We adapt [the FineWeb2 evaluation design](https://huggingface.co/spaces/HuggingFaceFW/blogpost-fine-tasks) to examine the signal HPLT-E tasks provide based on the criteria and statistics summarized below.
 
-| Criterion | Scope    | Description | Requirement      |
-| :---- | :---| :--- | :--- |
-| **Prompt-level median absolute deviation (MAD)** | Mid-late pretraining window (15B-30B) | Typical prompt sensitivity | ≤ 5 |
-| **Consistency (Kendall τ)** | Mid-late pretraining window (15B-30B)  | Stability of corpus rankings across pretraining intervals  | No strict threshold |
-| **Trajectory-level coefficient of variation (CV)**     | Mid-late pretraining window (15B-30B)  | Relative variation around upper-bound performance  | ≤ 10-12% |
-| **Prompt-switch rate (%)** | Mid-late pretraining window (15B-30B)  | Measures best prompt consistency across checkpoints (prompt lottery) | No strict threshold |
-| **Spread**      |  Final checkpoint (30B) | The absolute difference between the maximum and minimum scores across prompts | No strict threshold |
-| **Signal-to-noise ratio (SNR)** |  Final checkpoint (30B) | Noise from prompt variability | ≥ 3 |
-| **Non-randomness**      |  Final checkpoint (30B) | The absolute difference between the final score and random baseline  | Must be positive and satisfactory   |
-| **Monotonicity (Spearman correlation)**     | All checkpoints (1B-30B)  | Correlation between step and performance score  | ≥ 0.5 |
+- **Monotonicity**: performance should improve as pretraining progresses, even if the improvement differs across pretraining corpora. Tasks with fluctuating scores promote limited reliability.
+- **Stable pretraining**: relative variability of performance across checkpoints should be low, reflecting smooth pretraining dynamics.
+- **Ranking consistency**: relative ranking of models should remain consistent across consecutive pretraining intervals.
+- **Prompt sensitivity**: performance should be consistent across various prompt formulations.
+- **Prompt-switch rate**: frequent switches in best-performing prompt further reflects low evaluation reliability due to potential prompt lottery.
+- **Signal-to-Noise ratio**: differences in task performance should primarily reflect differences in corpora quality, not random variation due to prompt choice.
+- **Non-randomness**: final checkpoints should achieve performance above a random guessing baseline. Tasks where all models perform near random provide low discriminative power.
 
-### Language-level performance aggregation
+Specific evaluation criteria requirements are detailed on the corresponding evaluation page.
 
-#### Computing a language score
-
-To compute a language-level score across the selected tasks, we:
-
-1. Rescale performance scores relative to a random baseline using min–max normalization.
-2. Average the normalized scores within each task category.
-3. Compute the final language score as the mean of these category averages.
-
-Results for all languages are presented below.
-
-<details>
-  <summary><b>Spanish</b></summary>
-
-  <img src="figures/v3_release/spa_Latn_v2_vs_v3.png" alt="Spanish results">
 </details>
 
 <details>
-  <summary><b>Catalan</b></summary>
+<summary><b>📊 Performance aggregation</b></summary>
+We select tasks that provide the pretraining evaluation signal and aggregate the performance using a combination of several approaches.
 
-  <img src="figures/v3_release/cat_Latn_v2_vs_v3.png" alt="Spanish results">
-</details>
+#### 🔤 Language score
 
-<details>
-  <summary><b>Basque</b></summary>
+We compute **language scores** across the selected tasks as follows:
 
-  <img src="figures/v3_release/eus_Latn_v2_vs_v3.png" alt="Spanish results">
-</details>
+1. **Rescaling**: Normalize performance scores relative to a random baseline using min–max normalization.
+2. **Category averaging**: Compute the average of normalized scores within each task category.
+3. **Language score**: Derive the final language-level score as the mean of the category averages.
 
-<details>
-  <summary><b>Czech</b></summary>
 
-  <img src="figures/v3_release/ces_Latn_v2_vs_v3.png" alt="Spanish results">
-</details>
+#### 🌍 "Multilingual" score
 
-<details>
-  <summary><b>Finnish</b></summary>
-
-  <img src="figures/v3_release/fin_Latn_v2_vs_v3.png" alt="Spanish results">
-</details>
-
-<details>
-  <summary><b>Norwegian</b></summary>
-
-  <img src="figures/v3_release/nor_Latn_v2_vs_v3.png" alt="Spanish results">
-</details>
-
-<details>
-  <summary><b>Ukrainian</b></summary>
-
-  <img src="figures/v3_release/ukr_Cyrl_v2_vs_v3.png" alt="Spanish results">
-</details>
-
-<details>
-  <summary><b>French</b></summary>
-
-  <img src="figures/v3_release/fra_Latn_v2_vs_v3.png" alt="Spanish results">
-</details>
-
-#### Computing a "multilingual" score
-
-To compute the multilingual score, we utilize several approaches:
+To compute the **multilingual score**, we utilize several approaches:
 
 1. **Average normalized score**: We average min-max normalized language scores.
-2. **Average rank**: we rank the 30B models’ language scores across all corpora configurations and average their ranks.
-3. **Borda count**: first, we rank the 30B models for each language; second, we apply the Borda count on the language-wise rankings to compute the final ranking. We utilize the [Vote'n'Rank](https://aclanthology.org/2023.eacl-main.48/) framework.
+2. **Average rank**: we rank the final checkpoints' language scores across all corpora configurations and average their ranks.
+3. **Borda count**: first, we rank the final checkpoints for each language; second, we apply the Borda count on the language-wise rankings to compute the final ranking. We utilize the [Vote'n'Rank](https://aclanthology.org/2023.eacl-main.48/) framework.
 
+</details>
+
+### 😎 HPLT-E Tasks
+
+Based on our large-scale evaluations, we find that the set of selected tasks for each language can slightly differ depending on the number of corpora and checkpoints included in the comparison. Although we encourage users to perform task selection on their own data using our codebase, we also release a set of **HPLT-E tasks** for languages that less represented in multilingual evaluations, derived from [our 100BT model evaluation results](results/corpora_comparison/README.md).
 
 <details>
-  <summary><b>Average normalized score (max. as prompt-level aggregation)</b></summary>
+<summary><b>😎 HPLT-E tasks</b></summary>
 
-  <img src="figures/v3_release/avg_norm_score_max.png" alt="Spanish results">
+|Language |Name  |LM Evaluation Harness   |Task type  | Task category |
+|:---|:---|:---|:---|:---|
+|Spanish|COPA|	`copa_es_p[0-2]`		|Text cassification	|Commonsense reasoning|
+|Spanish|OpenBookQA-es	|`openbookqa_es_p[0-2]`	|	Multiple-choice QA|	Language-specific & world knowledge|
+|Spanish|XNLI	| `xnli_es_p[0-2]`	|	Text cassification	| Entailment|
+|Spanish|xStoryCloze	|`xstorycloze_es_p[0-2]`	|	Multiple-choice QA|	Commonsense reasoning|
+|Catalan|	ARC-ca	| `arc_ca_easy_p[0-2]`		|	Multiple-choice QA |	Language-specific & world knowledge |
+|Catalan|	COPA-ca	|`copa_ca_p[0-2]`	|	Text cassification	|Commonsense reasoning|
+|Catalan|	CoQCat	|`coqcat_p[0-2]`	|	 Generative QA	|Reading comprehension|
+|Catalan|	PIQA-ca|	`piqa_ca_p[0-2]`	|		Multiple-choice QA |	Commonsense reasoning|
+|Catalan|	SIQA-ca	|`siqa_ca_p[0-2]`	|		Multiple-choice QA |	Commonsense reasoning|
+|Catalan|	TE-ca	|`teca_p[0-2]`	|	Text classification	|Entailment|
+|Catalan|	xStoryCloze	|`xstorycloze_ca_p[0-2]`	|	Multiple-choice QA |	Commonsense reasoning|
+|Ukrainian| ZNO | `zno_p[0-2]` |  Multiple-choice QA | Language-specific & world knowledge |
+|Ukrainian| UA-SQuAD | `ua_squad_p[0-2]` |  Generative QA | Reading comprehension |
+|Czech|	SQAD3.2	|`cs_sqad32_p[0-4]`	 |	Generative QA	| Reading comprehension| 
+|Finnish| ARC-challenge-fi | `arc_challenge_fi_cf_fbv2_p[0-4]` | Multiple-choice QA | Language-scpecific & world knowledge |
+|Finnish| Belebele  |`belebele_fin_Latn_cf_fbv2_p[0-4]`| Multiple-choice QA | Reading comprehension |
+|Finnish| GoldenSwag | `goldenswag_ht_fi_cf_fbv2_p[0-4]`  | Sentence completion  | Commonsense reasoning |
+|Finnish| FIN-Bench Analogies    | `finbench_analogies_cf_fbv2_p[0-4]`   | Multiple choice QA | Language-scpecific & world knowledge  | 
+|Finnish|FIN-bench General Knowledge | `finbench_general_knowledge_cf_fbv2_p[0-4]` | Multiple choice QA | Language-scpecific & world knowledge |
+|French|	FQuaD	|`fquad_p[0-2]`	|					Generative QA|	Reading comprehension|
+|French|	French Language Test: Vocabulary|	`french_bench_vocabulary_p[0-2]`	|					Multiple-choice QA|	Language knowledge|
+|Norwegian|NorIdiom Nynorsk |```noridiom_nno_p[0-4]```  | Sentence completion| Language knowledge  |
+|Norwegian|NRK-Quiz-QA Bokmål |```nrk_quiz_qa_nob_p[0-4]```| Multiple-choice QA| Language-specific & world knowledge |
+|Norwegian|NRK-Quiz-QA Nynorsk | ```nrk_quiz_qa_nno_p[0-4]```| Multiple-choice QA| Language-specific & world knowledge |
+|Norwegian|NorCommonsenseQA Bokmål |```norcommonsenseqa_nob_p[0-4]```|Multiple-choice QA|Commonsense reasoning  |
+|Norwegian|NorQuAD|```norquad_p[0-4]```| Generative QA |Reading comprehension |
+
 </details>
 
-<details>
-  <summary><b>Average normalized score (median as prompt-level aggregation)</b></summary>
 
-  <img src="figures/v3_release/avg_norm_score_median.png" alt="Spanish results">
-</details>
-
-<details >
-<summary><b>Rank-based aggregation</b></summary>
-
-|Corpus  |Avg. rank  |Borda count  |
-|:---|:---|:---|
-|	HPLT v3	| 1.25	|	5|
-|	HPLT v2 | 1.75	|	2|
-
-</details>
-
-
-### Key Takeaways
-
-Our preliminary pretraining corpus comparison shows that LLMs pretrained on HPLT v3 consistently outperform HPLT v2 across the HPLT-E languages. In particular, v3 models achieve stronger results for Ukrainian, Basque, Catalan, and French, perform on par with v2 for Finnish and Czech, and show minor decreases for Spanish and Norwegian.
-
-Stay tuned for more evaluation and methodological updates 💥
-
-
-## Installation and usage
+## ⚙️ Installation and usage
 
 1. Install LM Evaluation Harness as described [here](https://github.com/EleutherAI/lm-evaluation-harness?tab=readme-ov-file#install).
 
@@ -421,29 +414,31 @@ cd lm-evaluation-harness
 pip install -e .
 ```
 
-2. Clone our HPLT-E GitHub repository to get access to the multi-prompt versions of SpanishBench, CatalanBench, BasqueBench, BenCzechMark, FrenchBench, and UkrainianBench.
+2. Clone our HPLT-E GitHub repository.
 
 ```bash
 git clone https://github.com/hplt-project/hplt-e.git
+cd hplt-e
 ```
 
-3. Get the `finbench_v2` folder from [the FinBench v2 GitHub repository](https://github.com/LumiOpen/lm-evaluation-harness/tree/finbench_v2/lm_eval/tasks/finbench_v2)
+3. Get the `finbench_v2` folder from [the FinBench v2 GitHub repository](https://github.com/LumiOpen/lm-evaluation-harness/tree/finbench_v2/lm_eval/tasks/finbench_v2).
 
 
-### Examples
+<details>
+<summary><b> 💻 How to run evaluation?</b></summary>
 
 Detailed guidelines on how to use LM Evaluation Harness can be found [here](https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/interface.md). The task names can be found in the **LM Evaluation Harness** column in the language-specific task tables provided above. `_p[i-j]` stands for the corresponding supported prompts.
 
 #### Basic usage
 
-Below is an example of a basic framework usage and must-have arguments. The evaluation requires the usage of the `include_path` argument to ensure our tasks are registered in the framework:
+Below is an example of a basic framework usage and must-have arguments. The evaluation requires the usage of the `include_path` argument to ensure our tasks are registered in the framework as these are not part of LM Evaluation Harness yet:
 
 ```bash
 lm_eval \
   --model hf \
   --model_args pretrained=my_hf_model_name \
   --tasks global_mmlu_ukrainian_p0 \
-  --include_path hplt-e/
+  --include_path ./
   --output results/ukrainian/ \
   --log_samples \
   --show_config \
@@ -451,16 +446,79 @@ lm_eval \
   --batch_size auto \
   --num_fewshot 0
 ```
-</details>
 
+An example of a slurm script for [the LUMI supercomputer](https://www.lumi-supercomputer.eu) is provided [here](scripts/run.sh).
+
+```bash
+sbatch scripts/run.sh <model_name> <task_name>
+```
 
 #### Task groups
 
 An alternative approach to run all tasks of interest at once involves creating a task group. LM Evaluation Harness allows to group tasks as described [here](https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/task_guide.md#group-configuration). An example for the Ukrainian `global_mmlu_ukrainian_p0` group task can be found [here](ukr_Cyrl/global_mmlu/global_mmlu_ukrainian_p0.yaml).
+
+
+</details>
+
+<details>
+<summary><b> 🗂️ How to select tasks?</b></summary>
+
+Please find the example on how to select tasks and vizualize the results below.
+
+```python
+from datasets import load_dataset
+from utils import *
+
+dataset = load_dataset("HPLT/corpora-comparison-evals", "spa_Latn", split="results").to_pandas()
+dataset_criteria_results, dataset_normalized_results, dataset_filtered_tasks = get_normalized_results(
+    dataset,
+    score_col="max_score",
+    monotonicity_threshold=0.5,
+    snr_threshold=3,
+    mad_threshold=5,
+    cv_threshold=15,
+    higher_bound=100,
+    thresholds=THRESHOLDS_100BT
+)
+```
+
+```python
+# Viz. example 1: Plotting the results on the selected tasks.
+plot_normalized_results(
+  dataset_normalized_results,
+  tick_style="100BT" # tick_style="30BT" for the 30BT models 
+) 
+```
+
+```python
+# Viz. example 2: Plotting the results on particular task (works for non- and selected tasks). 
+plot_results_by_task(
+  raw_results=dataset,
+  task="spabelebele",
+  score_col="max_score", # available: "max_score", "median_score", and "mean_score"
+  tick_style="100BT" # tick_style="30BT" for the 30BT models 
+)
+```
+
+
+We provide detailed codebase on task selection [here](utils.py), vizualization codebase [here](viz.py), and the recommended thresholds for [30BT](configs/thresholds_30bt.json) and [100BT](configs/thresholds_100bt.json) models.
+
 </details>
 
 
+## 🧾 Citation
 
-## Acknowledgements
+Our [pre-print](https://arxiv.org/abs/2511.01066) is available on arXiv.
+
+```
+@article{oepen2025hplt,
+  title={HPLT\~{} 3.0: Very Large-Scale Multilingual Resources for LLM and MT. Mono-and Bi-lingual Data, Multilingual Evaluation, and Pre-Trained Models},
+  author={Oepen, Stephan and Arefev, Nikolay and Aulamo, Mikko and Ba{\~n}{\'o}n, Marta and Buljan, Maja and Burchell, Laurie and Charpentier, Lucas and Chen, Pinzhen and Fedorova, Mariya and de Gibert, Ona and others},
+  journal={arXiv preprint arXiv:2511.01066},
+  year={2025}
+}
+```
+
+## 🙏 Acknowledgements
 
 We thank Étienne Simon (UiO), Lucas Georges Gabriel Charpentier (UiO), and Daryna Dementieva (TUM) for their contribution to our prompt collection for French and Ukrainian.

@@ -1,0 +1,10 @@
+dataset	randomness	snr	monotonicity	consistency	cv	mad	mad_q75	prompt_switch_rate
+fquad	15.128	1.654	0.601	0.72	31.243	1.724	2.751	0.0
+frabelebele	3.0	19.077	0.055	0.419	4.523	0.445	0.778	21.053
+french_bench_grammar	60.714	2.817	0.372	0.268	2.707	8.404	11.765	0.0
+french_bench_reading	38.38	3.628	0.507	0.36	5.613	7.042	8.451	0.0
+french_bench_vocabulary	54.832	2.395	0.546	0.346	1.796	11.764	12.815	0.0
+french_xnli	2.369	69.529	-0.125	0.613	2.029	0.04	0.155	0.0
+global_mmlu_french	0.018	58.16	-0.421	0.527	2.238	0.263	0.374	21.053
+include_french	4.594	20.463	-0.004	0.176	4.054	0.477	0.538	52.632
+topic_based_nli	15.533	9.925	-0.106	0.408	8.976	1.334	3.667	57.895
