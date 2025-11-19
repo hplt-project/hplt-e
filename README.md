@@ -10,10 +10,10 @@ HPLT-E is a framework for comprehensive multilingual and multi-prompt *k*-shot e
 
 
 ## 📑 Contents
-- [🗺️ Overview](#-overview)
+- [🗺️ Overview](#️-overview)
 - [🌐 Multilingual Evaluation Suite](#-multilingual-evaluation-suite)
 - [🧪 Multilingual Evaluation Recipe](#-multilingual-evaluation-recipe)
-- [⚙️ Installation and Usage](#-installation-and-usage)
+- [⚙️ Installation and Usage](#️-installation-and-usage)
 - [🧾 Citation](#-citation)
 - [🙏 Acknowledgements](#-acknowledgements)
 
