@@ -307,9 +307,9 @@ HPLT-E covers different task categories in all languages: entailment, causal rea
 ## 🧪 Multilingual Evaluation Recipe
 We provide results of our ablation studies evaluating different corpora and sampling strategies across multiple languages:
 
-* [**⚖️ Pre-HPLT 3.0 Comparison**](./results/pre-hplt3.0_comparison/README.md): Comparison of HPLT 2.0 and pre-HPLT 3.0 data deduplication strategies across nine selected languages (HPLT 3.0 pre-release).
-* [**📚 Corpora Comparison**](./results/corpora_comparison/README.md): Evaluation of HPLT 2.0, HPLT 3.0, FineWeb2, and MADLAD-400 on nine selected languages (HPLT 3.0 release).
-* [**🧰 Web Document Scorer (WDS) Comparison**](./results/wds_comparison/README.md): Analysis of HPLT 3.0 corpora sampled using different WDS thresholds, focusing on Spanish and French (HPLT 3.0 release).
+* [**⚖️ Pre-HPLT 3.0 Comparison**](./results/2505-deduplication/README.md): Comparison of HPLT 2.0 and pre-HPLT 3.0 data deduplication strategies across nine selected languages (HPLT 3.0 pre-release).
+* [**📚 Corpora Comparison**](./results/2508-datasets/README.md): Evaluation of HPLT 2.0, HPLT 3.0, FineWeb2, and MADLAD-400 on nine selected languages (HPLT 3.0 release).
+* [**🧰 Web Document Scorer (WDS) Comparison**](./results/2508-wds/README.md): Analysis of HPLT 3.0 corpora sampled using different WDS thresholds, focusing on Spanish and French (HPLT 3.0 release).
 
 
 Our multilingual evaluation recipe consists of three main components:
@@ -360,8 +360,8 @@ We compute **language scores** across the selected tasks as follows:
 To compute the **multilingual score**, we utilize several approaches:
 
 1. **Average normalized score**: We average min-max normalized language scores.
-2. **Average rank**: we rank the final checkpoints' language scores across all corpora configurations and average their ranks.
-3. **Borda count**: first, we rank the final checkpoints for each language; second, we apply the Borda count on the language-wise rankings to compute the final ranking. We utilize the [Vote'n'Rank](https://aclanthology.org/2023.eacl-main.48/) framework.
+2. **Average rank**: We rank the final checkpoints' language scores across all corpora configurations and average their ranks.
+3. **Borda count**: First, we rank the final checkpoints for each language; second, we apply the Borda count on the language-wise rankings to compute the final ranking. We utilize the [Vote'n'Rank](https://aclanthology.org/2023.eacl-main.48/) framework.
 
 </details>
 
@@ -468,6 +468,7 @@ Please find the example on how to select tasks and vizualize the results below.
 ```python
 from datasets import load_dataset
 from utils import *
+from viz import *
 
 dataset = load_dataset("HPLT/corpora-comparison-evals", "spa_Latn", split="results").to_pandas()
 dataset_criteria_results, dataset_normalized_results, dataset_filtered_tasks = get_normalized_results(

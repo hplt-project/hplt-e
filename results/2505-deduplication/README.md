@@ -4,9 +4,9 @@ We present results from our HPLT 3.0 pre-release evaluations comparing different
 
 We compare the following data deduplication strategies to guide our design choices, and guard against data quality regression compared to HPLT 2.0:
 
-* **pre-HPLT 3.0 CD**:
-* **pre-HPLT 3.0 GD**:
-* **pre-HPLT 3.0 GDR**:
+* **pre-HPLT 3.0 CD**: per-crawl deduplication.
+* **pre-HPLT 3.0 GD**: global deduplication.
+* **pre-HPLT 3.0 GDR**: global deduplication & rehydration.
 
 
 ## 🎯 Task selection
@@ -46,12 +46,12 @@ The task criteria results for each language can be found [here](./criteria).
 
 ### 🔤 Language scores
 
-We publish our evaluation results for each language at [hf.co/datasets/pre-HPLT3.0-evals](https://huggingface.co/datasets/HPLT/pre-HPLT3.0-evals). See an example below.
+We publish our evaluation results for each language at [hf.co/datasets/HPLT/2505-deduplication-evals](https://huggingface.co/datasets/HPLT/2505-deduplication-evals). See an example below.
 
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("HPLT/pre-HPLT3.0-evals", "spa_Latn", split="results").to_pandas()
+dataset = load_dataset("HPLT/2505-deduplication-evals", "spa_Latn", split="results").to_pandas()
 ```
 
 <details>

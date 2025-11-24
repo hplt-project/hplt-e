@@ -37,12 +37,12 @@ The task criteria results for each language can be found [here](./criteria).
 
 ### 🔤 Language scores
 
-We publish our evaluation results for each language at [hf.co/datasets/HPLT/wds-comparison-evals](https://huggingface.co/datasets/HPLT/wds-comparison-evals). See an example below.
+We publish our evaluation results for each language at [hf.co/datasets/HPLT/2508-wds-evals](https://huggingface.co/datasets/HPLT/2508-wds-evals). See an example below.
 
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("HPLT/wds-comparison-evals", "spa_Latn", split="results").to_pandas()
+dataset = load_dataset("HPLT/2508-wds-evals", "spa_Latn", split="results").to_pandas()
 ```
 
 <details>

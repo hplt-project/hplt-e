@@ -37,12 +37,12 @@ The task selection results for each language can be found [here](./criteria).
 
 ### 🔤 Language scores
 
-We publish our evaluation results for each language at [hf.co/datasets/HPLT/corpora-comparison-evals](https://huggingface.co/datasets/HPLT/corpora-comparison-evals). See an example below.
+We publish our evaluation results for each language at [hf/datasets/HPLT/2508-datasets-evals](https://huggingface.co/datasets/HPLT/2508-datasets-evals). See an example below.
 
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("HPLT/corpora-comparison-evals", "spa_Latn", split="results").to_pandas()
+dataset = load_dataset("HPLT/2508-datasets-evals", "spa_Latn", split="results").to_pandas()
 ```
 
 <details>
