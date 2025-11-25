@@ -307,8 +307,8 @@ HPLT-E covers different task categories in all languages: entailment, causal rea
 ## 🧪 Multilingual Evaluation Recipe
 We provide results of our ablation studies evaluating different corpora and sampling strategies across multiple languages:
 
-* [**⚖️ Pre-HPLT 3.0 Comparison**](./results/2505-deduplication/README.md): Comparison of HPLT 2.0 and pre-HPLT 3.0 data deduplication strategies across nine selected languages (HPLT 3.0 pre-release).
-* [**📚 Corpora Comparison**](./results/2508-datasets/README.md): Evaluation of HPLT 2.0, HPLT 3.0, FineWeb2, and MADLAD-400 on nine selected languages (HPLT 3.0 release).
+* [**⚖️ HPLT Pre-3.0 Comparison**](./results/2505-deduplication/README.md): Comparison of data deduplication strategies on a pre-release version of HPLT 3.0 across nine selected languages (HPLT 3.0 pre-release).
+* [**📚 Corpora Comparison**](./results/2508-datasets/README.md): Evaluation of HPLT 2.0, HPLT 3.0, FineWeb 2.1.0, and MADLAD-400 1.0 on nine selected languages (HPLT 3.0 release).
 * [**🧰 Web Document Scorer (WDS) Comparison**](./results/2508-wds/README.md): Analysis of HPLT 3.0 corpora sampled using different WDS thresholds, focusing on Spanish and French (HPLT 3.0 release).
 
 
