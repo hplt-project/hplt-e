@@ -34,8 +34,8 @@ The task criteria results for each language can be found [here](./criteria).
 
 |Corpus  |Avg. rank  |Borda count  |
 |:---|:---|:---|
-|	 Top	| 🥇 1.5	|	🥈 3|
-|	 Random | 🥇 1.5	|	🥇 2|
+|	 Top	| 🥇 1.5	| 🥇 3|
+|	 Random | 🥇 1.5	| 🥈 2|
 |	 Bottom | 🥈 3.0	|	🥉 0|
 
 ### 🔤 Language scores
