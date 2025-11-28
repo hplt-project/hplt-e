@@ -1,5 +1,8 @@
 # 🧰 Web Document Scorer (WDS) Comparison
 
+* **Models:** [hf.co/collections/HPLT/2508-wds](https://huggingface.co/collections/HPLT/2508-wds)
+* **Evals:** [hf.co/datasets/HPLT/2508-wds-evals](https://huggingface.co/datasets/HPLT/2508-wds-evals)
+
 We present results from our HPLT 3.0 release evaluations comparing the new HPLT 3.0 corpora sampled using different WDS thresholds, focusing on Spanish and French. We pretrain and evaluate decoder-only models on 100B tokens for each language as described [here](../../README.md) (see **Pretraining**, **Task selection**, and **Performance aggregation**).
 
 ## 🎯 Task selection
@@ -37,7 +40,7 @@ The task criteria results for each language can be found [here](./criteria).
 
 ### 🔤 Language scores
 
-We publish our evaluation results for each language at [hf.co/datasets/HPLT/2508-wds-evals](https://huggingface.co/datasets/HPLT/2508-wds-evals). See an example below.
+Please find an example for how to load evals results for particular language below.
 
 ```python
 from datasets import load_dataset

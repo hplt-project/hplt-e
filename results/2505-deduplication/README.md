@@ -1,4 +1,7 @@
-# ⚖️ HPLT 2.0 vs pre-HPLT 3.0
+# ⚖️ Pre-HPLT 3.0 Comparison
+
+* **Models:** [hf.co/collections/HPLT/2505-deduplication](https://huggingface.co/collections/HPLT/2505-deduplication)
+* **Evals:** [hf.co/datasets/HPLT/2505-deduplication-evals](https://huggingface.co/datasets/HPLT/2505-deduplication-evals)
 
 We present results from our HPLT 3.0 pre-release evaluations comparing different data deduplication stategies for the pre-HPLT 3.0 corpora with the previous HPLT 2.0 version. We pretrain and evaluate decoder-only models on 30B tokens for each language as described [here](../../README.md) (see **Pretraining**, **Task selection**, and **Performance aggregation**).
 
@@ -46,7 +49,7 @@ The task criteria results for each language can be found [here](./criteria).
 
 ### 🔤 Language scores
 
-We publish our evaluation results for each language at [hf.co/datasets/HPLT/2505-deduplication-evals](https://huggingface.co/datasets/HPLT/2505-deduplication-evals). See an example below.
+Please find an example for how to load evals results for particular language below.
 
 ```python
 from datasets import load_dataset

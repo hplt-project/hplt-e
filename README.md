@@ -4,6 +4,7 @@ HPLT-E is a framework for comprehensive multilingual and multi-prompt *k*-shot e
 
 ## 🚀 Updates
 
+
 * **`19.11.2025`**: We update HPLT-E and release our results of comparing HPLT 3.0, HPLT 2.0, FineWeb 2.1.0, and MADLAD-400 1.0.
 * **`02.11.2025`**: A [pre-print](https://arxiv.org/abs/2511.01066) is available, summarizing HPLT-E design principles and early results. 
 * **`08.10.2025`**: We make the first release of HPLT-E in connection with the HPLT 3.0 monolingual datasets.
@@ -328,7 +329,7 @@ Each evaluation series involves pretraining individual 2.15B-parameter models fo
 <details>
 <summary><b>🎯 Task selection</b></summary>
 
-We use the standard task-specific metrics and report the maximum score across the prompts as the main performance aggregation method. We adapt [the FineWeb2 evaluation design](https://huggingface.co/spaces/HuggingFaceFW/blogpost-fine-tasks) to examine the signal HPLT-E tasks provide based on the criteria and statistics summarized below.
+We use the standard task-specific metrics and report the maximum score across the prompts as the main performance aggregation method. We adapt [the FineWeb2.1.0 evaluation design](https://huggingface.co/spaces/HuggingFaceFW/blogpost-fine-tasks) to examine the signal HPLT-E tasks provide based on the criteria and statistics summarized below.
 
 - **Monotonicity**: performance should improve as pretraining progresses, even if the improvement differs across pretraining corpora. Tasks with fluctuating scores promote limited reliability.
 - **Stable pretraining**: relative variability of performance across checkpoints should be low, reflecting smooth pretraining dynamics.
