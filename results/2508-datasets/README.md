@@ -1,7 +1,7 @@
 # 📚 Corpora comparison
 
 * **Models:** [hf.co/collections/HPLT/2508-datasets](https://huggingface.co/collections/HPLT/2508-datasets)
-* **Evals:** [hf/datasets/HPLT/2508-datasets-evals](https://huggingface.co/datasets/HPLT/2508-datasets-evals)
+* **Evals:** [hf.co/datasets/HPLT/2508-datasets-evals](https://huggingface.co/datasets/HPLT/2508-datasets-evals)
 
 We present results from our HPLT 3.0 release evaluations comparing the new HPLT 3.0 corpora with the previous HPLT 2.0 version, FineWeb2.1.0, and MADLAD-400 1.0. We pretrain and evaluate decoder-only models on 100B tokens for each language as described [here](../../README.md) (see **Pretraining**, **Task selection**, and **Performance aggregation**).
 
