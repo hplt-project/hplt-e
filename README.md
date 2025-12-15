@@ -368,7 +368,7 @@ To compute the **multilingual score**, we utilize several approaches:
 
 ### 😎 HPLT-E Tasks
 
-Based on our large-scale evaluations, we find that the set of selected tasks for each language can slightly differ depending on the number of corpora and checkpoints included in the comparison. Although we encourage users to perform task selection on their own data using our codebase, we also release a set of **HPLT-E tasks** for languages that less represented in multilingual evaluations, derived from [our 100BT model evaluation results](results/corpora_comparison/README.md).
+Based on our large-scale evaluations, we find that the set of selected tasks for each language can slightly differ depending on the number of corpora and checkpoints included in the comparison. Although we encourage users to perform task selection on their own data using our codebase, we also release a set of **HPLT-E tasks** for languages that less represented in multilingual evaluations, derived from [our 100BT model evaluation results](results/2508-datasets/README.md).
 
 <details>
 <summary><b>😎 HPLT-E tasks</b></summary>
