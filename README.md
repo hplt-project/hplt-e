@@ -1,13 +1,13 @@
-# HPLT-E: Comprehensive Multilingual LLM Evaluation
+# HPLT-e: Comprehensive Multilingual LLM Evaluation
 
-HPLT-E is a framework for comprehensive multilingual and multi-prompt *k*-shot evaluation across 124 tasks in nine typologically diverse languages: Catalan, Spanish, Basque, Galician, French, Norwegian, Ukrainian, Czech, and Finnish.
+HPLT-e is a framework for comprehensive multilingual and multi-prompt *k*-shot evaluation across 124 tasks in nine typologically diverse languages: Catalan, Spanish, Basque, Galician, French, Norwegian, Ukrainian, Czech, and Finnish.
 
 ## 🚀 Updates
 
 
-* **`19.11.2025`**: We update HPLT-E and release our results of comparing HPLT 3.0, HPLT 2.0, FineWeb 2.1.0, and MADLAD-400 1.0.
-* **`02.11.2025`**: A [pre-print](https://arxiv.org/abs/2511.01066) is available, summarizing HPLT-E design principles and early results. 
-* **`08.10.2025`**: We make the first release of HPLT-E in connection with the HPLT 3.0 monolingual datasets.
+* **`19.11.2025`**: We update HPLT-e and release our results of comparing HPLT 3.0, HPLT 2.0, FineWeb 2.1.0, and MADLAD-400 1.0.
+* **`02.11.2025`**: A [pre-print](https://arxiv.org/abs/2511.01066) is available, summarizing HPLT-e design principles and early results. 
+* **`08.10.2025`**: We make the first release of HPLT-d in connection with the HPLT 3.0 monolingual datasets.
 
 
 ## 📑 Contents
@@ -21,7 +21,7 @@ HPLT-E is a framework for comprehensive multilingual and multi-prompt *k*-shot e
 
 ## 🗺️ Overview
 
-HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Spanish (SpanishBench), Basque (BasqueBench), Galician (GalicianBench), French (FrenchBench), Norwegian (NorEval), Finnish (FinBench v2), and Czech (BenCzechMark). In addition, we create a multi-task benchmark for Ukrainian (UkrainianBench) and extend single-prompt benchmarks to the multi-prompt scenario (French, Catalan, Spanish, Basque, Galician, and Ukrainian). HPLT-E covers a diverse set of 124 natural language understanding and generation tasks, each supporting 3-7 human-written prompts. Our main evaluation principles include:
+HPLT-e combines existing monolingual benchmarks for Catalan (CatalanBench), Spanish (SpanishBench), Basque (BasqueBench), Galician (GalicianBench), French (FrenchBench), Norwegian (NorEval), Finnish (FinBench v2), and Czech (BenCzechMark). In addition, we create a multi-task benchmark for Ukrainian (UkrainianBench) and extend single-prompt benchmarks to the multi-prompt scenario (French, Catalan, Spanish, Basque, Galician, and Ukrainian). HPLT-E covers a diverse set of 124 natural language understanding and generation tasks, each supporting 3-7 human-written prompts. Our main evaluation principles include:
 
 * **Diversity**: broader representation of lesser-resourced languages in context of pretraining corpora comparison.
 * **Data quality**: use of human-curated datasets to ensure reliable evaluation.
@@ -31,7 +31,7 @@ HPLT-E combines existing monolingual benchmarks for Catalan (CatalanBench), Span
 
 ## 🌐 Multilingual evaluation suite
 
-HPLT-E covers different task categories in all languages: entailment, causal reasoning, mathematical reasoning, commonsense reasoning, language knowledge, language-specific & world knowledge, paraphrase detection, reading comprehension, sentiment analysis, toxicity detection, machine translation, and truthfulness. The supported tasks for each language are summarized below.
+HPLT-e covers different task categories in all languages: entailment, causal reasoning, mathematical reasoning, commonsense reasoning, language knowledge, language-specific & world knowledge, paraphrase detection, reading comprehension, sentiment analysis, toxicity detection, machine translation, and truthfulness. The supported tasks for each language are summarized below.
 
 <details>
 <summary><b>Catalan</b></summary>
@@ -41,7 +41,7 @@ HPLT-E covers different task categories in all languages: entailment, causal rea
 * Homepage: N/A
 * Language code: `cat_Latn`
 * Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/catalan_bench](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/catalan_bench)
-* HPLT-E multi-prompt implementation: [cat_Latn](./cat_Latn/)
+* HPLT-e multi-prompt implementation: [cat_Latn](./cat_Latn/)
 
 
 |Name  |LM Evaluation Harness   |Task type  | Task category |
@@ -80,7 +80,7 @@ HPLT-E covers different task categories in all languages: entailment, causal rea
 * Homepage: N/A
 * Language code: `spa_Latn`
 * Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/spanish_bench](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/spanish_bench)
-* HPLT-E multi-prompt implementation: [spa_Latn](./spa_Latn/)
+* HPLT-e multi-prompt implementation: [spa_Latn](./spa_Latn/)
 
 |Name  |LM Evaluation Harness   |Task type  | Task category |
 |:---|:---|:---|:---|
@@ -111,7 +111,7 @@ HPLT-E covers different task categories in all languages: entailment, causal rea
 * Homepage: N/A
 * Language code: `glg_Latn`
 * Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/galician_bench](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/galician_bench)
-* HPLT-E multi-prompt implementation: [glg_Latn](./glg_Latn/)
+* HPLT-e multi-prompt implementation: [glg_Latn](./glg_Latn/)
 
 
 |Name  |LM Evaluation Harness   | Task type  | Task category |
@@ -137,7 +137,7 @@ HPLT-E covers different task categories in all languages: entailment, causal rea
 * Homepage: N/A
 * Language code: `eus_Latn`
 * Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/basque_bench](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/basque_bench)
-* HPLT-E multi-prompt implementation: [eus_Latn](./eus_Latn/)
+* HPLT-e multi-prompt implementation: [eus_Latn](./eus_Latn/)
 
 
 |Name  |LM Evaluation Harness   | Task type  | Task category |
@@ -169,7 +169,7 @@ HPLT-E covers different task categories in all languages: entailment, causal rea
 * Homepage: [github.com/ltgoslo/noreval](https://github.com/ltgoslo/noreval/tree/main)
 * Language code: `nor_Latn` (Bokmål and Nynorsk)
 * Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/noreval](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/noreval)
-* HPLT-E multi-prompt implementation: N/A
+* multi-prompt implementation: N/A
 
 
 |Name  |LM Evaluation Harness (Bokmål) | LM Evaluation Harness (Nynorsk)  |Task type  | Task category |
@@ -194,10 +194,10 @@ HPLT-E covers different task categories in all languages: entailment, causal rea
 
 * Benchmark: UkrainianBench
 * Paper: [arxiv.org/abs/2511.01066](https://arxiv.org/abs/2511.01066)
-* Homepage: [github.com/hplt-project/hplt-e](https://github.com/hplt-project/hplt-e)
+* Homepage: [github.com/hplt-project/](https://github.com/hplt-project/)
 * Language code: `ukr_Cyrl`
 * Original LM Evaluation Harness implementation: N/A 
-* HPLT-E multi-prompt implementation: [ukr_Cyrl](./ukr_Cyrl/)
+* HPLT-e multi-prompt implementation: [ukr_Cyrl](./ukr_Cyrl/)
 
 |Name  |LM Evaluation Harness   |Task type  | Task category |
 |:---|:---|:---|:---|
@@ -220,7 +220,7 @@ HPLT-E covers different task categories in all languages: entailment, causal rea
 * Homepage: [github.com/DCGM/lm-evaluation-harness](https://github.com/DCGM/lm-evaluation-harness)
 * Language code: `ces_Latn`
 * Original LM Evaluation Harness implementation: [github.com/DCGM/lm-evaluation-harness/tree/main/lm_eval/tasks/benczechmark](https://github.com/DCGM/lm-evaluation-harness/tree/main/lm_eval/tasks/benczechmark)
-* HPLT-E multi-prompt implementation: [ces_Latn](./ces_Latn/)
+* HPLT-e multi-prompt implementation: [ces_Latn](./ces_Latn/)
 
 **NB**: we update BenCzechmark to enable support for latest LM Evaluation Harness versions and create new prompts for Global-MMLU.
 
@@ -252,7 +252,7 @@ HPLT-E covers different task categories in all languages: entailment, causal rea
 * Homepage: [huggingface.co/croissantllm](https://huggingface.co/croissantllm)
 * Language code: `fra_Latn`
 * Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/french_bench](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/french_bench)
-* HPLT-E multi-prompt implementation: [fra_Latn](./fra_Latn/)
+* HPLT-e multi-prompt implementation: [fra_Latn](./fra_Latn/)
 
 |Name  |LM Evaluation Harness   |Task type  | Task category |
 |:---|:---|:---|:---|
@@ -276,7 +276,7 @@ HPLT-E covers different task categories in all languages: entailment, causal rea
 * Homepage: N/A
 * Language code: `fin_Latn`
 * Original LM Evaluation Harness implementation: [github.com/LumiOpen/lm-evaluation-harness/tree/finbench_v2/lm_eval/tasks/finbench_v2](https://github.com/LumiOpen/lm-evaluation-harness/tree/finbench_v2/lm_eval/tasks/finbench_v2)
-* HPLT-E multi-prompt implementation: N/A
+* HPLT-e multi-prompt implementation: N/A
 
 | Name| Formulation | LM Evaluation Harness| Task type | Task category| FinBench v2 dataset version |
 |:--------------------|-------------|:----|:----------------|:----|:------------------|
@@ -329,7 +329,7 @@ Each evaluation series involves pretraining individual 2.15B-parameter models fo
 <details>
 <summary><b>🎯 Task selection</b></summary>
 
-We use the standard task-specific metrics and report the maximum score across the prompts as the main performance aggregation method. We adapt [the FineWeb2.1.0 evaluation design](https://huggingface.co/spaces/HuggingFaceFW/blogpost-fine-tasks) to examine the signal HPLT-E tasks provide based on the criteria and statistics summarized below.
+We use the standard task-specific metrics and report the maximum score across the prompts as the main performance aggregation method. We extend [the FineWeb 2.1.0 evaluation design](https://huggingface.co/spaces/HuggingFaceFW/blogpost-fine-tasks) to examine the signal HPLT-e tasks provide based on the criteria and statistics summarized below.
 
 - **Monotonicity**: performance should improve as pretraining progresses, even if the improvement differs across pretraining corpora. Tasks with fluctuating scores promote limited reliability.
 - **Stable pretraining**: relative variability of performance across checkpoints should be low, reflecting smooth pretraining dynamics.
@@ -366,12 +366,12 @@ To compute the **multilingual score**, we utilize several approaches:
 
 </details>
 
-### 😎 HPLT-E Tasks
+### 😎 HPLT-e Tasks
 
-Based on our large-scale evaluations, we find that the set of selected tasks for each language can slightly differ depending on the number of corpora and checkpoints included in the comparison. Although we encourage users to perform task selection on their own data using our codebase, we also release a set of **HPLT-E tasks** for languages that less represented in multilingual evaluations, derived from [our 100BT model evaluation results](results/2508-datasets/README.md).
+Based on our large-scale evaluations, we find that the set of selected tasks for each language can slightly differ depending on the number of corpora and checkpoints included in the comparison. Although we encourage users to perform task selection on their own data using our codebase, we also release a set of **HPLT-e tasks** for languages that less represented in multilingual evaluations, derived from [our 100BT model evaluation results](results/2508-datasets/README.md).
 
 <details>
-<summary><b>😎 HPLT-E tasks</b></summary>
+<summary><b>😎 HPLT-e tasks</b></summary>
 
 |Language |Name  |LM Evaluation Harness   |Task type  | Task category |
 |:---|:---|:---|:---|:---|
@@ -415,7 +415,7 @@ cd lm-evaluation-harness
 pip install -e .
 ```
 
-2. Clone our HPLT-E GitHub repository.
+2. Clone our HPLT-e GitHub repository.
 
 ```bash
 git clone https://github.com/hplt-project/hplt-e.git
