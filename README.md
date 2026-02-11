@@ -7,7 +7,7 @@ HPLT-e is a framework for comprehensive multilingual and multi-prompt *k*-shot e
 
 * **`19.11.2025`**: We update HPLT-e and release our results of comparing HPLT 3.0, HPLT 2.0, FineWeb 2.1.0, and MADLAD-400 1.0.
 * **`02.11.2025`**: A [pre-print](https://arxiv.org/abs/2511.01066) is available, summarizing HPLT-e design principles and early results. 
-* **`08.10.2025`**: We make the first release of HPLT-d in connection with the HPLT 3.0 monolingual datasets.
+* **`08.10.2025`**: We make the first release of HPLT-e in connection with the HPLT 3.0 monolingual datasets.
 
 
 ## 📑 Contents
