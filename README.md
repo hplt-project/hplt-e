@@ -4,7 +4,7 @@ HPLT-e is a framework for comprehensive multilingual and multi-prompt *k*-shot e
 
 ## 🚀 Updates
 
-
+* **`13.02.2026`**: Our paper is accepted to [LREC 2026](https://lrec.elra.info/lrec2026-main-110).
 * **`19.11.2025`**: We update HPLT-e and release our results of comparing HPLT 3.0, HPLT 2.0, FineWeb 2.1.0, and MADLAD-400 1.0.
 * **`02.11.2025`**: A [pre-print](https://arxiv.org/abs/2511.01066) is available, summarizing HPLT-e design principles and early results. 
 * **`08.10.2025`**: We make the first release of HPLT-e in connection with the HPLT 3.0 monolingual datasets.
@@ -513,11 +513,18 @@ We provide detailed codebase on task selection [here](utils.py), vizualization c
 Our [pre-print](https://arxiv.org/abs/2511.01066) is available on arXiv.
 
 ```
-@article{oepen2025hplt,
-  title={HPLT\~{} 3.0: Very Large-Scale Multilingual Resources for LLM and MT. Mono-and Bi-lingual Data, Multilingual Evaluation, and Pre-Trained Models},
-  author={Oepen, Stephan and Arefev, Nikolay and Aulamo, Mikko and Ba{\~n}{\'o}n, Marta and Buljan, Maja and Burchell, Laurie and Charpentier, Lucas and Chen, Pinzhen and Fedorova, Mariya and de Gibert, Ona and others},
-  journal={arXiv preprint arXiv:2511.01066},
-  year={2025}
+@inproceedings{oepen-etal-2026-very,
+  title = {HPLT 3.0: Very Large-Scale Multilingual Resources for LLMs and MT. Mono- and Bi-lingual Data, Multilingual Evaluation, and Pre-Trained Models},
+  author = {Oepen, Stephan and Arefyev, Nikolay and Aulamo, Mikko and Bañón, Marta and Buljan, Maja and Burchell, Laurie V. and Charpentier, Lucas Georges Gabriel and Chen, Pinzhen and Fedorova, Mariia and Gibert, Ona de and Haddow, Barry and Hajič, Jan and Helcl, Jindrich and Kutuzov, Andrey and Laippala, Veronika and Li, Zihao and Malik, Bhavitvya and Mikhailov, Vladislav and Myntti, Amanda and O'Brien, Dayyán and Polakova, Lucie and Ramírez-Sánchez, Gema and Siewert, Janine and Stepachev, Pavel and Tiedemann, Joerg and Vahtola, Teemu and Varis, Dusan and Vitiugin, Fedor and Zaragoza, Jaume},
+  booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
+  month = {May},
+  year = {2026},
+  pages = {1409--1434},
+  address = {Palma, Mallorca, Spain},
+  publisher = {European Language Resources Association (ELRA)},
+  editor = {Piperidis, Stelios and Bel, Núria and van den Heuvel, Henk and Ide, Nancy and Krek, Simon and Toral, Antonio},
+  doi = {10.63317/25xbdofco9od},
+  abstract = {We present an ongoing initiative to provide open, very large, high-quality, and richly annotated textual datasets for almost 200 languages. At 30 trillion tokens, this is likely the largest generally available multilingual collection of LLM pre-training data. These datasets are derived from web crawls from different sources and accompanied with a complete, open-source pipeline for document selection from web archives, text extraction from HTML, language identification for noisy texts, exact and near-deduplication, annotation with, among others, register labels, text quality estimates, and personally identifiable information; and final selection and filtering. We report on data quality probes through contrastive and analytical statistics, through manual inspection of samples for some 20 languages, and through end-to-end evaluation of various language model architectures trained on this data. For multilingual LLM evaluation, we provide a comprehensive collection of benchmarks for nine European languages, with special emphasis on natively created tasks, mechanisms to mitigate prompt sensitivity, and refined normalization and aggregation of scores. Additionally, we train and evaluate a family of 57 monolingual encoder–decoder models, as well as about 30 “smallish” monolingual GPT-like reference models. Besides the monolingual data and models, we also present a very large collection of parallel texts automatically mined from this data, together with a novel parallel corpus synthesized via machine translation.}
 }
 ```
 
