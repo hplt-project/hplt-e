@@ -1,4 +1,4 @@
 task: klokan_qa_p4
-tag: hplt_ces_klokan_qa
+tag: hplte_ces_klokan_qa
 include: _klokan_qa_yaml
 description: "Správná řešení úloh z Krajského přeboru v matematice.\n\n"

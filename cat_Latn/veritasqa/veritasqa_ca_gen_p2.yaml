@@ -1,4 +1,4 @@
 task: veritasqa_ca_gen_p2
-tag: hplt_cat_veritasqa_gen
+tag: hplte_cat_veritasqa_gen
 include: _veritasqa_gen_yaml
 doc_to_text: "Proporciona una resposta detallada per a la pregunta següent:\n{{question}}\nResposta:"

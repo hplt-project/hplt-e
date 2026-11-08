@@ -1,4 +1,4 @@
 task: wnli_eu_p1
-tag: hplt_eus_wnli
+tag: hplte_eus_wnli
 include: _wnli_yaml
 doc_to_text: "{{sentence1}}\nGaldera: {{sentence2}}.\nZer da, Egia ala Gezurra?\nErantzuna:"

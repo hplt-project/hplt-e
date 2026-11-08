@@ -1,5 +1,5 @@
 task: sentiment_fb_p0
-tag: hplt_ces_sentiment_fb
+tag: hplte_ces_sentiment_fb
 include: ../_sentiment_yaml
 dataset_path: CZLC/fb_sentiment_balanced
 dataset_kwargs:

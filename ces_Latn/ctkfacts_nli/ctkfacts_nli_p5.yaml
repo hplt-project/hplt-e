@@ -1,5 +1,5 @@
 task: ctkfacts_nli_p5
-tag: hplt_ces_ctkfacts_nli
+tag: hplte_ces_ctkfacts_nli
 include: _ctkfacts_nli_yaml
 description: "Seš profesionální fact-checker. Determinuj pravdivost následujúcích tvrzení. Odpověz pravda/nepravda/nejasné:\n\n"
 doc_to_choice:

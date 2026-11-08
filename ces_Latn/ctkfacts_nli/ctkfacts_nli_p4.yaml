@@ -1,5 +1,5 @@
 task: ctkfacts_nli_p4
-tag: hplt_ces_ctkfacts_nli
+tag: hplte_ces_ctkfacts_nli
 include: _ctkfacts_nli_yaml
 description: "Ste si jisti pravdivostí následujúcích tvrzení? Odpovězte ne/možná/ano:\n\n"
 doc_to_choice:

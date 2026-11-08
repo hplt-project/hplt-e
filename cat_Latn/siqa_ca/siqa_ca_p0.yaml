@@ -1,5 +1,5 @@
 task: siqa_ca_p0
-tag: hplt_cat_siqa
+tag: hplte_cat_siqa
 include: _siqa_yaml
 doc_to_text: "Pregunta: {{context}} {{question}}\nResposta:"
 doc_to_choice: "{{[answerA, answerB, answerC]}}"

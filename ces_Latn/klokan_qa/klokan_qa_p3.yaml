@@ -1,4 +1,4 @@
 task: klokan_qa_p3
-tag: hplt_ces_klokan_qa
+tag: hplte_ces_klokan_qa
 include: _klokan_qa_yaml
 description: "Matematická Olympiáda.\n\nInstrukce: Vyberte správnou odpověď A-E pro zadanou otázku. Pro každou otázku existuje právě jedna správná odpověď.\nZadání:\n\n"

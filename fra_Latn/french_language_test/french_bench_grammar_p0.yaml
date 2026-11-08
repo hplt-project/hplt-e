@@ -1,5 +1,5 @@
 task: french_bench_grammar_p0
-tag: hplt_fra_grammar
+tag: hplte_fra_grammar
 include: _language_test_yaml
 validation_split: Grammar
 fewshot_split: Grammar

@@ -1,5 +1,5 @@
 task: veritasqa_gl_mc2_p2
-tag: hplt_glg_veritasqa_mc2
+tag: hplte_glg_veritasqa_mc2
 include: _veritasqa_mc_yaml
 doc_to_choice: "{{mc2_targets.choices}}"
 process_results: !function utils.process_results_mc2

@@ -1,5 +1,5 @@
 task: zno_p1
-tag: hplt_ukr_zno
+tag: hplte_ukr_zno
 include: _zno_yaml
 doc_to_text: !function utils.p1
 doc_to_choice: "{{choices.label}}"

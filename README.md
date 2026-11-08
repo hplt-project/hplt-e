@@ -455,7 +455,7 @@ lm_eval \
 
 #### Tags
 
-All prompts of a task can be run at once with its tag `hplt_<language>_<task>`, where `<language>` is the ISO 639-3 code: for example, `--tasks hplt_spa_xnli` runs `xnli_es_p[0-2]`, and `--tasks hplt_ces_ctkfacts_nli` runs `ctkfacts_nli_p[0-7]`. The tags and their tasks are listed in [`configs/tags.json`](configs/tags.json). Global-MMLU, EusExams and Umimeto have a group per prompt instead (e.g. `global_mmlu_ukrainian_p0`).
+All prompts of a task can be run at once with its tag `hplte_<language>_<task>`, where `<language>` is the ISO 639-3 code: for example, `--tasks hplte_spa_xnli` runs `xnli_es_p[0-2]`, and `--tasks hplte_ces_ctkfacts_nli` runs `ctkfacts_nli_p[0-7]`. The tags and their tasks are listed in [`configs/tags.json`](configs/tags.json). Global-MMLU, EusExams and Umimeto have a group per prompt instead (e.g. `global_mmlu_ukrainian_p0`).
 
 #### Task groups
 

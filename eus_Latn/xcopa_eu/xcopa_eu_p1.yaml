@@ -1,4 +1,4 @@
 task: xcopa_eu_p1
-tag: hplt_eus_xcopa
+tag: hplte_eus_xcopa
 include: _xcopa_yaml
 doc_to_text: '{{premise[:-1].strip() +  {"cause": " zeren eta", "effect": ". Horregatik,"}[question]}}'

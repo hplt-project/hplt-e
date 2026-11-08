@@ -1,162 +1,162 @@
 {
-  "hplt_cat_arc_challenge": [
+  "hplte_cat_arc_challenge": [
     "arc_ca_challenge_p0",
     "arc_ca_challenge_p1",
     "arc_ca_challenge_p2"
   ],
-  "hplt_cat_arc_easy": [
+  "hplte_cat_arc_easy": [
     "arc_ca_easy_p0",
     "arc_ca_easy_p1",
     "arc_ca_easy_p2"
   ],
-  "hplt_cat_belebele": [
+  "hplte_cat_belebele": [
     "catbelebele_p0",
     "catbelebele_p1",
     "catbelebele_p2"
   ],
-  "hplt_cat_catalanqa": [
+  "hplte_cat_catalanqa": [
     "catalanqa_p0",
     "catalanqa_p1",
     "catalanqa_p2"
   ],
-  "hplt_cat_catcola": [
+  "hplte_cat_catcola": [
     "catcola_p0",
     "catcola_p1",
     "catcola_p2"
   ],
-  "hplt_cat_cocoteros_va": [
+  "hplte_cat_cocoteros_va": [
     "cocoteros_va_p0",
     "cocoteros_va_p1",
     "cocoteros_va_p2"
   ],
-  "hplt_cat_copa": [
+  "hplte_cat_copa": [
     "copa_ca_p0",
     "copa_ca_p1",
     "copa_ca_p2"
   ],
-  "hplt_cat_coqcat": [
+  "hplte_cat_coqcat": [
     "coqcat_p0",
     "coqcat_p1",
     "coqcat_p2"
   ],
-  "hplt_cat_flores_en-ca": [
+  "hplte_cat_flores_en-ca": [
     "flores_en-ca_p0",
     "flores_en-ca_p1",
     "flores_en-ca_p2"
   ],
-  "hplt_cat_mgsm_direct": [
+  "hplte_cat_mgsm_direct": [
     "mgsm_direct_ca_p0",
     "mgsm_direct_ca_p1",
     "mgsm_direct_ca_p2"
   ],
-  "hplt_cat_openbookqa": [
+  "hplte_cat_openbookqa": [
     "openbookqa_ca_p0",
     "openbookqa_ca_p1",
     "openbookqa_ca_p2"
   ],
-  "hplt_cat_parafraseja": [
+  "hplte_cat_parafraseja": [
     "parafraseja_p0",
     "parafraseja_p1",
     "parafraseja_p2"
   ],
-  "hplt_cat_paws": [
+  "hplte_cat_paws": [
     "paws_ca_p0",
     "paws_ca_p1",
     "paws_ca_p2"
   ],
-  "hplt_cat_piqa": [
+  "hplte_cat_piqa": [
     "piqa_ca_p0",
     "piqa_ca_p1",
     "piqa_ca_p2"
   ],
-  "hplt_cat_siqa": [
+  "hplte_cat_siqa": [
     "siqa_ca_p0",
     "siqa_ca_p1",
     "siqa_ca_p2"
   ],
-  "hplt_cat_teca": [
+  "hplte_cat_teca": [
     "teca_p0",
     "teca_p1",
     "teca_p2"
   ],
-  "hplt_cat_veritasqa_gen": [
+  "hplte_cat_veritasqa_gen": [
     "veritasqa_ca_gen_p0",
     "veritasqa_ca_gen_p1",
     "veritasqa_ca_gen_p2"
   ],
-  "hplt_cat_veritasqa_mc1": [
+  "hplte_cat_veritasqa_mc1": [
     "veritasqa_ca_mc1_p0",
     "veritasqa_ca_mc1_p1",
     "veritasqa_ca_mc1_p2"
   ],
-  "hplt_cat_veritasqa_mc2": [
+  "hplte_cat_veritasqa_mc2": [
     "veritasqa_ca_mc2_p0",
     "veritasqa_ca_mc2_p1",
     "veritasqa_ca_mc2_p2"
   ],
-  "hplt_cat_wnli": [
+  "hplte_cat_wnli": [
     "wnli_ca_p0",
     "wnli_ca_p1",
     "wnli_ca_p2"
   ],
-  "hplt_cat_xnli": [
+  "hplte_cat_xnli": [
     "xnli_ca_p0",
     "xnli_ca_p1",
     "xnli_ca_p2"
   ],
-  "hplt_cat_xquad": [
+  "hplte_cat_xquad": [
     "xquad_ca_p0",
     "xquad_ca_p1",
     "xquad_ca_p2"
   ],
-  "hplt_cat_xstorycloze": [
+  "hplte_cat_xstorycloze": [
     "xstorycloze_ca_p0",
     "xstorycloze_ca_p1",
     "xstorycloze_ca_p2"
   ],
-  "hplt_ces_belebele": [
+  "hplte_ces_belebele": [
     "cesbelebele_p0",
     "cesbelebele_p1",
     "cesbelebele_p2",
     "cesbelebele_p3",
     "cesbelebele_p4"
   ],
-  "hplt_ces_cermat_czech_mc": [
+  "hplte_ces_cermat_czech_mc": [
     "cermat_czech_mc_p0",
     "cermat_czech_mc_p1",
     "cermat_czech_mc_p2",
     "cermat_czech_mc_p3",
     "cermat_czech_mc_p4"
   ],
-  "hplt_ces_cermat_czech_open": [
+  "hplte_ces_cermat_czech_open": [
     "cermat_czech_open_p0",
     "cermat_czech_open_p1",
     "cermat_czech_open_p2",
     "cermat_czech_open_p3",
     "cermat_czech_open_p4"
   ],
-  "hplt_ces_cermat_czech_tf": [
+  "hplte_ces_cermat_czech_tf": [
     "cermat_czech_tf_p0",
     "cermat_czech_tf_p1",
     "cermat_czech_tf_p2",
     "cermat_czech_tf_p3",
     "cermat_czech_tf_p4"
   ],
-  "hplt_ces_cermat_czmath_mc": [
+  "hplte_ces_cermat_czmath_mc": [
     "cermat_czmath_mc_p0",
     "cermat_czmath_mc_p1",
     "cermat_czmath_mc_p2",
     "cermat_czmath_mc_p3",
     "cermat_czmath_mc_p4"
   ],
-  "hplt_ces_cermat_czmath_open": [
+  "hplte_ces_cermat_czmath_open": [
     "cermat_czmath_open_p0",
     "cermat_czmath_open_p1",
     "cermat_czmath_open_p2",
     "cermat_czmath_open_p3",
     "cermat_czmath_open_p4"
   ],
-  "hplt_ces_ctkfacts_nli": [
+  "hplte_ces_ctkfacts_nli": [
     "ctkfacts_nli_p0",
     "ctkfacts_nli_p1",
     "ctkfacts_nli_p2",
@@ -166,314 +166,314 @@
     "ctkfacts_nli_p6",
     "ctkfacts_nli_p7"
   ],
-  "hplt_ces_klokan_qa": [
+  "hplte_ces_klokan_qa": [
     "klokan_qa_p0",
     "klokan_qa_p1",
     "klokan_qa_p2",
     "klokan_qa_p3",
     "klokan_qa_p4"
   ],
-  "hplt_ces_sentiment_csfd": [
+  "hplte_ces_sentiment_csfd": [
     "sentiment_csfd_p0",
     "sentiment_csfd_p1",
     "sentiment_csfd_p2",
     "sentiment_csfd_p3",
     "sentiment_csfd_p4"
   ],
-  "hplt_ces_sentiment_fb": [
+  "hplte_ces_sentiment_fb": [
     "sentiment_fb_p0",
     "sentiment_fb_p1",
     "sentiment_fb_p2",
     "sentiment_fb_p3",
     "sentiment_fb_p4"
   ],
-  "hplt_ces_sentiment_mall": [
+  "hplte_ces_sentiment_mall": [
     "sentiment_mall_p0",
     "sentiment_mall_p1",
     "sentiment_mall_p2",
     "sentiment_mall_p3",
     "sentiment_mall_p4"
   ],
-  "hplt_ces_sqad32": [
+  "hplte_ces_sqad32": [
     "cs_sqad32_p0",
     "cs_sqad32_p1",
     "cs_sqad32_p2",
     "cs_sqad32_p3",
     "cs_sqad32_p4"
   ],
-  "hplt_ces_subjectivity": [
+  "hplte_ces_subjectivity": [
     "ces_subjectivity_p0",
     "ces_subjectivity_p1",
     "ces_subjectivity_p2",
     "ces_subjectivity_p3",
     "ces_subjectivity_p4"
   ],
-  "hplt_eus_arc_challenge": [
+  "hplte_eus_arc_challenge": [
     "arc_eu_challenge_p0",
     "arc_eu_challenge_p1",
     "arc_eu_challenge_p2"
   ],
-  "hplt_eus_arc_easy": [
+  "hplte_eus_arc_easy": [
     "arc_eu_easy_p0",
     "arc_eu_easy_p1",
     "arc_eu_easy_p2"
   ],
-  "hplt_eus_belebele": [
+  "hplte_eus_belebele": [
     "eusbelebele_p0",
     "eusbelebele_p1",
     "eusbelebele_p2"
   ],
-  "hplt_eus_flores_en-eu": [
+  "hplte_eus_flores_en-eu": [
     "flores_en-eu_p0",
     "flores_en-eu_p1",
     "flores_en-eu_p2"
   ],
-  "hplt_eus_include": [
+  "hplte_eus_include": [
     "include_basque_p0",
     "include_basque_p1",
     "include_basque_p2"
   ],
-  "hplt_eus_mgsm_direct": [
+  "hplte_eus_mgsm_direct": [
     "mgsm_direct_eu_p0",
     "mgsm_direct_eu_p1",
     "mgsm_direct_eu_p2"
   ],
-  "hplt_eus_paws": [
+  "hplte_eus_paws": [
     "paws_eu_p0",
     "paws_eu_p1",
     "paws_eu_p2"
   ],
-  "hplt_eus_piqa": [
+  "hplte_eus_piqa": [
     "piqa_eu_p0",
     "piqa_eu_p1",
     "piqa_eu_p2"
   ],
-  "hplt_eus_proficiency": [
+  "hplte_eus_proficiency": [
     "eus_proficiency_p0",
     "eus_proficiency_p1",
     "eus_proficiency_p2"
   ],
-  "hplt_eus_reading": [
+  "hplte_eus_reading": [
     "eus_reading_p0",
     "eus_reading_p1",
     "eus_reading_p2"
   ],
-  "hplt_eus_trivia": [
+  "hplte_eus_trivia": [
     "eus_trivia_p0",
     "eus_trivia_p1",
     "eus_trivia_p2"
   ],
-  "hplt_eus_wnli": [
+  "hplte_eus_wnli": [
     "wnli_eu_p0",
     "wnli_eu_p1",
     "wnli_eu_p2"
   ],
-  "hplt_eus_xcopa": [
+  "hplte_eus_xcopa": [
     "xcopa_eu_p0",
     "xcopa_eu_p1",
     "xcopa_eu_p2"
   ],
-  "hplt_eus_xnli_native": [
+  "hplte_eus_xnli_native": [
     "xnli_eu_native_p0",
     "xnli_eu_native_p1",
     "xnli_eu_native_p2"
   ],
-  "hplt_eus_xstorycloze": [
+  "hplte_eus_xstorycloze": [
     "xstorycloze_eu_p0",
     "xstorycloze_eu_p1",
     "xstorycloze_eu_p2"
   ],
-  "hplt_fra_belebele": [
+  "hplte_fra_belebele": [
     "frabelebele_p0",
     "frabelebele_p1",
     "frabelebele_p2"
   ],
-  "hplt_fra_fquad": [
+  "hplte_fra_fquad": [
     "fquad_p0",
     "fquad_p1",
     "fquad_p2"
   ],
-  "hplt_fra_grammar": [
+  "hplte_fra_grammar": [
     "french_bench_grammar_p0",
     "french_bench_grammar_p1",
     "french_bench_grammar_p2"
   ],
-  "hplt_fra_include": [
+  "hplte_fra_include": [
     "include_french_p0",
     "include_french_p1",
     "include_french_p2"
   ],
-  "hplt_fra_reading": [
+  "hplte_fra_reading": [
     "french_bench_reading_p0",
     "french_bench_reading_p1",
     "french_bench_reading_p2"
   ],
-  "hplt_fra_topic_based_nli": [
+  "hplte_fra_topic_based_nli": [
     "topic_based_nli_p0",
     "topic_based_nli_p1",
     "topic_based_nli_p2"
   ],
-  "hplt_fra_vocabulary": [
+  "hplte_fra_vocabulary": [
     "french_bench_vocabulary_p0",
     "french_bench_vocabulary_p1",
     "french_bench_vocabulary_p2"
   ],
-  "hplt_fra_xnli": [
+  "hplte_fra_xnli": [
     "french_xnli_p0",
     "french_xnli_p1",
     "french_xnli_p2"
   ],
-  "hplt_glg_belebele": [
+  "hplte_glg_belebele": [
     "glgbelebele_p0",
     "glgbelebele_p1",
     "glgbelebele_p2"
   ],
-  "hplt_glg_flores_en-gl": [
+  "hplte_glg_flores_en-gl": [
     "flores_en-gl_p0",
     "flores_en-gl_p1",
     "flores_en-gl_p2"
   ],
-  "hplt_glg_galcola": [
+  "hplte_glg_galcola": [
     "galcola_p0",
     "galcola_p1",
     "galcola_p2"
   ],
-  "hplt_glg_mgsm_direct": [
+  "hplte_glg_mgsm_direct": [
     "mgsm_direct_gl_p0",
     "mgsm_direct_gl_p1",
     "mgsm_direct_gl_p2"
   ],
-  "hplt_glg_openbookqa": [
+  "hplte_glg_openbookqa": [
     "openbookqa_gl_p0",
     "openbookqa_gl_p1",
     "openbookqa_gl_p2"
   ],
-  "hplt_glg_parafrases": [
+  "hplte_glg_parafrases": [
     "parafrases_gl_p0",
     "parafrases_gl_p1",
     "parafrases_gl_p2"
   ],
-  "hplt_glg_paws": [
+  "hplte_glg_paws": [
     "paws_gl_p0",
     "paws_gl_p1",
     "paws_gl_p2"
   ],
-  "hplt_glg_veritasqa_gen": [
+  "hplte_glg_veritasqa_gen": [
     "veritasqa_gl_gen_p0",
     "veritasqa_gl_gen_p1",
     "veritasqa_gl_gen_p2"
   ],
-  "hplt_glg_veritasqa_mc1": [
+  "hplte_glg_veritasqa_mc1": [
     "veritasqa_gl_mc1_p0",
     "veritasqa_gl_mc1_p1",
     "veritasqa_gl_mc1_p2"
   ],
-  "hplt_glg_veritasqa_mc2": [
+  "hplte_glg_veritasqa_mc2": [
     "veritasqa_gl_mc2_p0",
     "veritasqa_gl_mc2_p1",
     "veritasqa_gl_mc2_p2"
   ],
-  "hplt_spa_belebele": [
+  "hplte_spa_belebele": [
     "spabelebele_p0",
     "spabelebele_p1",
     "spabelebele_p2"
   ],
-  "hplt_spa_cocoteros": [
+  "hplte_spa_cocoteros": [
     "cocoteros_es_p0",
     "cocoteros_es_p1",
     "cocoteros_es_p2"
   ],
-  "hplt_spa_copa": [
+  "hplte_spa_copa": [
     "copa_es_p0",
     "copa_es_p1",
     "copa_es_p2"
   ],
-  "hplt_spa_escola": [
+  "hplte_spa_escola": [
     "escola_p0",
     "escola_p1",
     "escola_p2"
   ],
-  "hplt_spa_flores_en-es": [
+  "hplte_spa_flores_en-es": [
     "flores_en-es_p0",
     "flores_en-es_p1",
     "flores_en-es_p2"
   ],
-  "hplt_spa_include": [
+  "hplte_spa_include": [
     "include_spanish_p0",
     "include_spanish_p1",
     "include_spanish_p2"
   ],
-  "hplt_spa_mgsm_direct": [
+  "hplte_spa_mgsm_direct": [
     "mgsm_direct_es_p0",
     "mgsm_direct_es_p1",
     "mgsm_direct_es_p2"
   ],
-  "hplt_spa_openbookqa": [
+  "hplte_spa_openbookqa": [
     "openbookqa_es_p0",
     "openbookqa_es_p1",
     "openbookqa_es_p2"
   ],
-  "hplt_spa_paws": [
+  "hplte_spa_paws": [
     "paws_es_p0",
     "paws_es_p1",
     "paws_es_p2"
   ],
-  "hplt_spa_veritasqa_gen": [
+  "hplte_spa_veritasqa_gen": [
     "veritasqa_es_gen_p0",
     "veritasqa_es_gen_p1",
     "veritasqa_es_gen_p2"
   ],
-  "hplt_spa_veritasqa_mc1": [
+  "hplte_spa_veritasqa_mc1": [
     "veritasqa_es_mc1_p0",
     "veritasqa_es_mc1_p1",
     "veritasqa_es_mc1_p2"
   ],
-  "hplt_spa_veritasqa_mc2": [
+  "hplte_spa_veritasqa_mc2": [
     "veritasqa_es_mc2_p0",
     "veritasqa_es_mc2_p1",
     "veritasqa_es_mc2_p2"
   ],
-  "hplt_spa_xnli": [
+  "hplte_spa_xnli": [
     "xnli_es_p0",
     "xnli_es_p1",
     "xnli_es_p2"
   ],
-  "hplt_spa_xquad": [
+  "hplte_spa_xquad": [
     "xquad_es_p0",
     "xquad_es_p1",
     "xquad_es_p2"
   ],
-  "hplt_spa_xstorycloze": [
+  "hplte_spa_xstorycloze": [
     "xstorycloze_es_p0",
     "xstorycloze_es_p1",
     "xstorycloze_es_p2"
   ],
-  "hplt_ukr_belebele": [
+  "hplte_ukr_belebele": [
     "ukrbelebele_p0",
     "ukrbelebele_p1",
     "ukrbelebele_p2"
   ],
-  "hplt_ukr_include": [
+  "hplte_ukr_include": [
     "include_ukrainian_p0",
     "include_ukrainian_p1",
     "include_ukrainian_p2"
   ],
-  "hplt_ukr_textdetox": [
+  "hplte_ukr_textdetox": [
     "textdetox_ukr_p0",
     "textdetox_ukr_p1",
     "textdetox_ukr_p2"
   ],
-  "hplt_ukr_ua_squad": [
+  "hplte_ukr_ua_squad": [
     "ua_squad_p0",
     "ua_squad_p1",
     "ua_squad_p2"
   ],
-  "hplt_ukr_wmt24pp_en-uk": [
+  "hplte_ukr_wmt24pp_en-uk": [
     "wmt24pp_en-uk_p0",
     "wmt24pp_en-uk_p1",
     "wmt24pp_en-uk_p2"
   ],
-  "hplt_ukr_zno": [
+  "hplte_ukr_zno": [
     "zno_p0",
     "zno_p1",
     "zno_p2"

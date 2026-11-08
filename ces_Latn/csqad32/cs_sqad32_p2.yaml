@@ -1,5 +1,5 @@
 task: cs_sqad32_p2
-tag: hplt_ces_sqad32
+tag: hplte_ces_sqad32
 description: "Kvíz. Zodpovězte následující otázky podle textu. Použijte symbol '\n\n' pro ukončení odpovědi.\n\n"
 doc_to_text: "Kontext: {{title}}-{{context}} Otázka: {{question}}\nOdpověď:"
 include: _cs_sqad32_yaml

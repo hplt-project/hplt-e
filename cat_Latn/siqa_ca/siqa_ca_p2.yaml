@@ -1,5 +1,5 @@
 task: siqa_ca_p2
-tag: hplt_cat_siqa
+tag: hplte_cat_siqa
 include: _siqa_yaml
 doc_to_text: "Llegeix el passatge i respon a la pregunta: {{context}}\n{{question}}\nOpció A: {{answerA}}\nOpció B: {{answerB}}\nOpció C: {{answerC}}\nÉs la resposta correcta A, B  o C?"
 doc_to_choice: ["Opció A", "Opció B", "Opció C"]

@@ -1,5 +1,5 @@
 task: eus_reading_p2
-tag: hplt_eus_reading
+tag: hplte_eus_reading
 include: _reading_yaml
 doc_to_text: !function utils.p2
 doc_to_choice: !function utils.doc_to_choice_p2

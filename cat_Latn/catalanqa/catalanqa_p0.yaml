@@ -1,4 +1,4 @@
 task: catalanqa_p0
-tag: hplt_cat_catalanqa
+tag: hplte_cat_catalanqa
 include: _catalanqa_yaml
 doc_to_text: "Context: {{context}}\n\nPregunta: {{question}}\n\nResposta:"

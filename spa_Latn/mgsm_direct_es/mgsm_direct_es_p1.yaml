@@ -1,4 +1,4 @@
 task: mgsm_direct_es_p1
-tag: hplt_spa_mgsm_direct
+tag: hplte_spa_mgsm_direct
 include: _mgsm_direct_yaml
 doc_to_text: "Responde a la siguiente pregunta:\n{{question}}\nRazona tu respuesta:"

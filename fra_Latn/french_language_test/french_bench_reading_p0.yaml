@@ -1,5 +1,5 @@
 task: french_bench_reading_p0
-tag: hplt_fra_reading
+tag: hplte_fra_reading
 include: _language_test_yaml
 validation_split: Reading
 fewshot_split: Reading

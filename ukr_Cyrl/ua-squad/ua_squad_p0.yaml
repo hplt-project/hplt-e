@@ -1,4 +1,4 @@
 task: ua_squad_p0
-tag: hplt_ukr_ua_squad
+tag: hplte_ukr_ua_squad
 include: _ua_squad_yaml
 doc_to_text: "Текст: {{context}}\n\nПитання: {{question}}\n\nВiдповiдь:"
