@@ -2,5 +2,7 @@ task: sentiment_fb_p4
 tag: sentiment_fb
 include: ../_sentiment_yaml
 dataset_path: CZLC/fb_sentiment_balanced
+dataset_kwargs:
+  revision: 4e1219f86589335aafd99b23dcdb7ba7574f9560
 description: "Příklady textů, které jsou negativní, neutrální, nebo pozitivní.\n"
 doc_to_text: "{{query}} Sentiment:"

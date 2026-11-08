@@ -1,6 +1,3 @@
-from typing import List
-
-
 LETTERS = ["A", "B", "C", "D"]
 
 
@@ -56,12 +53,12 @@ def p2(doc) -> str:
     num_choices = len(candidates)
     choices = LETTERS[:num_choices]
     formatted_choices = "\n".join(
-       [f"Auskera {choice}: {candidates[i]}" for i, choice in enumerate(choices)]
+        [f"Auskera {choice}: {candidates[i]}" for i, choice in enumerate(choices)]
     )
     return f"Irakurri pasartea eta erantzun galderari: {doc['context']}\n{doc['question']}\n{formatted_choices}\nZein da erantzun zuzena {', '.join(choices)}?"
 
 
-def doc_to_choice_p01(doc) -> List[str]:
+def doc_to_choice_p01(doc) -> list[str]:
     """
     Returns the answer choices for a document.
 
@@ -75,7 +72,7 @@ def doc_to_choice_p01(doc) -> List[str]:
     return LETTERS[:num_choices]
 
 
-def doc_to_choice_p2(doc) -> List[str]:
+def doc_to_choice_p2(doc) -> list[str]:
     """
     Returns the answer choices for a document.
 

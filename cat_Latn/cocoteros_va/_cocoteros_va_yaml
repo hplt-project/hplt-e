@@ -1,5 +1,7 @@
 dataset_path: gplsi/cocoteros_va
 dataset_name: null
+dataset_kwargs:
+  revision: 652b16cb3cd15c8a695e39ffdd483b552f233319
 output_type: generate_until
 doc_to_target: "{{text}}"
 training_split: null
@@ -18,8 +20,8 @@ metric_list:
   - metric: bleu
     aggregation: bleu
     higher_is_better: true
-  - metric: !function ../utils.rouge1
-    aggregation: !function ../utils.rouge1_agg
+  - metric: !function utils.rouge1
+    aggregation: !function utils.rouge1_agg
     higher_is_better: true
 metadata:
   version: 1.0

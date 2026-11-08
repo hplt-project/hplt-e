@@ -1,5 +1,6 @@
-tag: ua_squad
 dataset_path: HPLT/ua-squad
+dataset_kwargs:
+  revision: da7bf2dc1090b83b1051310159c9c7ee83466d0b
 output_type: generate_until
 training_split: train
 validation_split: null

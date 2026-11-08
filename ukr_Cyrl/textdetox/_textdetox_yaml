@@ -1,5 +1,6 @@
-tag: textdetox_ukr
 dataset_path: ukr-detect/ukr-toxicity-dataset
+dataset_kwargs:
+  revision: 7ce81eef25ddd22ecdff4848c6aef738dfee0a0e
 output_type: multiple_choice
 training_split: null
 validation_split: null

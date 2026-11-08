@@ -1,6 +1,3 @@
-from typing import List
-
-
 LETTERS = ["A", "B", "C", "D"]
 
 
@@ -67,7 +64,7 @@ def p2(doc) -> str:
     return f"{doc['question']}\n{formatted_choices}\n\nZein da erantzun zuzena, A, B, C ala D?"
 
 
-def doc_to_choice_p01(doc) -> List[str]:
+def doc_to_choice_p01(doc) -> list[str]:
     """
     Returns the answer choices for a document.
 
@@ -83,7 +80,7 @@ def doc_to_choice_p01(doc) -> List[str]:
     return LETTERS[:num_choices]
 
 
-def doc_to_choice_p2(doc) -> List[str]:
+def doc_to_choice_p2(doc) -> list[str]:
     """
     Returns the answer choices for a document.
 

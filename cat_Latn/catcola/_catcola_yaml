@@ -1,5 +1,8 @@
 dataset_path: nbel/CatCoLA
+dataset_kwargs:
+  revision: 270d27642857cf08d279ae9d7d9d2b70f8c3ba6a
 output_type: multiple_choice
+doc_to_choice: ["no", "sí"]
 training_split: train
 validation_split: validation
 test_split: null

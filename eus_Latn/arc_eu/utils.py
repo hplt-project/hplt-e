@@ -1,23 +1,20 @@
-from typing import List
-
-
 def p1(doc):
-   candidates, letters = doc["choices"]["text"], doc["choices"]["label"]
-   formatted_choices = "\n".join(
-       [f"{letters[i]}: {candidates[i]}" for i, _ in enumerate(candidates)]
-   )
-   return f"{doc['question']}\n{formatted_choices}\nZein da erantzun zuzena, {', '.join(letters[:-1])} ala {letters[-1]}?"
+    candidates, letters = doc["choices"]["text"], doc["choices"]["label"]
+    formatted_choices = "\n".join(
+        [f"{letters[i]}: {candidates[i]}" for i, _ in enumerate(candidates)]
+    )
+    return f"{doc['question']}\n{formatted_choices}\nZein da erantzun zuzena, {', '.join(letters[:-1])} ala {letters[-1]}?"
 
 
 def p2(doc):
-   candidates, letters = doc["choices"]["text"], doc["choices"]["label"]
-   formatted_choices = "\n".join(
-       [f"{letters[i]}: {candidates[i]}" for i, _ in enumerate(candidates)]
-   )
-   return f"{doc['question']}\n{formatted_choices}\nErantzuna:"
+    candidates, letters = doc["choices"]["text"], doc["choices"]["label"]
+    formatted_choices = "\n".join(
+        [f"{letters[i]}: {candidates[i]}" for i, _ in enumerate(candidates)]
+    )
+    return f"{doc['question']}\n{formatted_choices}\nErantzuna:"
 
 
-def doc_to_choice(doc) -> List[str]:
+def doc_to_choice(doc) -> list[str]:
     """
     Returns the answer choices for a document.
 

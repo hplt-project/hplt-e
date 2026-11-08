@@ -2,5 +2,7 @@ task: sentiment_mall_p4
 tag: sentiment_mall
 include: ../_sentiment_yaml
 dataset_path: CZLC/mall_sentiment_balanced
+dataset_kwargs:
+  revision: c1130c2640dc00bf50f8ec61529d97cafbac86b2
 description: "Příklady textů, které jsou negativní, neutrální, nebo pozitivní.\n"
 doc_to_text: "{{query}} Sentiment:"

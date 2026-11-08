@@ -1,5 +1,6 @@
 dataset_path: osyvokon/zno
-tag: zno
+dataset_kwargs:
+  revision: 473616f29e9f6504593235deb7aa27e85b400c58
 output_type: multiple_choice
 training_split: train
 validation_split: null

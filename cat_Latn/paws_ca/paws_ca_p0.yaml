@@ -1,5 +1,5 @@
 task: paws_ca_p0
-include: _paws_ca_yaml
+include: _paws_yaml
 doc_to_text: ''
 doc_to_choice: '{{[sentence1+", veritat? No, "+sentence2, sentence1+", veritat? Sí, "+sentence2]}}'
 target_delimiter: ''

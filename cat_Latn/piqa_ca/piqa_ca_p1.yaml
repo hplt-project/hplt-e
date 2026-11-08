@@ -1,4 +1,4 @@
 task: piqa_ca_p1
-include: _piqa_ca_yaml
+include: _piqa_yaml
 doc_to_text: "{{goal}}\nA. {{sol1}}\nB. {{sol2}}\nResposta:"
 doc_to_choice: ["A", "B"]

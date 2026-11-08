@@ -1,4 +1,6 @@
 dataset_path: CZLC/cermat_czech_open
+dataset_kwargs:
+  revision: baaf89c9da552e9bbd79c2fe9f595eb241584343
 tag: cermat_czech_open
 include: ../templates/qa/qa_template_yaml
 fewshot_split: test

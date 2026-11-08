@@ -4,6 +4,7 @@ HPLT-e is a framework for comprehensive multilingual and multi-prompt *k*-shot e
 
 ## 🚀 Updates
 
+* **`08.11.2026`**: We release HPLT-e v2.0: the task configurations work with recent LM Evaluation Harness versions (tested with v0.4.13), the datasets are pinned to the Hugging Face Hub revisions used in our evaluations, and several configuration bugs are fixed. The version used in our paper is available as [v1.0](https://github.com/hplt-project/hplt-e/releases/tag/v1.0).
 * **`13.02.2026`**: Our paper is accepted to [LREC 2026](https://lrec.elra.info/lrec2026-main-110).
 * **`19.11.2025`**: We update HPLT-e and release our results of comparing HPLT 3.0, HPLT 2.0, FineWeb 2.1.0, and MADLAD-400 1.0.
 * **`02.11.2025`**: A [pre-print](https://arxiv.org/abs/2511.01066) is available, summarizing HPLT-e design principles and early results. 
@@ -21,12 +22,12 @@ HPLT-e is a framework for comprehensive multilingual and multi-prompt *k*-shot e
 
 ## 🗺️ Overview
 
-HPLT-e combines existing monolingual benchmarks for Catalan (CatalanBench), Spanish (SpanishBench), Basque (BasqueBench), Galician (GalicianBench), French (FrenchBench), Norwegian (NorEval), Finnish (FinBench v2), and Czech (BenCzechMark). In addition, we create a multi-task benchmark for Ukrainian (UkrainianBench) and extend single-prompt benchmarks to the multi-prompt scenario (French, Catalan, Spanish, Basque, Galician, and Ukrainian). HPLT-E covers a diverse set of 124 natural language understanding and generation tasks, each supporting 3-7 human-written prompts. Our main evaluation principles include:
+HPLT-e combines existing monolingual benchmarks for Catalan ([CatalanBench](https://aclanthology.org/2025.coling-main.699/)), Spanish ([SpanishBench](https://aclanthology.org/2025.coling-main.699/)), Basque ([BasqueBench](https://aclanthology.org/2025.coling-main.699/)), Galician ([GalicianBench](https://aclanthology.org/2025.coling-main.699/)), French ([FrenchBench](https://openreview.net/forum?id=uA19Xo1o31)), Norwegian ([NorEval](https://aclanthology.org/2025.findings-acl.181/)), Finnish ([FinBench v2](https://arxiv.org/abs/2512.13330)), and Czech ([BenCzechMark](https://aclanthology.org/2025.tacl-1.50/)). In addition, we create a multi-task benchmark for Ukrainian ([UkrainianBench](https://aclanthology.org/2026.lrec-1.110/)) and extend single-prompt benchmarks to the multi-prompt scenario (French, Catalan, Spanish, Basque, Galician, and Ukrainian). HPLT-e covers a diverse set of 124 natural language understanding and generation tasks, each supporting 3-8 human-written prompts. Our main evaluation principles include:
 
 * **Diversity**: broader representation of lesser-resourced languages in context of pretraining corpora comparison.
 * **Data quality**: use of human-curated datasets to ensure reliable evaluation.
 * **Robust evaluation**: evaluation across 500+ prompts written by native speakers to account for prompt sensitivity.
-* **Reproducibility**: full integration of HPLT-E into [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) for user-friendly standardized evaluation.
+* **Reproducibility**: full integration of HPLT-e into [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) for user-friendly standardized evaluation.
 
 
 ## 🌐 Multilingual evaluation suite
@@ -51,7 +52,7 @@ HPLT-e covers different task categories in all languages: entailment, causal rea
 |	Belebele| 	`catbelebele_p[0-2]`	|Multiple-choice QA |	Reading comprehension |
 |	CatalanQA|	`catalanqa_p[0-2]`			 |Generative QA	| Language-specific & world knowledge|
 |	CatCoLA|	`catcola_p[0-2]`	|		 Text classification	|Language knowledge|
-|	COPA-ca	|`copa_ca_p[0-2]`	|	Text cassification	|Commonsense reasoning|
+|	COPA-ca	|`copa_ca_p[0-2]`	|	Text classification	|Commonsense reasoning|
 |	CoQCat	|`coqcat_p[0-2]`	|	 Generative QA	|Reading comprehension|
 |	MGSM-cat|	`mgsm_direct_ca_p[0-2]`	|	Generative QA	|Mathematical reasoning|
 |	OpenBookQA-cat	|`openbookqa_ca_p[0-2]`	|	Multiple-choice QA |	Language-specific & world knowledge|
@@ -85,15 +86,15 @@ HPLT-e covers different task categories in all languages: entailment, causal rea
 |Name  |LM Evaluation Harness   |Task type  | Task category |
 |:---|:---|:---|:---|
 |Belebele|	`spabelebele_p[0-2]`	 |Multiple-choice QA	|Reading comprehension|
-|COPA|	`copa_es_p[0-2]`		|Text cassification	|Commonsense reasoning|
-|ESCoLA	|`escola_p[0-2]`		|Text cassification	|Language knowledge|
+|COPA|	`copa_es_p[0-2]`		|Text classification	|Commonsense reasoning|
+|ESCoLA	|`escola_p[0-2]`		|Text classification	|Language knowledge|
 |MGSM-es|	`mgsm_direct_es_p[0-2]`	|	Generative QA|	Mathematical reasoning|
 |OpenBookQA-es	|`openbookqa_es_p[0-2]`	|	Multiple-choice QA|	Language-specific & world knowledge|
-|PAWS-es|	`paws_es_p[0-2]`	|	Text cassification|	Paraphrase detection|
+|PAWS-es|	`paws_es_p[0-2]`	|	Text classification|	Paraphrase detection|
 |VeritasQA-es Generation	|`veritasqa_es_gen_p[0-2]`	|	Generative QA|	Truthfulness|
 |VeritasQA-es Multiple-choice	|`veritasqa_es_mc1_p[0-2]`	|	Multiple-choice QA	|Truthfulness|
 |VeritasQA-es Multiple-choice	|`veritasqa_es_mc2_p[0-2]`	|		Multiple-choice QA|	Truthfulness|
-|XNLI	| `xnli_es_p[0-2]`	|	Text cassification	| Entailment|
+|XNLI	| `xnli_es_p[0-2]`	|	Text classification	| Entailment|
 |XQuAD	| `xquad_es_p[0-2]`|		Generative QA	|Reading comprehension|
 |xStoryCloze	|`xstorycloze_es_p[0-2]`	|	Multiple-choice QA|	Commonsense reasoning|
 |Cocoteros|	`cocoteros_es_p[0-2]`	|		Text generation | 	Commonsense reasoning|
@@ -122,7 +123,7 @@ HPLT-e covers different task categories in all languages: entailment, causal rea
 |	OpenBookQA-gl	|`openbookqa_gl_p[0-2]`	|	Multiple-choice QA |	Language-specific & world knowledge|
 |	Parafrases-gl	|`parafrases_gl_p[0-2]`	|	Text classification	|Paraphrase detection|
 |	PAWS-gl|	`paws_gl_p[0-2]`	|Text classification|	Paraphrase detection|
-|	FLORES	|`flores_en-glg_p[0-2]`	|	Sequence-to-sequence generation|	Machine translation|
+|	FLORES	|`flores_en-gl_p[0-2]`	|	Sequence-to-sequence generation|	Machine translation|
 |	VeritasQA-gl Generation	|`veritasqa_gl_gen_p[0-2]`	|	Generative QA|	Truthfulness|
 |	VeritasQA-gl Multiple-choice	|`veritasqa_gl_mc1_p[0-2]`	|	Multiple-choice QA |	Truthfulness|
 |	VeritasQA-gl Multiple-choice	|`veritasqa_gl_mc2_p[0-2]`	|	Multiple-choice QA |	Truthfulness|
@@ -144,13 +145,13 @@ HPLT-e covers different task categories in all languages: entailment, causal rea
 |:---|:---|:---|:---|
 |	Belebele |	`eusbelebele_p[0-2]`	|	 	Multiple-choice QA	|Reading comprehension|
 |	EusExams	|`eus_exams_eu_p[0-2]`	|		Multiple-choice QA	|Language-specific & world knowledge|
-|	EusProfficiency	|`eus_proficiency_p[0-2]`	|	 Multiple-choice QA	|Language-specific & world knowledge|
+|	EusProficiency	|`eus_proficiency_p[0-2]`	|	 Multiple-choice QA	|Language-specific & world knowledge|
 |	EusReading|	`eus_reading_p[0-2]`	|	 Multiple-choice QA|	Reading comprehension|
 |	EusTrivia	|`eus_trivia_p[0-2]`	|	 Multiple-choice QA|	Language-specific & world knowledge|
 |	MGSM-eu	|`mgsm_direct_eu_p[0-2]`	|		Generative QA	|Mathematical reasoning|
 |	PIQA-eu	|`piqa_eu_p[0-2]`	|	Multiple-choice QA|	Commonsense reasoning|
 |	WNLI	|`wnli_eu_p[0-2]`	|	Text classification|	Entailment|
-|	XCOPA	|`xcopa_eu_p[0-2]`	|	Text cassification	|Commonsense reasoning|
+|	XCOPA	|`xcopa_eu_p[0-2]`	|	Text classification	|Commonsense reasoning|
 |	XNLI	|`xnli_eu_native_p[0-2]`	|	Text classification|	Entailment|
 |	xStoryCloze|	`xstorycloze_eu_p[0-2]`	|		Multiple-choice QA|	Commonsense reasoning|
 |	PAWS-eu|	`paws_eu_p[0-2]`	|Text classification|	Paraphrase detection|
@@ -167,24 +168,27 @@ HPLT-e covers different task categories in all languages: entailment, causal rea
 * Benchmark: NorEval
 * Paper: [aclanthology.org/2025.findings-acl.181](https://aclanthology.org/2025.findings-acl.181/)
 * Homepage: [github.com/ltgoslo/noreval](https://github.com/ltgoslo/noreval/tree/main)
+* Release used in HPLT-e: [v1.0](https://github.com/ltgoslo/noreval/releases/tag/v1.0)
 * Language code: `nor_Latn` (Bokmål and Nynorsk)
 * Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/noreval](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/noreval)
 * multi-prompt implementation: N/A
 
 
-|Name  |LM Evaluation Harness (Bokmål) | LM Evaluation Harness (Nynorsk)  |Task type  | Task category |
-|:---|:---|:---|:---|:---|
-|[NoReC Sentence](https://huggingface.co/datasets/ltg/norec_sentence) |```norec_sentence_p[0-4]```  | ❌ |Text classification| Sentiment analysis |
-|[NoReC Document](https://huggingface.co/datasets/ltg/norec_document) |```norec_document_p[0-4]```  | ❌ |Text classification| Sentiment analysis |
-|[NorIdiom](https://huggingface.co/datasets/Sprakbanken/Norwegian_idioms) |```noridiom_nob_p[0-4]```  | ```noridiom_nno_p[0-4]```  | Sentence completion| Language knowledge  |
-|[Belebele](https://huggingface.co/datasets/facebook/belebele) |```norbelebele_p[0-4]```| ❌|Multiple-choice QA| Reading comprehension |
-|[NRK-Quiz-QA](https://huggingface.co/datasets/ltg/nrk_quiz_qa) |```nrk_quiz_qa_nob_p[0-4]```| ```nrk_quiz_qa_nno_p[0-4]```| Multiple-choice QA| Language-specific & world knowledge |
-|[NorOpenBookQA](https://huggingface.co/datasets/ltg/noropenbookqa) |```noropenbookqa_nob_p[0-4]```| ```noropenbookqa_nno_p[0-4]``` |Multiple-choice QA| Language-specific & world knowledge |
-|[NorCommonsenseQA](https://huggingface.co/datasets/ltg/norcommonsenseqa) |```norcommonsenseqa_nob_p[0-4]```| ```norcommonsenseqa_nno_p[0-4]``` |Multiple-choice QA|Commonsense reasoning  |
-|[NorTruthfulQA Multiple choice](https://huggingface.co/datasets/ltg/nortruthfulqa_mc) |```nortruthfulqa_mc_nob_p[0-4]```| ```nortruthfulqa_mc_nno_p[0-4]``` |Multiple-choice QA |Truthfulness |
-|[NorQuAD](https://huggingface.co/datasets/ltg/norquad) |```norquad_p[0-4]```| ❌  | Generative QA |Reading comprehension |
-|[NorTruthfulQA Generation](https://huggingface.co/datasets/ltg/nortruthfulqa_gen) |```nortruthfulqa_gen_nob_p[0-4]```| ```nortruthfulqa_gen_nno_p[0-4]``` |  Generative QA|Truthfulness |
-|[Tatoeba (English → Bokmål/Nynorsk)](https://huggingface.co/datasets/Helsinki-NLP/tatoeba_mt) | ```tatoeba_eng_nob_p[0-4]```| ```tatoeba_eng_nno_p[0-4]```  |Sequence-to-sequence generation|Machine translation |
+Task names ending in `_nob` are for Bokmål and in `_nno` for Nynorsk.
+
+|Name  |LM Evaluation Harness   |Task type  | Task category |
+|:---|:---|:---|:---|
+|[NoReC Sentence](https://huggingface.co/datasets/ltg/norec_sentence) | `norec_sentence_p[0-4]` | Text classification | Sentiment analysis |
+|[NoReC Document](https://huggingface.co/datasets/ltg/norec_document) | `norec_document_p[0-4]` | Text classification | Sentiment analysis |
+|[NorIdiom](https://huggingface.co/datasets/Sprakbanken/Norwegian_idioms) | `noridiom_nob_p[0-4]`, `noridiom_nno_p[0-4]` | Sentence completion | Language knowledge |
+|[Belebele](https://huggingface.co/datasets/facebook/belebele) | `norbelebele_p[0-4]` | Multiple-choice QA | Reading comprehension |
+|[NRK-Quiz-QA](https://huggingface.co/datasets/ltg/nrk_quiz_qa) | `nrk_quiz_qa_nob_p[0-4]`, `nrk_quiz_qa_nno_p[0-4]` | Multiple-choice QA | Language-specific & world knowledge |
+|[NorOpenBookQA](https://huggingface.co/datasets/ltg/noropenbookqa) | `noropenbookqa_nob_p[0-4]`, `noropenbookqa_nno_p[0-4]` | Multiple-choice QA | Language-specific & world knowledge |
+|[NorCommonsenseQA](https://huggingface.co/datasets/ltg/norcommonsenseqa) | `norcommonsenseqa_nob_p[0-4]`, `norcommonsenseqa_nno_p[0-4]` | Multiple-choice QA | Commonsense reasoning |
+|[NorTruthfulQA Multiple choice](https://huggingface.co/datasets/ltg/nortruthfulqa_mc) | `nortruthfulqa_mc_nob_p[0-4]`, `nortruthfulqa_mc_nno_p[0-4]` | Multiple-choice QA | Truthfulness |
+|[NorQuAD](https://huggingface.co/datasets/ltg/norquad) | `norquad_p[0-4]` | Generative QA | Reading comprehension |
+|[NorTruthfulQA Generation](https://huggingface.co/datasets/ltg/nortruthfulqa_gen) | `nortruthfulqa_gen_nob_p[0-4]`, `nortruthfulqa_gen_nno_p[0-4]` | Generative QA | Truthfulness |
+|[Tatoeba (English → Bokmål/Nynorsk)](https://huggingface.co/datasets/Helsinki-NLP/tatoeba_mt) | `tatoeba_eng_nob_p[0-3]`, `tatoeba_eng_nno_p[0-3]` | Sequence-to-sequence generation | Machine translation |
 
 </details>
 
@@ -193,8 +197,8 @@ HPLT-e covers different task categories in all languages: entailment, causal rea
 <summary><b>Ukrainian</b></summary>
 
 * Benchmark: UkrainianBench
-* Paper: [arxiv.org/abs/2511.01066](https://arxiv.org/abs/2511.01066)
-* Homepage: [github.com/hplt-project/](https://github.com/hplt-project/)
+* Paper: [aclanthology.org/2026.lrec-1.110](https://aclanthology.org/2026.lrec-1.110/)
+* Homepage: [github.com/hplt-project/hplt-e](https://github.com/hplt-project/hplt-e)
 * Language code: `ukr_Cyrl`
 * Original LM Evaluation Harness implementation: N/A 
 * HPLT-e multi-prompt implementation: [ukr_Cyrl](./ukr_Cyrl/)
@@ -216,7 +220,7 @@ HPLT-e covers different task categories in all languages: entailment, causal rea
 <summary><b>Czech</b></summary>
 
 * Benchmark: BenCzechMark
-* Paper: [direct.mit.edu/tacl/article/doi/10.1162/TACL.a.32/132962](https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.32/132962/BenCzechMark-A-Czech-Centric-Multitask-and)
+* Paper: [aclanthology.org/2025.tacl-1.50](https://aclanthology.org/2025.tacl-1.50/)
 * Homepage: [github.com/DCGM/lm-evaluation-harness](https://github.com/DCGM/lm-evaluation-harness)
 * Language code: `ces_Latn`
 * Original LM Evaluation Harness implementation: [github.com/DCGM/lm-evaluation-harness/tree/main/lm_eval/tasks/benczechmark](https://github.com/DCGM/lm-evaluation-harness/tree/main/lm_eval/tasks/benczechmark)
@@ -227,7 +231,7 @@ HPLT-e covers different task categories in all languages: entailment, causal rea
 |Name  |LM Evaluation Harness   |Task type  | Task category |
 |:---|:---|:---|:---|
  |	Belebele	|`cesbelebele_p[0-4]`	 |	 Multiple-choice QA  | 	Reading comprehension |
- |	Global-MMLU|	`global_mmlu_czech_p[0-4]`	 |		Multiple-choice QA  | 	Language-specific & world knowledge |
+ |	Global-MMLU|	`global_mmlu_czech_p[0-2]`	 |		Multiple-choice QA  | 	Language-specific & world knowledge |
  |	SQAD3.2	|`cs_sqad32_p[0-4]`	 |	Generative QA	| Reading comprehension| 
  |	Umimeto 	|`umimeto_p[0-4]`	 |	Multiple-choice QA  | 	Language-specific & world knowledge| 
  |	CERMAT OPEN	|`cermat_czech_open_p[0-4]`	 |	Generative QA |	Language knowledge|
@@ -236,7 +240,7 @@ HPLT-e covers different task categories in all languages: entailment, causal rea
  |	Klokan QA |	`klokan_qa_p[0-4]`	 |	Multiple-choice QA  | 	Mathematical reasoning|
  |	CERMAT (Math) MC |	`cermat_czmath_mc_p[0-4]`	 |	Multiple-choice QA  | 	Mathematical reasoning|
   |	CERMAT (Math) OPEN|	`cermat_czmath_open_p[0-4]`	 |	Generative QA  | 	Mathematical reasoning|
- |	CTKFacts 	| `ctkfacts_nli_p[0-4]`	 |		Text classification | 	Entailment|
+ |	CTKFacts 	| `ctkfacts_nli_p[0-7]`	 |		Text classification | 	Entailment|
  |	Subjectivity 	|`ces_subjectivity_p[0-4]`	 |	Text classification | 	Sentiment analysis|
  |	CzechSentiment - Mall	|`sentiment_mall_p[0-4]`	 |		Text classification | 	Sentiment analysis|
  |	CzechSentiment - CSFD |	`sentiment_csfd_p[0-4]`	 |		Text classification | 	Sentiment analysis|
@@ -248,7 +252,7 @@ HPLT-e covers different task categories in all languages: entailment, causal rea
 <summary><b>French</b></summary>
 
 * Benchmark: FrenchBench
-* Paper: [arxiv.org/abs/2402.00786](https://arxiv.org/abs/2402.00786)
+* Paper: [openreview.net/forum?id=uA19Xo1o31](https://openreview.net/forum?id=uA19Xo1o31) (TMLR 2025)
 * Homepage: [huggingface.co/croissantllm](https://huggingface.co/croissantllm)
 * Language code: `fra_Latn`
 * Original LM Evaluation Harness implementation: [github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/french_bench](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/french_bench)
@@ -257,8 +261,8 @@ HPLT-e covers different task categories in all languages: entailment, causal rea
 |Name  |LM Evaluation Harness   |Task type  | Task category |
 |:---|:---|:---|:---|
 |	FQuaD	|`fquad_p[0-2]`	|					Generative QA|	Reading comprehension|
-|	French Language Test: Grammar	|`french_bench_grammar_p[0-2]`	|					Multiple-choice QA|	Language knowledge|
-|	French Language Test: Vocabulary|	`french_bench_vocabulary_p[0-2]`	|					Multiple-choice QA|	Language knowledge|
+|	French Language Test: Grammar	|`french_bench_grammar_p[0-2]`	|					Multiple-choice QA|	Language-specific & world knowledge|
+|	French Language Test: Vocabulary|	`french_bench_vocabulary_p[0-2]`	|					Multiple-choice QA|	Language-specific & world knowledge|
 |	French Language Test: Reading	|`french_bench_reading_p[0-2]`	|					Multiple-choice QA|	Reading comprehension|
 |	Belebele	|`frabelebele_p[0-2]`	|					Multiple-choice QA|	Reading comprehension|
 |	French NLI|	`topic_based_nli_p[0-2]`	|					Text classification|	Entailment|
@@ -272,15 +276,15 @@ HPLT-e covers different task categories in all languages: entailment, causal rea
 <summary><b>Finnish</b></summary>
 
 * Benchmark: FinBench v2
-* Paper: TBA
-* Homepage: N/A
+* Paper: [arxiv.org/abs/2512.13330](https://arxiv.org/abs/2512.13330)
+* Homepage: [github.com/LumiOpen/lm-evaluation-harness](https://github.com/LumiOpen/lm-evaluation-harness)
 * Language code: `fin_Latn`
 * Original LM Evaluation Harness implementation: [github.com/LumiOpen/lm-evaluation-harness/tree/finbench_v2/lm_eval/tasks/finbench_v2](https://github.com/LumiOpen/lm-evaluation-harness/tree/finbench_v2/lm_eval/tasks/finbench_v2)
 * HPLT-e multi-prompt implementation: N/A
 
 | Name| Formulation | LM Evaluation Harness| Task type | Task category| FinBench v2 dataset version |
 |:--------------------|-------------|:----|:----------------|:----|:------------------|
-| [ARC-challenge-fi](https://huggingface.co/datasets/silogen/ARC-C-fi-HT) |Multiple-choice | `arc_challenge_fi_mcf_fbv2_p[0-4]` | Multiple-choice QA | Language-scpecific & world knowledge | [finbenchv2-arc-c-fi-ht](https://huggingface.co/datasets/TurkuNLP/finbenchv2-arc-c-fi-ht)  | 
+| [ARC-challenge-fi](https://huggingface.co/datasets/silogen/ARC-C-fi-HT) |Multiple-choice | `arc_challenge_fi_mcf_fbv2_p[0-4]` | Multiple-choice QA | Language-specific & world knowledge | [finbenchv2-arc-c-fi-ht](https://huggingface.co/datasets/TurkuNLP/finbenchv2-arc-c-fi-ht)  | 
 |     |Close| `arc_challenge_fi_cf_fbv2_p[0-4]`  ||  |      |    |
 | [Belebele](https://huggingface.co/datasets/facebook/belebele)   |Multiple-choice | `belebele_fin_Latn_mcf_fbv2_p[0-4]`| Multiple-choice QA | Reading comprehension | [finbenchv2-belebele-fi-og](https://huggingface.co/datasets/TurkuNLP/finbenchv2-belebele-fi-og)  |
 |     |Close| `belebele_fin_Latn_cf_fbv2_p[0-4]` ||  |      |    |
@@ -292,7 +296,7 @@ HPLT-e covers different task categories in all languages: entailment, causal rea
 |     |Close| `finbench_emotions_cf_fbv2_p[0-4]` ||  |      |    |
 |     |Multiple-choice | `finbench_empirical_judgments_mcf_fbv2_p[0-4]` | Text classification | Causal reasoning      | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
 |     |Close| `finbench_empirical_judgments_cf_fbv2_p[0-4]` ||  |      |    |
-|     |Multiple-choice | `finbench_general_knowledge_mcf_fbv2_p[0-4]` | Multiple choice QA | Language-scpecific & world knowledge | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
+|     |Multiple-choice | `finbench_general_knowledge_mcf_fbv2_p[0-4]` | Multiple choice QA | Language-specific & world knowledge | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
 |     |Close| `finbench_general_knowledge_cf_fbv2_p[0-4]` ||  |      |    |
 |     |Multiple-choice | `finbench_hhh_alignment_mcf_fbv2_p[0-4]`     | Multiple choice QA | Alignment and safety  | [FIN-bench](https://huggingface.co/datasets/TurkuNLP/FIN-bench)  |
 |     |Close| `finbench_hhh_alignment_cf_fbv2_p[0-4]`     ||  |      |    |
@@ -375,12 +379,12 @@ Based on our large-scale evaluations, we find that the set of selected tasks for
 
 |Language |Name  |LM Evaluation Harness   |Task type  | Task category |
 |:---|:---|:---|:---|:---|
-|Spanish|COPA|	`copa_es_p[0-2]`		|Text cassification	|Commonsense reasoning|
+|Spanish|COPA|	`copa_es_p[0-2]`		|Text classification	|Commonsense reasoning|
 |Spanish|OpenBookQA-es	|`openbookqa_es_p[0-2]`	|	Multiple-choice QA|	Language-specific & world knowledge|
-|Spanish|XNLI	| `xnli_es_p[0-2]`	|	Text cassification	| Entailment|
+|Spanish|XNLI	| `xnli_es_p[0-2]`	|	Text classification	| Entailment|
 |Spanish|xStoryCloze	|`xstorycloze_es_p[0-2]`	|	Multiple-choice QA|	Commonsense reasoning|
 |Catalan|	ARC-ca	| `arc_ca_easy_p[0-2]`		|	Multiple-choice QA |	Language-specific & world knowledge |
-|Catalan|	COPA-ca	|`copa_ca_p[0-2]`	|	Text cassification	|Commonsense reasoning|
+|Catalan|	COPA-ca	|`copa_ca_p[0-2]`	|	Text classification	|Commonsense reasoning|
 |Catalan|	CoQCat	|`coqcat_p[0-2]`	|	 Generative QA	|Reading comprehension|
 |Catalan|	PIQA-ca|	`piqa_ca_p[0-2]`	|		Multiple-choice QA |	Commonsense reasoning|
 |Catalan|	SIQA-ca	|`siqa_ca_p[0-2]`	|		Multiple-choice QA |	Commonsense reasoning|
@@ -389,13 +393,13 @@ Based on our large-scale evaluations, we find that the set of selected tasks for
 |Ukrainian| ZNO | `zno_p[0-2]` |  Multiple-choice QA | Language-specific & world knowledge |
 |Ukrainian| UA-SQuAD | `ua_squad_p[0-2]` |  Generative QA | Reading comprehension |
 |Czech|	SQAD3.2	|`cs_sqad32_p[0-4]`	 |	Generative QA	| Reading comprehension| 
-|Finnish| ARC-challenge-fi | `arc_challenge_fi_cf_fbv2_p[0-4]` | Multiple-choice QA | Language-scpecific & world knowledge |
+|Finnish| ARC-challenge-fi | `arc_challenge_fi_cf_fbv2_p[0-4]` | Multiple-choice QA | Language-specific & world knowledge |
 |Finnish| Belebele  |`belebele_fin_Latn_cf_fbv2_p[0-4]`| Multiple-choice QA | Reading comprehension |
 |Finnish| GoldenSwag | `goldenswag_ht_fi_cf_fbv2_p[0-4]`  | Sentence completion  | Commonsense reasoning |
-|Finnish| FIN-Bench Analogies    | `finbench_analogies_cf_fbv2_p[0-4]`   | Multiple choice QA | Language-scpecific & world knowledge  | 
-|Finnish|FIN-bench General Knowledge | `finbench_general_knowledge_cf_fbv2_p[0-4]` | Multiple choice QA | Language-scpecific & world knowledge |
+|Finnish| FIN-Bench Analogies    | `finbench_analogies_cf_fbv2_p[0-4]`   | Multiple choice QA | Language-specific & world knowledge  | 
+|Finnish|FIN-bench General Knowledge | `finbench_general_knowledge_cf_fbv2_p[0-4]` | Multiple choice QA | Language-specific & world knowledge |
 |French|	FQuaD	|`fquad_p[0-2]`	|					Generative QA|	Reading comprehension|
-|French|	French Language Test: Vocabulary|	`french_bench_vocabulary_p[0-2]`	|					Multiple-choice QA|	Language knowledge|
+|French|	French Language Test: Vocabulary|	`french_bench_vocabulary_p[0-2]`	|					Multiple-choice QA|	Language-specific & world knowledge|
 |Norwegian|NorIdiom Nynorsk |```noridiom_nno_p[0-4]```  | Sentence completion| Language knowledge  |
 |Norwegian|NRK-Quiz-QA Bokmål |```nrk_quiz_qa_nob_p[0-4]```| Multiple-choice QA| Language-specific & world knowledge |
 |Norwegian|NRK-Quiz-QA Nynorsk | ```nrk_quiz_qa_nno_p[0-4]```| Multiple-choice QA| Language-specific & world knowledge |
@@ -407,7 +411,7 @@ Based on our large-scale evaluations, we find that the set of selected tasks for
 
 ## ⚙️ Installation and usage
 
-1. Install LM Evaluation Harness as described [here](https://github.com/EleutherAI/lm-evaluation-harness?tab=readme-ov-file#install).
+1. Install LM Evaluation Harness as described [here](https://github.com/EleutherAI/lm-evaluation-harness?tab=readme-ov-file#install). The task configurations are tested with LM Evaluation Harness v0.4.13 and `datasets` v5.1; all datasets are pinned to the Hugging Face Hub revisions used for the HPLT-e evaluations.
 
 ```bash
 git clone --depth 1 https://github.com/EleutherAI/lm-evaluation-harness
@@ -439,8 +443,8 @@ lm_eval \
   --model hf \
   --model_args pretrained=my_hf_model_name \
   --tasks global_mmlu_ukrainian_p0 \
-  --include_path ./
-  --output results/ukrainian/ \
+  --include_path ./ \
+  --output_path results/ukrainian/ \
   --log_samples \
   --show_config \
   --write_out \
@@ -448,11 +452,6 @@ lm_eval \
   --num_fewshot 0
 ```
 
-An example of a slurm script for [the LUMI supercomputer](https://www.lumi-supercomputer.eu) is provided [here](scripts/run.sh).
-
-```bash
-sbatch scripts/run.sh <model_name> <task_name>
-```
 
 #### Task groups
 
@@ -464,7 +463,7 @@ An alternative approach to run all tasks of interest at once involves creating a
 <details>
 <summary><b> 🗂️ How to select tasks?</b></summary>
 
-Please find the example on how to select tasks and vizualize the results below.
+Please find the example on how to select tasks and visualize the results below.
 
 ```python
 from datasets import load_dataset
@@ -510,21 +509,55 @@ We provide detailed codebase on task selection [here](utils.py), vizualization c
 
 ## 🧾 Citation
 
-Our [pre-print](https://arxiv.org/abs/2511.01066) is available on arXiv.
+Our paper is available in the [ACL Anthology](https://aclanthology.org/2026.lrec-1.110/).
 
 ```
-@inproceedings{oepen-etal-2026-very,
-  title = {HPLT 3.0: Very Large-Scale Multilingual Resources for LLMs and MT. Mono- and Bi-lingual Data, Multilingual Evaluation, and Pre-Trained Models},
-  author = {Oepen, Stephan and Arefyev, Nikolay and Aulamo, Mikko and Bañón, Marta and Buljan, Maja and Burchell, Laurie V. and Charpentier, Lucas Georges Gabriel and Chen, Pinzhen and Fedorova, Mariia and Gibert, Ona de and Haddow, Barry and Hajič, Jan and Helcl, Jindrich and Kutuzov, Andrey and Laippala, Veronika and Li, Zihao and Malik, Bhavitvya and Mikhailov, Vladislav and Myntti, Amanda and O'Brien, Dayyán and Polakova, Lucie and Ramírez-Sánchez, Gema and Siewert, Janine and Stepachev, Pavel and Tiedemann, Joerg and Vahtola, Teemu and Varis, Dusan and Vitiugin, Fedor and Zaragoza, Jaume},
-  booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
-  month = {May},
-  year = {2026},
-  pages = {1409--1434},
-  address = {Palma, Mallorca, Spain},
-  publisher = {European Language Resources Association (ELRA)},
-  editor = {Piperidis, Stelios and Bel, Núria and van den Heuvel, Henk and Ide, Nancy and Krek, Simon and Toral, Antonio},
-  doi = {10.63317/25xbdofco9od},
-  abstract = {We present an ongoing initiative to provide open, very large, high-quality, and richly annotated textual datasets for almost 200 languages. At 30 trillion tokens, this is likely the largest generally available multilingual collection of LLM pre-training data. These datasets are derived from web crawls from different sources and accompanied with a complete, open-source pipeline for document selection from web archives, text extraction from HTML, language identification for noisy texts, exact and near-deduplication, annotation with, among others, register labels, text quality estimates, and personally identifiable information; and final selection and filtering. We report on data quality probes through contrastive and analytical statistics, through manual inspection of samples for some 20 languages, and through end-to-end evaluation of various language model architectures trained on this data. For multilingual LLM evaluation, we provide a comprehensive collection of benchmarks for nine European languages, with special emphasis on natively created tasks, mechanisms to mitigate prompt sensitivity, and refined normalization and aggregation of scores. Additionally, we train and evaluate a family of 57 monolingual encoder–decoder models, as well as about 30 “smallish” monolingual GPT-like reference models. Besides the monolingual data and models, we also present a very large collection of parallel texts automatically mined from this data, together with a novel parallel corpus synthesized via machine translation.}
+@inproceedings{oepen-etal-2026-hplt,
+    title = "{HPLT} 3.0: Very Large-Scale Multilingual Resources for {LLM}s and {MT}. Mono- and Bi-lingual Data, Multilingual Evaluation, and Pre-Trained Models",
+    author = "Oepen, Stephan  and
+      Arefyev, Nikolay  and
+      Aulamo, Mikko  and
+      Ba{\~n}{\'o}n, Marta  and
+      Buljan, Maja  and
+      Burchell, Laurie V.  and
+      Charpentier, Lucas Georges Gabriel  and
+      Chen, Pinzhen  and
+      Fedorova, Mariia  and
+      de Gibert, Ona  and
+      Haddow, Barry  and
+      Haji{\v{c}}, Jan  and
+      Helcl, Jindrich  and
+      Kutuzov, Andrey  and
+      Laippala, Veronika  and
+      Li, Zihao  and
+      Malik, Bhavitvya  and
+      Mikhailov, Vladislav  and
+      Myntti, Amanda  and
+      O{'}Brien, Dayy{\'a}n  and
+      Polakova, Lucie  and
+      Ram{\'i}rez-S{\'a}nchez, Gema  and
+      Siewert, Janine  and
+      Stepachev, Pavel  and
+      Tiedemann, Joerg  and
+      Vahtola, Teemu  and
+      Varis, Dusan  and
+      Vitiugin, Fedor  and
+      Zaragoza, Jaume",
+    editor = "Piperidis, Stelios  and
+      Bel, N{\'u}ria  and
+      van den Heuvel, Henk  and
+      Ide, Nancy  and
+      Krek, Simon  and
+      Toral, Antonio",
+    booktitle = "Proceedings of the Fifteenth Language Resources and Evaluation Conference",
+    month = may,
+    year = "2026",
+    address = "Palma de Mallorca, Spain",
+    publisher = "ELRA Language Resource Association",
+    url = "https://aclanthology.org/2026.lrec-1.110/",
+    doi = "10.63317/25xbdofco9od",
+    pages = "1409--1434",
+    abstract = "We present an ongoing initiative to provide open, very large, high-quality, and richly annotated textual datasets for almost 200 languages. At 30 trillion tokens, this is likely the largest generally available multilingual collection of LLM pre-training data. These datasets are derived from web crawls from different sources and accompanied with a complete, open-source pipeline for document selection from web archives, text extraction from HTML, language identification for noisy texts, exact and near-deduplication, annotation with, among others, register labels, text quality estimates, and personally identifiable information; and final selection and filtering. We report on data quality probes through contrastive and analytical statistics, through manual inspection of samples for some 20 languages, and through end-to-end evaluation of various language model architectures trained on this data. For multilingual LLM evaluation, we provide a comprehensive collection of benchmarks for nine European languages, with special emphasis on natively created tasks, mechanisms to mitigate prompt sensitivity, and refined normalization and aggregation of scores. Additionally, we train and evaluate a family of 57 monolingual encoder{--}decoder models, as well as about 30 ``smallish'' monolingual GPT-like reference models. Besides the monolingual data and models, we also present a very large collection of parallel texts automatically mined from this data, together with a novel parallel corpus synthesized via machine translation."
 }
 ```
 

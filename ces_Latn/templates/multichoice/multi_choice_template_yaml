@@ -1,3 +1,0 @@
-include: multi_class_template_yaml
-doc_to_target: gold
-doc_to_choice: choices

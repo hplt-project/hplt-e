@@ -1,4 +1,6 @@
 dataset_path: davidadamczyk/czechbench_subjectivity
+dataset_kwargs:
+  revision: 9e5761c390a68482e292491c6656b47ad7c0e738
 tag: ces_subjectivity
 output_type: multiple_choice
 fewshot_split: train
@@ -9,7 +11,7 @@ metric_list:
     aggregation: mean
     higher_is_better: true
   - metric: f1
-    aggregation: !function ../utils.aggregate_macro_f1_score
+    aggregation: !function utils.aggregate_macro_f1_score
     higher_is_better: true
 metadata:
   version: 1.0

@@ -1,4 +1,6 @@
 dataset_path: manu/topic_based_nli_test
+dataset_kwargs:
+  revision: bedd5923d341a06bc48f65f3801ba2a76883f8fe
 output_type: multiple_choice
 validation_split: valid
 test_split: test

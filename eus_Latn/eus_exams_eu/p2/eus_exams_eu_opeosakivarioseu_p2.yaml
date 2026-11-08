@@ -1,0 +1,3 @@
+include: ../_exams_p2_yaml
+task: eus_exams_eu_opeosakivarioseu_p2
+dataset_name: eu_opeosakivarioseu

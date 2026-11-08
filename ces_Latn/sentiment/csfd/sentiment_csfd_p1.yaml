@@ -2,5 +2,7 @@ task: sentiment_csfd_p1
 tag: sentiment_csfd
 include: ../_sentiment_yaml
 dataset_path: CZLC/csfd_sentiment_balanced
+dataset_kwargs:
+  revision: 9f551f59e499f5ac400b23358ce78965da14570a
 description: "Rozhodni jestli je sentiment následujícího textu negativní, neutrální, nebo pozitivní. Odpověz negativní, neutrální, nebo pozitivní.\n"
 doc_to_text: "{{query}} Rozhodnutí je:"

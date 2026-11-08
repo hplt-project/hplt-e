@@ -1,4 +1,0 @@
-include:
- - multi_class_template_yaml
-
-fewshot_split: train

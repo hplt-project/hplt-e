@@ -1,8 +1,7 @@
-tag: wmt24pp_en-uk
 dataset_path: google/wmt24pp
 dataset_name: en-uk_UA
 dataset_kwargs:
-  trust_remote_code: true
+  revision: 388a8a9cf4ddddad75d9e0549e840ea1f3d36f29
 output_type: generate_until
 training_split: null
 validation_split: null

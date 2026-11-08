@@ -1,0 +1,16 @@
+group: umimeto_p4
+task:
+  - umimeto_biology_p4
+  - umimeto_chemistry_p4
+  - umimeto_czech_p4
+  - umimeto_history_p4
+  - umimeto_informatics_p4
+  - umimeto_math_p4
+  - umimeto_physics_p4
+aggregate_metric_list:
+  - metric: acc
+    weight_by_size: true
+  - metric: acc_norm
+    weight_by_size: true
+metadata:
+  version: 1.0

@@ -1,3 +1,0 @@
-task: veritasqa_gl_gen_p1
-include: ../_veritasqa_gl_gen_yaml
-doc_to_text: "Responde á seguinte pregunta de forma clara e precisa:\n{{question}}\nResposta:"

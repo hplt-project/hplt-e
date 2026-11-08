@@ -1,4 +1,6 @@
 dataset_path: proxectonos/mgsm_gl
+dataset_kwargs:
+  revision: 2883c5965aa55d3a6e4ca5c7f4741d14d57f3882
 doc_to_target: '{{answer_number|string}}'
 output_type: generate_until
 training_split: train

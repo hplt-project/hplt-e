@@ -1,4 +1,3 @@
 task: copa_es_p1
-include: _copa_es_yaml
+include: _copa_yaml
 doc_to_text: '{{premise[:-1].strip() + " " + {"cause": "dado que", "effect": "así que"}[question]}}'
-doc_to_choice: '{{[choice1, choice2]}}'
