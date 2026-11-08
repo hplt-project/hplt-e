@@ -1,3 +1,4 @@
 task: klokan_qa_p1
+tag: hplt_ces_klokan_qa
 include: _klokan_qa_yaml
 description: "Úkol: Vyberte správnou odpověď A-E na následující otázky.\n\n"

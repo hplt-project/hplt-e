@@ -1,7 +1,6 @@
 dataset_path: davidadamczyk/czechbench_subjectivity
 dataset_kwargs:
   revision: 9e5761c390a68482e292491c6656b47ad7c0e738
-tag: ces_subjectivity
 output_type: multiple_choice
 fewshot_split: train
 test_split: test

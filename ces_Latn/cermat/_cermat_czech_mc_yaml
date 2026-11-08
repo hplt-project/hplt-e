@@ -1,7 +1,6 @@
 dataset_path: CZLC/cermat_czech_mc
 dataset_kwargs:
   revision: 0e538d316eb5cb4d65f230baa3450e9e5c5fe440
-tag: cermat_czech_mc
 test_split: test
 fewshot_split: test
 fewshot_config:

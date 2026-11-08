@@ -1,3 +1,4 @@
 task: wnli_eu_p2
+tag: hplt_eus_wnli
 include: _wnli_yaml
 doc_to_text: "{{sentence1}}\nGaldera: {{sentence2}}.\nErantzuna:"

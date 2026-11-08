@@ -1,4 +1,3 @@
-tag: cs_sqad32
 dataset_path: CZLC/sqad_3.2_filtered
 dataset_kwargs:
   revision: 375a8cd155f0207ef86192a9256a96a3b0f68db4

@@ -1,4 +1,5 @@
 task: french_bench_vocabulary_p2
+tag: hplt_fra_vocabulary
 include: _language_test_yaml
 validation_split: Vocabulary
 fewshot_split: Vocabulary

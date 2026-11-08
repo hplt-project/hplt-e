@@ -1,4 +1,5 @@
 task: eus_trivia_p2
+tag: hplt_eus_trivia
 include: _trivia_yaml
 doc_to_text: !function utils.p2
 doc_to_choice: !function utils.doc_to_choice_p2

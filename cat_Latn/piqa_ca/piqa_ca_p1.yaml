@@ -1,4 +1,5 @@
 task: piqa_ca_p1
+tag: hplt_cat_piqa
 include: _piqa_yaml
 doc_to_text: "{{goal}}\nA. {{sol1}}\nB. {{sol2}}\nResposta:"
 doc_to_choice: ["A", "B"]

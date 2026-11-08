@@ -1,4 +1,5 @@
 task: arc_ca_easy_p2
+tag: hplt_cat_arc_easy
 include: _arc_yaml
 dataset_name: ARC-Easy
 doc_to_text: !function utils.p2

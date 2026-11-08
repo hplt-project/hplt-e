@@ -1,5 +1,4 @@
 dataset_name: history
-tag: umimeto_history
 task: umimeto_history_p4
 include: ../_umimeto_yaml
 description: "Správná řešení úloh z Krajského přeboru v dějepise.\n\n"

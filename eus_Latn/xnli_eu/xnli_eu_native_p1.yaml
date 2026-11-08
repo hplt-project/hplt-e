@@ -1,4 +1,5 @@
 task: xnli_eu_native_p1
+tag: hplt_eus_xnli_native
 include: _xnli_native_yaml
 doc_to_text: "Premisa: {{premise}}\nHipotesia: {{hypothesis}}\n\nAdierazi premisaren eta hipotesiaren arteko erlazioa:"
 doc_to_choice: ["ados", "elkarren artean neutroak", "kontraesanean"]

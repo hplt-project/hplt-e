@@ -1,7 +1,6 @@
 dataset_path: ctu-aic/ctkfacts_nli
 dataset_kwargs:
   revision: 5311a65a9d93556b613e3a5e94d7ff6fad209b2a
-tag: ctkfacts_nli
 output_type: multiple_choice
 fewshot_split: train
 test_split: test

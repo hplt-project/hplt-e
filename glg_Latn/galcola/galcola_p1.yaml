@@ -1,4 +1,5 @@
 task: galcola_p1
+tag: hplt_glg_galcola
 include: _galcola_yaml
 doc_to_text: "{{sentence}}\nPregunta: Ten sentido esta frase?"
 target_delimiter: "\n"

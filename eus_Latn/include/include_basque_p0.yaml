@@ -1,4 +1,5 @@
 task: include_basque_p0
+tag: hplt_eus_include
 include: _include_yaml
 doc_to_text: "{{question.strip()}}\nA. {{option_a}}\nB. {{option_b}}\nC. {{option_c}}\nD. {{option_d}}\nErantzuna:"
 doc_to_choice: ["A", "B", "C", "D"]

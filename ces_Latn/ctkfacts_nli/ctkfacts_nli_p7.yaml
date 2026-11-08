@@ -1,4 +1,5 @@
 task: ctkfacts_nli_p7
+tag: hplt_ces_ctkfacts_nli
 include: _ctkfacts_nli_yaml
 description: "Seš AI pro fact-checking. Urči pravdivost následujúcích tvrzení. Odpověz jestli evidence podporuje/vyvrací tvrzení, nebo jestli chybí informace:\n\n"
 doc_to_choice:

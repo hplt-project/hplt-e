@@ -1,4 +1,5 @@
 task: textdetox_ukr_p0
+tag: hplt_ukr_textdetox
 include: _textdetox_yaml
 doc_to_text: "Чи токсичний цей текст? Текст: {{text}}"
 doc_to_choice: ["Нi", "Так"]

@@ -1,4 +1,5 @@
 task: ctkfacts_nli_p0
+tag: hplt_ces_ctkfacts_nli
 include: _ctkfacts_nli_yaml
 description: "Vyhodnoťte pravdivost následujúcích tvrzení. Odpovězte pravda/nepravda/není jasné:\n\n"
 doc_to_choice:

@@ -1,4 +1,5 @@
 task: cermat_czech_open_p0
+tag: hplt_ces_cermat_czech_open
 include: _cermat_czech_open_yaml
 description: "Jsi expert v Češtine. Předložím ti několik otázek a tvůj úkol bude odpovídat. V případě vícero odpovědí je oddělte pomocí ', '. Konec odpovědi označte znakem '\n\n'\n\n"
 doc_to_text: "{{('Kontext: '+ context+' ') if context else ''}}Dotaz: {{query}}\nOdpověď:"

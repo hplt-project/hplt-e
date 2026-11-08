@@ -1,4 +1,5 @@
 task: cermat_czech_tf_p2
+tag: hplt_ces_cermat_czech_tf
 include: _cermat_czech_tf_yaml
 description: "Ukázkové úlohy ze zkoušky ČJ. Odpovídejte pouze NE/ANO:\n\n"
 doc_to_text: "{{('Ukázka: '+ context+' ') if context else ''}}Zodpovězte: {{query}}\nVybraná odpověď:"

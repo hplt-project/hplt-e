@@ -1,4 +1,5 @@
 task: cermat_czech_tf_p3
+tag: hplt_ces_cermat_czech_tf
 include: _cermat_czech_tf_yaml
 description: "Maturitní zkouška.\n\nInstrukce: Vyberte správnou NE/ANO pro zadanou otázku. \nZadání:\n\n"
 doc_to_text: "{{('Příklad: '+ context+' ') if context else ''}}Dotaz: {{query}}\nVaše odpověď:"

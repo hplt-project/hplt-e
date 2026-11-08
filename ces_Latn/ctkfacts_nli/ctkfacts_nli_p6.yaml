@@ -1,4 +1,5 @@
 task: ctkfacts_nli_p6
+tag: hplt_ces_ctkfacts_nli
 include: _ctkfacts_nli_yaml
 description: "Prozkoumejte pravdivost následujúcích výroků. Odpovězte Ano/ne/možná:\n\n"
 doc_to_choice:

@@ -2,7 +2,6 @@ dataset_path: hynky/klokan-qa
 dataset_name: balanced
 dataset_kwargs:
   revision: c6a88ac7d57a38c2ddd8140c10bb50800be43588
-tag: klokan_qa
 test_split: test
 fewshot_split: test
 fewshot_config:

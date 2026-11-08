@@ -1,7 +1,6 @@
 dataset_path: CZLC/cermat_math_open
 dataset_kwargs:
   revision: 67d0e3dfd2da54caaf7ac5016dc668b8c1bd97ad
-tag: cermat_czmath_open
 include: ../templates/qa/qa_template_yaml
 fewshot_split: test
 fewshot_config:

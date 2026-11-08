@@ -1,4 +1,3 @@
-tag: cesbelebele
 dataset_path: davidadamczyk/czechbench_belebele
 dataset_kwargs:
   revision: b13f376bcde571fd7157ae5e0e1319b1f7e504bd

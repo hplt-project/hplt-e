@@ -1,5 +1,4 @@
 dataset_name: math
-tag: umimeto_math
 task: umimeto_math_p4
 include: ../_umimeto_yaml
 description: "Správná řešení úloh z Krajského přeboru v matematice.\n\n"

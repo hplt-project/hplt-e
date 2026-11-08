@@ -1,4 +1,5 @@
 task: xnli_es_p0
+tag: hplt_spa_xnli
 include: _xnli_yaml
 doc_to_text: ''
 target_delimiter: ''
